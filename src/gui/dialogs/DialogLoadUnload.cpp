@@ -349,6 +349,8 @@ DialogLoadUnload::DialogLoadUnload(fsm::BaseData data)
 
     notice_frame.Hide(); // default state is 'normal' - leave progress frame the only one shown
 
+    notice_frame.Hide(); // default state is 'normal' - leave progress frame the only one shown
+
     Change(data);
 }
 
