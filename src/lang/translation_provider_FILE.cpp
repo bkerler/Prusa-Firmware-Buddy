@@ -51,6 +51,9 @@ bool FILETranslationProvider::EnsureFile() const {
     // set file buffer to 64B -> most reads are very short, so it will be more efficient to have relatively small buffer.
     setvbuf(m_File, nullptr, _IOFBF, 64);
 
+    // set file buffer to 64B -> most reads are very short, so it will be more efficient to have relatively small buffer.
+    setvbuf(m_File, nullptr, _IOFBF, 64);
+
     if (!m_HashTable.Init(m_File)) {
         fclose(m_File);
         m_File = nullptr;
