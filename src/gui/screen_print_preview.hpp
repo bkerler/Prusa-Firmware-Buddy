@@ -37,6 +37,12 @@ class ScreenPrintPreview : public ScreenPrintPreviewBase {
     static constexpr const char *txt_new_fw_available = N_(find_error(ErrCode::CONNECT_PRINT_PREVIEW_NEW_FW).err_text);
     static constexpr const char *txt_wrong_fil_type = find_error(ErrCode::CONNECT_PRINT_PREVIEW_WRONG_FILAMENT).err_text;
 
+#if defined(USE_ST7789)
+    static constexpr const char *txt_new_fw_available = N_("New FW available");
+#else
+    static constexpr const char *txt_new_fw_available = N_("New firmware available");
+#endif
+
     static ScreenPrintPreview *ths; // to be accessible in dialog handler
 
     GCodeInfo &gcode;
