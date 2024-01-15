@@ -32,13 +32,20 @@ extern "C" {
     #define LWIP_MDNS_RESPONDER 1
     // For MDNS
     #define LWIP_IGMP                      1
+    #define LWIP_IPV6_MLD                  1
     #define LWIP_NUM_NETIF_CLIENT_DATA     1
     #define LWIP_NETIF_EXT_STATUS_CALLBACK 1
 #else
     // No extra timeouts if no MDNS
     #define MDNS_EXTRA_TIMEOUTS 0
 #endif
-#define MEMP_NUM_SYS_TIMEOUT 8 + MDNS_EXTRA_TIMEOUTS
+#define MEMP_NUM_SYS_TIMEOUT        10 + MDNS_EXTRA_TIMEOUTS
+#define LWIP_IPV4                   1
+#define LWIP_IPV6                   1
+#define LWIP_ICMP6                  1
+#define LWIP_IPV6_DHCP6             1
+#define LWIP_IPV6_ADDRESS_LIFETIMES 1
+#define LWIP_IPV6_AUTOCONFIG        1
 
 #define TCP_MSS                1024
 #define TCP_WND                (8 * TCP_MSS)

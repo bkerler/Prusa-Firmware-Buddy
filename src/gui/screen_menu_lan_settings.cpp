@@ -34,10 +34,13 @@ void ScreenMenuConnectionBase::refresh_addresses() {
     netdev_status_t n_status = netdev_get_status(dev_id);
     if (n_status == NETDEV_NETIF_UP || n_status == NETDEV_NETIF_NOADDR) {
         lan_t ethconfig = {};
-        netdev_get_ipv4_addresses(dev_id, &ethconfig);
+        netdev_get_ip_addresses(dev_id, &ethconfig);
 
         stringify_address_for_screen(str, sizeof(str), ethconfig, ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4));
         Item<MI_IP4_ADDR>().ChangeInformation(str);
+
+        stringify_address_for_screen(str, sizeof(str), ethconfig, ETHVAR_MSK(ETHVAR_LAN_ADDR_IP6));
+        Item<MI_IP6_ADDR>().ChangeInformation(str);
 
         stringify_address_for_screen(str, sizeof(str), ethconfig, ETHVAR_MSK(ETHVAR_LAN_MSK_IP4));
         Item<MI_IP4_NMSK>().ChangeInformation(str);
@@ -49,6 +52,7 @@ void ScreenMenuConnectionBase::refresh_addresses() {
     } else {
         const char *msg = UNKNOWN_ADDR;
         Item<MI_IP4_ADDR>().ChangeInformation(msg);
+        Item<MI_IP6_ADDR>().ChangeInformation(msg);
 
         msg = UNKNOWN_ADDR;
         Item<MI_IP4_NMSK>().ChangeInformation(msg);

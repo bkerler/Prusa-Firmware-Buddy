@@ -23,7 +23,7 @@
 
 #define ETHVAR_MSK(n_id) ((uint32_t)1 << (n_id))
 #define ETHVAR_STATIC_LAN_ADDRS \
-    (ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4) | ETHVAR_MSK(ETHVAR_LAN_MSK_IP4) | ETHVAR_MSK(ETHVAR_LAN_GW_IP4))
+    (ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4) | ETHVAR_MSK(ETHVAR_LAN_ADDR_IP6) | ETHVAR_MSK(ETHVAR_LAN_MSK_IP4) | ETHVAR_MSK(ETHVAR_LAN_GW_IP4))
 
 #define ETHVAR_STATIC_DNS_ADDRS \
     (ETHVAR_MSK(ETHVAR_DNS1_IP4) | ETHVAR_MSK(ETHVAR_DNS2_IP4))
@@ -41,9 +41,9 @@ extern "C" {
 typedef enum {
     ETHVAR_LAN_FLAGS, // uint8_t, lan.flag
     ETHVAR_HOSTNAME, // char[20 + 1], hostname
-    ETHVAR_LAN_ADDR_IP4, // ip4_addr_t, lan.addr_ip4
-    ETHVAR_LAN_MSK_IP4, // ip4_addr_t, lan.msk_ip4
-    ETHVAR_LAN_GW_IP4, // ip4_addr_t, lan.gw_ip4
+    ETHVAR_LAN_ADDR_IP4, // ip_addr_t, lan.addr_ip4
+    ETHVAR_LAN_MSK_IP4, // ip_addr_t, lan.msk_ip4
+    ETHVAR_LAN_GW_IP4, // ip_addr_t, lan.gw_ip4
     ETHVAR_TIMEZONE, // int8_t, timezone
     ETHVAR_DNS1_IP4, // ip_addr_t, dns1_ip4
     ETHVAR_DNS2_IP4, // ip_addr_t, dns2_ip4
@@ -51,6 +51,8 @@ typedef enum {
 
     APVAR_SSID, // char[32 + 1], ap_entry_t::ssid
     APVAR_PASS, // char[64 + 1], ap_entry_t::pass
+
+    ETHVAR_LAN_ADDR_IP6, // ip_addr_t, lan.addr_ip6
 } ETHVAR_t;
 
 typedef char mac_address_t[MAC_ADDR_STR_LEN];

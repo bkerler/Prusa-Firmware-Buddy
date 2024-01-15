@@ -135,7 +135,8 @@ public:
     };
 
     struct NetInfo {
-        uint8_t ip[4];
+        uint8_t ipv4[4];
+        uint32_t ipv6[5];
         uint8_t mac[6];
     };
 

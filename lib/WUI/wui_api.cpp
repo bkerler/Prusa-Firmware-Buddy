@@ -69,9 +69,13 @@ static int ini_handler_func(void *user, const char *section, const char *name, c
     } else if (ini_string_match(section, "network", name, "hostname")) {
         strlcpy(tmp_config->hostname, value, ETH_HOSTNAME_LEN + 1);
         tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_HOSTNAME);
-    } else if (ini_string_match(section, def->ip_section, name, "addr")) {
-        if (ip4addr_aton(value, &tmp_config->lan.addr_ip4)) {
+    } else if (strncasecmp(def->ip_section, "eth::ipv4", 9) && ini_string_match(section, def->ip_section, name, "addr")) {
+        if (ip4addr_aton(value, &tmp_config->lan.addr_ip4.u_addr.ip4)) {
             tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4);
+        }
+    } else if (strncasecmp(def->ip_section, "eth::ipv6", 9) && ini_string_match(section, def->ip_section, name, "addr")) {
+        if (ip6addr_aton(value, &tmp_config->lan.addr_ip6.u_addr.ip6)) {
+            tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_LAN_ADDR_IP6);
         }
     } else if (ini_string_match(section, def->ip_section, name, "mask")) {
         if (ip4addr_aton(value, &tmp_config->lan.msk_ip4)) {
@@ -91,12 +95,12 @@ static int ini_handler_func(void *user, const char *section, const char *name, c
                 if (NULL != token) {
                     switch (i) {
                     case 0:
-                        if (ip4addr_aton(token, &tmp_config->dns1_ip4)) {
+                        if (ip4addr_aton(token, &tmp_config->dns1.u_addr.ip4)) {
                             tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_DNS1_IP4);
                         }
                         break;
                     case 1:
-                        if (ip4addr_aton(token, &tmp_config->dns2_ip4)) {
+                        if (ip4addr_aton(token, &tmp_config->dns2.u_addr.ip4)) {
                             tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_DNS2_IP4);
                         }
                         break;
@@ -106,7 +110,7 @@ static int ini_handler_func(void *user, const char *section, const char *name, c
                 }
             }
         } else {
-            if (ip4addr_aton(value, &tmp_config->dns1_ip4)) {
+            if (ip4addr_aton(value, &tmp_config->dns1.u_addr.ip4)) {
                 tmp_config->var_mask |= ETHVAR_MSK(ETHVAR_DNS1_IP4);
             }
         }
@@ -129,7 +133,10 @@ uint32_t load_ini_file_eth(ETH_config_t *config) {
     ini_load_def def = {};
     def.config = config;
     def.ip_section = "eth::ipv4";
-    return ini_load_file(ini_handler_func, &def);
+    uint32_t ret = ini_load_file(ini_handler_func, &def);
+    def.ip_section = "eth::ipv6";
+    ret |= ini_load_file(ini_handler_func, &def);
+    return ret;
 }
 
 uint32_t load_ini_file_wifi(ETH_config_t *config, ap_entry_t *ap) {
@@ -137,7 +144,10 @@ uint32_t load_ini_file_wifi(ETH_config_t *config, ap_entry_t *ap) {
     def.config = config;
     def.ip_section = "wifi::ipv4";
     def.ap = ap;
-    return ini_load_file(ini_handler_func, &def);
+    uint32_t ret = ini_load_file(ini_handler_func, &def);
+    def.ip_section = "wifi::ipv6";
+    ret |= ini_load_file(ini_handler_func, &def);
+    return ret;
 }
 
 void save_net_params(ETH_config_t *ethconfig, ap_entry_t *ap, uint32_t netdev_id) {
@@ -147,16 +157,22 @@ void save_net_params(ETH_config_t *ethconfig, ap_entry_t *ap, uint32_t netdev_id
         netdev_id == NETDEV_ETH_ID ? config_store().lan_flag.set(flags) : config_store().wifi_flag.set(flags);
     }
     if (ethconfig->var_mask & ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4)) {
-        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_addr.set(ethconfig->lan.addr_ip4.addr)
-                                   : config_store().wifi_ip4_addr.set(ethconfig->lan.addr_ip4.addr);
+        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_addr.set(ethconfig->lan.addr_ip4.u_addr.ip4.addr)
+                                   : config_store().wifi_ip4_addr.set(ethconfig->lan.addr_ip4.u_addr.ip4.addr);
     }
+    if (ethconfig->var_mask & ETHVAR_MSK(ETHVAR_LAN_ADDR_IP6)) {
+        std::array<uint32_t, 5> ip6_addr { ethconfig->lan.addr_ip6.u_addr.ip6.addr[0], ethconfig->lan.addr_ip6.u_addr.ip6.addr[1], ethconfig->lan.addr_ip6.u_addr.ip6.addr[2], ethconfig->lan.addr_ip6.u_addr.ip6.addr[3], ethconfig->lan.addr_ip6.u_addr.ip6.zone };
+        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip6_addr.set(ip6_addr)
+                                   : config_store().wifi_ip6_addr.set(ip6_addr);
+    }
+
     if (ethconfig->var_mask & ETHVAR_MSK(ETHVAR_DNS1_IP4)) {
-        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_dns1.set(ethconfig->dns1_ip4.addr)
-                                   : config_store().wifi_ip4_dns1.set(ethconfig->dns1_ip4.addr);
+        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_dns1.set(ethconfig->dns1.u_addr.ip4.addr)
+                                   : config_store().wifi_ip4_dns1.set(ethconfig->dns1.u_addr.ip4.addr);
     }
     if (ethconfig->var_mask & ETHVAR_MSK(ETHVAR_DNS2_IP4)) {
-        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_dns2.set(ethconfig->dns2_ip4.addr)
-                                   : config_store().wifi_ip4_dns2.set(ethconfig->dns2_ip4.addr);
+        netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_dns2.set(ethconfig->dns2.u_addr.ip4.addr)
+                                   : config_store().wifi_ip4_dns2.set(ethconfig->dns2.u_addr.ip4.addr);
     }
     if (ethconfig->var_mask & ETHVAR_MSK(ETHVAR_LAN_MSK_IP4)) {
         netdev_id == NETDEV_ETH_ID ? config_store().lan_ip4_mask.set(ethconfig->lan.msk_ip4.addr)
@@ -190,17 +206,17 @@ void load_net_params(ETH_config_t *ethconfig, ap_entry_t *ap, uint32_t netdev_id
     // Just the flags, without (possibly) the wifi security
     if (netdev_id == NETDEV_ETH_ID) {
         ethconfig->lan.flag = config_store().lan_flag.get() & ~RESERVED_MASK;
-        ethconfig->lan.addr_ip4.addr = config_store().lan_ip4_addr.get();
-        ethconfig->dns1_ip4.addr = config_store().lan_ip4_dns1.get();
-        ethconfig->dns2_ip4.addr = config_store().lan_ip4_dns2.get();
+        ethconfig->lan.addr_ip4.u_addr.ip4.addr = config_store().lan_ip4_addr.get();
+        ethconfig->dns1.u_addr.ip4.addr = config_store().lan_ip4_dns1.get();
+        ethconfig->dns2.u_addr.ip4.addr = config_store().lan_ip4_dns2.get();
         ethconfig->lan.msk_ip4.addr = config_store().lan_ip4_mask.get();
         ethconfig->lan.gw_ip4.addr = config_store().lan_ip4_gateway.get();
         strlcpy(ethconfig->hostname, config_store().lan_hostname.get_c_str(), ETH_HOSTNAME_LEN + 1);
     } else {
         ethconfig->lan.flag = config_store().wifi_flag.get() & ~RESERVED_MASK;
-        ethconfig->lan.addr_ip4.addr = config_store().wifi_ip4_addr.get();
-        ethconfig->dns1_ip4.addr = config_store().wifi_ip4_dns1.get();
-        ethconfig->dns2_ip4.addr = config_store().wifi_ip4_dns2.get();
+        ethconfig->lan.addr_ip4.u_addr.ip4.addr = config_store().wifi_ip4_addr.get();
+        ethconfig->dns1.u_addr.ip4.addr = config_store().wifi_ip4_dns1.get();
+        ethconfig->dns2.u_addr.ip4.addr = config_store().wifi_ip4_dns2.get();
         ethconfig->lan.msk_ip4.addr = config_store().wifi_ip4_mask.get();
         ethconfig->lan.gw_ip4.addr = config_store().wifi_ip4_gateway.get();
         strlcpy(ethconfig->hostname, config_store().wifi_hostname.get_c_str(), ETH_HOSTNAME_LEN + 1);

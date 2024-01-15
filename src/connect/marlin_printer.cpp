@@ -283,9 +283,11 @@ std::optional<Printer::NetInfo> MarlinPrinter::net_info(Printer::Iface iface) co
         return nullopt;
     }
     lan_t addrs;
-    netdev_get_ipv4_addresses(id, &addrs);
-    static_assert(sizeof(addrs.addr_ip4) == sizeof(result.ip));
-    memcpy(result.ip, &addrs.addr_ip4, sizeof addrs.addr_ip4);
+    netdev_get_ip_addresses(id, &addrs);
+    static_assert(sizeof(addrs.addr_ip4.u_addr.ip4) == sizeof(result.ipv4));
+    static_assert(sizeof(addrs.addr_ip6.u_addr.ip6) == sizeof(result.ipv6));
+    memcpy(result.ipv4, &addrs.addr_ip4.u_addr.ip4, sizeof addrs.addr_ip4.u_addr.ip4);
+    memcpy(result.ipv6, &addrs.addr_ip6.u_addr.ip6, sizeof addrs.addr_ip6.u_addr.ip6);
     return result;
 }
 

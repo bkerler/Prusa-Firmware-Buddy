@@ -138,13 +138,13 @@ netdev_ip_obtained_t netdev_get_ip_obtained_type(uint32_t);
 void netdev_get_hostname(uint32_t, char *buffer, size_t buffer_len);
 
 ////////////////////////////////////////////////////////////////////////////
-/// @brief Retrive IPv4 configuration. IP address, network mask, gateway address
+/// @brief Retrive IPv4/IPv6 configuration. IP address, network mask, gateway address
 ///
 /// @param[in] dev_id device ID. One of
 ///             - #NETDEV_ETH_ID
 ///             - #NETDEV_ESP_ID
-/// @param[out] ipv4_configuration Structure to store IPv4 configuration
-void netdev_get_ipv4_addresses(uint32_t, lan_t *);
+/// @param[out] lan_t Structure to store IPv4/IPv6 configuration
+void netdev_get_ip_addresses(uint32_t, lan_t *);
 
 /// Load ini file to both runtime and eeprom configuration.
 ///

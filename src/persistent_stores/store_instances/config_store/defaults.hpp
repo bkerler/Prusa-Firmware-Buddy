@@ -37,6 +37,8 @@ namespace defaults {
 
     inline constexpr uint8_t uint8_t_ff { 0xff };
 
+    inline constexpr std::array<uint32_t, 5> zero_ipv6 { 0, 0, 0, 0, 0 };
+
     // default values for variables that have distinct requirements
     inline constexpr float pid_nozzle_p {
 #ifdef DEFAULT_Kp

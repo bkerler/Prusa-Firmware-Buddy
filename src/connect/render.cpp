@@ -36,6 +36,7 @@ using transfers::Monitor;
 
 #define JSON_MAC(NAME, VAL) JSON_FIELD_STR_FORMAT(NAME, "%02hhX:%02hhX:%02hhX:%02hhX:%02hhX:%02hhX", VAL[0], VAL[1], VAL[2], VAL[3], VAL[4], VAL[5])
 #define JSON_IP(NAME, VAL)  JSON_FIELD_STR_FORMAT(NAME, "%hhu.%hhu.%hhu.%hhu", VAL[0], VAL[1], VAL[2], VAL[3])
+#define JSON_IP6(NAME, VAL) JSON_FIELD_STR_FORMAT(NAME, "%02hhX%02hhX:%02hhX%02hhX:%02hhX%02hhX:%02hhX%02hhX", VAL[0] & 0xFFFF, (VAL[0] >> 16) & 0xFFFF, VAL[1] & 0xFFFF, (VAL[1] >> 16) & 0xFFFF, VAL[2] & 0xFFFF, (VAL[2] >> 16) & 0xFFFF, VAL[3] & 0xFFFF, (VAL[3] >> 16) & 0xFFFF)
 
 namespace connect_client {
 
@@ -254,7 +255,8 @@ namespace {
                     JSON_FIELD_OBJ("network_info");
                     if (state.lan.has_value()) {
                         JSON_MAC("lan_mac", state.lan->mac) JSON_COMMA;
-                        JSON_IP("lan_ipv4", state.lan->ip);
+                        JSON_IP("lan_ipv4", state.lan->ipv4);
+                        JSON_IP6("lan_ipv6", state.lan->ipv6);
                     }
                     if (state.lan.has_value() && state.wifi.has_value()) {
                         // Why oh why can't json accept a trailing comma :-(
@@ -265,7 +267,8 @@ namespace {
                             JSON_FIELD_STR("wifi_ssid", creds.ssid) JSON_COMMA;
                         }
                         JSON_MAC("wifi_mac", state.wifi->mac) JSON_COMMA;
-                        JSON_IP("wifi_ipv4", state.wifi->ip);
+                        JSON_IP("wifi_ipv4", state.wifi->ipv4);
+                        JSON_IP6("wifi_ipv6", state.wifi->ipv6);
                     }
                     JSON_OBJ_END JSON_COMMA;
 #if HAS_MMU2()

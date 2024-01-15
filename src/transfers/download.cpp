@@ -347,7 +347,7 @@ public:
         auto &request = get<Request>(phase_payload);
 #ifndef UNITTESTS
         // Hack to make it compile during tests. Not actually executed.
-        conn = altcp_new_ip_type(altcp_tcp_alloc, IP_GET_TYPE(request.ip));
+        conn = altcp_new_ip_type(altcp_tcp_alloc, request.ip.type);
 #endif
 
         if (conn == nullptr) {

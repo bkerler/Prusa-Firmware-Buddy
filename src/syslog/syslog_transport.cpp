@@ -85,7 +85,7 @@ void SyslogTransport::dns_done_callback(const ip_addr_t *ip) {
     // prepare remote address
     memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
-    addr.sin_addr.s_addr = ip->addr;
+    addr.sin_addr.s_addr = ip->u_addr.ip4.addr;
     addr.sin_port = htons(remote_port);
     dns_resolved = DnsState::Resolved;
 }

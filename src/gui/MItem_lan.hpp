@@ -94,6 +94,7 @@ public:
 
 #define UNKNOWN_ADDR "N/A"
 #define ADDR_LEN     sizeof("255.255.255.255")
+#define ADDR6_LEN    sizeof("FFFF:FFFF:FFFF:FFFF:0000:0000:0000:0000")
 #define UNKNOWN_MAC  "N/A"
 #define MAC_LEN      sizeof("ff.ff.ff.ff.ff.ff")
 
@@ -116,6 +117,13 @@ class MI_IP4_GWAY : public WiInfo<ADDR_LEN> {
 
 public:
     MI_IP4_GWAY();
+};
+
+class MI_IP6_ADDR : public WiInfo<ADDR6_LEN> {
+    static constexpr const char *const label = GuiDefaults::ScreenWidth > 240 ? N_("IPv6 Address") : N_("IPv6");
+
+public:
+    MI_IP6_ADDR();
 };
 
 class MI_MAC_ADDR : public WiInfo<MAC_LEN> {

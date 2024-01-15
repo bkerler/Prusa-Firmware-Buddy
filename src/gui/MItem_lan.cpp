@@ -91,6 +91,10 @@ MI_IP4_GWAY::MI_IP4_GWAY()
     : WiInfo<ADDR_LEN>(_(label), nullptr, is_enabled_t::yes, is_hidden_t::no) {
 }
 
+MI_IP6_ADDR::MI_IP6_ADDR()
+    : WiInfo<ADDR6_LEN>(_(label), nullptr, is_enabled_t::yes, is_hidden_t::no) {
+}
+
 MI_MAC_ADDR::MI_MAC_ADDR()
     : WiInfo<MAC_LEN>(_(label), nullptr, is_enabled_t::yes, is_hidden_t::no) {
 }

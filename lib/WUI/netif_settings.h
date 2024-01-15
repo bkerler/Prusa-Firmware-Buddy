@@ -1,6 +1,7 @@
 #pragma once
 
 #include "lwip/ip_addr.h"
+#include "lwip/ip6_addr.h"
 
 #define LAN_FLAG_ONOFF_POS (1 << 0) // position of ONOFF switch in lan.flag
 #define LAN_FLAG_TYPE_POS  (1 << 1) // position of DHCP/STATIC switch in lan.flag
@@ -22,15 +23,16 @@
 typedef struct {
     uint8_t flag; // lan flags: pos0 = switch(ON=0, OFF=1), pos1 = type(DHCP=0, STATIC=1)
                   // pos2 = type(ETH=1, WIFI=0)
-    ip4_addr_t addr_ip4; // user defined static ip4 address
+    ip_addr_t addr_ip4; // user defined static ip4 address
+    ip_addr_t addr_ip6; // user defined static ip6 address
     ip4_addr_t msk_ip4; // user defined ip4 netmask
     ip4_addr_t gw_ip4; // user define ip4 default gateway
 } lan_t;
 
 typedef struct {
     char hostname[ETH_HOSTNAME_LEN + 1]; // ETH hostname: MAX 20 chars
-    ip_addr_t dns1_ip4; // user defined DNS #1
-    ip_addr_t dns2_ip4; // user defined DNS #2
+    ip_addr_t dns1; // user defined DNS #1
+    ip_addr_t dns2; // user defined DNS #2
     lan_t lan; // user defined LAN configurations
     uint32_t var_mask; // mask for setting ethvars
 } ETH_config_t;

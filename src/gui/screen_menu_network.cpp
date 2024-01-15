@@ -23,13 +23,17 @@ void ScreenMenuNetwork::refresh_address() {
     netdev_status_t n_status = netdev_get_status(active_netdev);
     Item<MI_HOSTNAME>().ChangeInformation(active_netdev == NETDEV_ESP_ID ? config_store().wifi_hostname.get_c_str() : config_store().lan_hostname.get_c_str());
     if (n_status == NETDEV_NETIF_UP || n_status == NETDEV_NETIF_NOADDR) {
-        char str[ADDR_LEN];
+        char str_v4[ADDR_LEN];
+        char str_v6[ADDR6_LEN];
         lan_t ethconfig = {};
-        netdev_get_ipv4_addresses(active_netdev, &ethconfig);
-        stringify_address_for_screen(str, sizeof(str), ethconfig, ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4));
-        Item<MI_IP4_ADDR>().ChangeInformation(str);
+        netdev_get_ip_addresses(active_netdev, &ethconfig);
+        stringify_address_for_screen(str_v4, sizeof(str_v4), ethconfig, ETHVAR_MSK(ETHVAR_LAN_ADDR_IP4));
+        Item<MI_IP4_ADDR>().ChangeInformation(str_v4);
+        stringify_address_for_screen(str_v6, sizeof(str_v6), ethconfig, ETHVAR_MSK(ETHVAR_LAN_ADDR_IP6));
+        Item<MI_IP6_ADDR>().ChangeInformation(str_v6);
     } else {
         Item<MI_IP4_ADDR>().ChangeInformation(UNKNOWN_ADDR);
+        Item<MI_IP6_ADDR>().ChangeInformation(UNKNOWN_ADDR);
     }
 }
 

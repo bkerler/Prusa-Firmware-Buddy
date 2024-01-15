@@ -102,7 +102,7 @@ uint32_t Printer::info_fingerprint() const {
 
     auto update_net = [&](Iface iface) {
         if (const auto info = net_info(iface); info.has_value()) {
-            crc.add(info->ip).add(info->mac);
+            crc.add(info->ipv4).add((uint8_t *)info->ipv6).add(info->mac);
         }
     };
 

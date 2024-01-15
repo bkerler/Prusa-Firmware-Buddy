@@ -81,6 +81,8 @@ struct CurrentStore
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("LAN IP4 Gateway")> lan_ip4_gateway; // X.X.X.X address encoded
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("LAN IP4 DNS1")> lan_ip4_dns1; // X.X.X.X address encoded
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("LAN IP4 DNS2")> lan_ip4_dns2; // X.X.X.X address encoded
+    StoreItem<std::array<uint32_t, 5>, defaults::zero_ipv6, journal::hash("LAN IP6 Address")> lan_ip6_addr; // X.X.X.X address encoded
+
     StoreItem<std::array<char, lan_hostname_max_len + 1>, defaults::net_hostname, journal::hash("LAN Hostname")> lan_hostname;
 
     StoreItem<int8_t, defaults::lan_timezone, journal::hash("LAN Timezone")> timezone; // hour difference from UTC
@@ -95,6 +97,7 @@ struct CurrentStore
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("WIFI IP4 Gateway")> wifi_ip4_gateway; // X.X.X.X address encoded
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("WIFI IP4 DNS1")> wifi_ip4_dns1; // X.X.X.X address encoded
     StoreItem<uint32_t, defaults::uint32_t_zero, journal::hash("WIFI IP4 DNS2")> wifi_ip4_dns2; // X.X.X.X address encoded
+    StoreItem<std::array<uint32_t, 5>, defaults::zero_ipv6, journal::hash("WIFI IP6 Address")> wifi_ip6_addr; // X.X.X.X address encoded
     StoreItem<std::array<char, lan_hostname_max_len + 1>, defaults::net_hostname, journal::hash("WIFI Hostname")> wifi_hostname;
     StoreItem<std::array<char, wifi_max_ssid_len + 1>, defaults::wifi_ap_ssid, journal::hash("WIFI AP SSID")> wifi_ap_ssid;
     StoreItem<std::array<char, wifi_max_passwd_len + 1>, defaults::wifi_ap_password, journal::hash("WIFI AP Password")> wifi_ap_password;

@@ -1,4 +1,6 @@
 #include "wui.h"
+#include "dhcp6.h"
+#include "ethip6.h"
 #include "netif_settings.h"
 
 #include "marlin_client.hpp"
@@ -112,6 +114,7 @@ void prusalink_password_init(void) {
 //   EEPROM, reading of the configuration needs to happen inside a lock. This is
 //   not yet written, but we at least have a well defined place where it goes
 //   inside this class.
+
 class NetworkState {
 public:
     enum NetworkAction {
@@ -253,16 +256,20 @@ private:
         // Won't fail with eSetBits
         xTaskNotify(network_task, CoreInitDone, eSetBits);
     }
+
     static void tcpip_init_done_raw(void *me) {
         static_cast<NetworkState *>(me)->tcpip_init_done();
     }
+
     void post_init(Iface &iface) {
         // Already locked by the caller.
-
         // FIXME: Error handling
         switch (iface_mode(iface)) {
         case Mode::DHCP:
             netifapi_dhcp_start(&iface.dev);
+#if LWIP_IPV6 && LWIP_IPV6_DHCP6_STATELESS
+            dhcp6_enable_stateless(&iface.dev);
+#endif
             break;
         case Mode::Static: {
             ETH_config_t cfg;
@@ -276,9 +283,22 @@ private:
             // stack, not only to specific interface. How do we want the
             // config of multiple interfaces to interact? Take it from the
             // selected interface?
-            dns_setserver(0, &cfg.dns1_ip4);
-            dns_setserver(1, &cfg.dns2_ip4);
-            netifapi_netif_set_addr(&iface.dev, &cfg.lan.addr_ip4, &cfg.lan.msk_ip4, &cfg.lan.gw_ip4);
+            ip_addr_t dns1;
+            dns1.type = IPADDR_TYPE_V4;
+            dns1.u_addr.ip4.addr = cfg.dns1.u_addr.ip4.addr;
+            ip_addr_t dns2;
+            dns2.type = IPADDR_TYPE_V4;
+            dns2.u_addr.ip4.addr = cfg.dns2.u_addr.ip4.addr;
+            dns_setserver(0, &dns1);
+            dns_setserver(1, &dns2);
+            netifapi_netif_set_addr(&iface.dev, &cfg.lan.addr_ip4.u_addr.ip4, &cfg.lan.msk_ip4, &cfg.lan.gw_ip4);
+
+#if LWIP_IPV6
+            iface.dev.ip6_addr_state[0] = IP6_ADDR_VALID;
+            netif_ip6_addr_set(&iface.dev, 0, &cfg.lan.addr_ip6.u_addr.ip6);
+            ip6_addr_assign_zone(ip_2_ip6(&iface.dev.ip6_addr[0]), IP6_UNICAST, &iface.dev);
+            netif_ip6_addr_set_state(&iface.dev, 0, IP6_ADDR_TENTATIVE);
+#endif
             netifapi_dhcp_inform(&iface.dev);
             break;
         }
@@ -304,6 +324,14 @@ private:
         netifapi_netif_set_link_up(&iface);
         // FIXME: Error handling
         netifapi_netif_set_up(&iface);
+#if LWIP_IPV6
+        ETH->MACFFR |= ETH_MACFFR_PAM;
+        iface.flags |= NETIF_FLAG_MLD6;
+        iface.output_ip6 = ethip6_output;
+        iface.ip6_autoconfig_enabled = 1;
+        netif_create_ip6_linklocal_address(&iface, 1 /*from mac*/);
+        netif_ip6_addr_set_state(&iface, 0, IP6_ADDR_TENTATIVE);
+#endif
     }
 
     void join_ap() {
@@ -557,9 +585,20 @@ public:
     static void get_addresses(uint32_t netdev_id, lan_t *config) {
         memset(config, 0, sizeof *config);
         with_iface(netdev_id, [&](netif &iface, NetworkState &) {
-            config->addr_ip4.addr = netif_ip4_addr(&iface)->addr;
+            config->addr_ip4.u_addr.ip4.addr = netif_ip4_addr(&iface)->addr;
             config->msk_ip4.addr = netif_ip4_netmask(&iface)->addr;
             config->gw_ip4.addr = netif_ip4_gw(&iface)->addr;
+            for (size_t j = 0; j < LWIP_IPV6_NUM_ADDRESSES; ++j) {
+                const ip6_addr_t *ip6 = netif_ip6_addr(&iface, j);
+                if (ip6_addr_isany(ip6)) {
+                    continue;
+                }
+                config->addr_ip6.u_addr.ip6.addr[0] = ip6->addr[0];
+                config->addr_ip6.u_addr.ip6.addr[1] = ip6->addr[1];
+                config->addr_ip6.u_addr.ip6.addr[2] = ip6->addr[2];
+                config->addr_ip6.u_addr.ip6.addr[3] = ip6->addr[3];
+                config->addr_ip6.u_addr.ip6.zone = ip6->zone;
+            }
         });
     }
 
@@ -636,7 +675,7 @@ void notify_ethernet_data() {
     NetworkState::notify(NetworkState::NetworkAction::EthData);
 }
 
-void netdev_get_ipv4_addresses(uint32_t netdev_id, lan_t *config) {
+void netdev_get_ip_addresses(uint32_t netdev_id, lan_t *config) {
     NetworkState::get_addresses(netdev_id, config);
 }
 
