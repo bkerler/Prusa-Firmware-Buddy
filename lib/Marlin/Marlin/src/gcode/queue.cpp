@@ -350,6 +350,7 @@ FORCE_INLINE bool is_M29(const char * const cmd) {  // matches "M29" & "M29 ", b
  */
 void GCodeQueue::get_serial_commands() {
   static char serial_line_buffer[NUM_SERIAL][MAX_CMD_SIZE];
+  static bool serial_line_too_long[NUM_SERIAL] = { false };
   static bool serial_comment_mode[NUM_SERIAL] = { false }
               #if ENABLED(PAREN_COMMENTS)
                 // #error dead code found by automatic analyses (see BFW-5461)
@@ -383,6 +384,8 @@ void GCodeQueue::get_serial_commands() {
        * If the character ends the line
        */
       if (serial_char == '\n' || serial_char == '\r') {
+        const bool line_too_long = serial_line_too_long[i];
+        serial_line_too_long[i] = false;
 
         // Start with comment mode off
         serial_comment_mode[i] = false;
@@ -393,6 +396,9 @@ void GCodeQueue::get_serial_commands() {
 
         // Skip empty lines and comments
         if (!serial_count[i]) { thermalManager.manage_heater(); continue; }
+
+        if (line_too_long)
+          return gcode_line_error(PSTR(MSG_ERR_LINE_LENGTH), i);
 
         serial_line_buffer[i][serial_count[i]] = 0;       // Terminate string
         serial_count[i] = 0;                              // Reset buffer
@@ -458,7 +464,8 @@ void GCodeQueue::get_serial_commands() {
       }
       else if (serial_count[i] >= MAX_CMD_SIZE - 1) {
         // Keep fetching, but ignore normal characters beyond the max length
-        // The command will be injected when EOL is reached
+        // The error is reported once EOL is reached, after the whole line is drained.
+        serial_line_too_long[i] = true;
       }
       else if (serial_char == '\\') {  // Handle escapes
         // if we have one more character, copy it over
