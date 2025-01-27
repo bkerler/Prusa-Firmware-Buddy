@@ -179,8 +179,5 @@ cmake-build-*
 .settings
 .classpath
 
-#Example configs
-config/*
-
 #Python
 __pycache__
