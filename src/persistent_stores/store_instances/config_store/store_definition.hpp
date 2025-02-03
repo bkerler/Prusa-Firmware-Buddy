@@ -370,6 +370,7 @@ struct CurrentStore
 
     /// User-defined filament ordering. Does not need to contain all the filaments - the rest will be appended to the back using the standard rules
     StoreItem<std::array<FilamentType, max_total_filament_count>, FilamentType::none, ItemFlag::user_presets, journal::hash("Filament Order")> filament_order;
+    StoreItemArray<float, float {}, journal::hash("Filament Previous Temperatures"), 8, EXTRUDERS> filament_prev_temp;
 
     StoreItem<std::bitset<max_preset_filament_type_count>, defaults::visible_preset_filament_types, ItemFlag::user_presets, journal::hash("Visible Preset Filament Types")> visible_preset_filament_types;
 
@@ -395,6 +396,8 @@ struct CurrentStore
 
     FilamentType get_filament_type(uint8_t index);
     void set_filament_type(uint8_t index, FilamentType value);
+    float get_previous_filament_temp(uint8_t index);
+    void set_previous_filament_temp(uint8_t index, float temperature);
 
     // Note: hash is kept for backwards compatibility
     StoreItem<bool, false, ItemFlag::features, journal::hash("Heatup Bed")> filament_change_preheat_all;
