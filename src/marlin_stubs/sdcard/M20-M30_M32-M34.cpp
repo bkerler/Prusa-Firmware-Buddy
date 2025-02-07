@@ -4,6 +4,8 @@
 #include "marlin_server.hpp"
 #include <usb_host.h>
 #include "marlin_vars.hpp"
+#include "transfers/partial_file.hpp"
+#include <transfers/files.hpp>
 
 /** \addtogroup G-Codes
  * @{
@@ -168,7 +170,67 @@ void GcodeSuite::M32() {
  *   M28 []
  */
 void GcodeSuite::M28() {
-    // TODO
+    // first wait for how many bytes we will receive
+    uint32_t bytesToReceive;
+    size_t file_idx;
+    // receive the four bytes
+    char bytesToReceiveBuffer[4];
+    for (int i = 0; i < 4; i++) {
+        int data;
+        while ((data = SerialUSB.read()) == -1) {
+        };
+        bytesToReceiveBuffer[i] = data;
+    }
+    // make it a uint32
+    memcpy(&bytesToReceive, &bytesToReceiveBuffer, 4);
+
+    // we're ready, notify the sender
+    SerialUSB.write('+');
+    const auto fname = transfers::transfer_name(file_idx);
+    auto preallocated = transfers::PartialFile::create(fname.begin(), bytesToReceive);
+
+    if (const char **err = get_if<const char *>(&preallocated); err != nullptr) {
+    } else {
+        // lock in the routine
+        uint32_t receivedBytes = 0;
+        while (prusa_sd_card_upload) {
+            int i;
+            for (i = 0; i < CHUNK_SIZE; i++) {
+                int data;
+
+                // check if we're not done
+                if (receivedBytes == bytesToReceive) {
+                    break;
+                }
+
+                // read the next byte
+                while ((data = SerialUSB.read()) == -1) {
+                };
+                receivedBytes++;
+
+                // save it to the chunk
+                chunk[i] = data;
+            }
+
+            // write the chunk to SD
+            card.write_command_no_newline(&chunk[0]);
+
+            // notify the sender we're ready for more data
+            MYSERIAL.write('+');
+
+            // for safety
+            manage_heater();
+
+            // check if we're done
+            if (receivedBytes == bytesToReceive) {
+                trace(); // beep
+                card.closefile();
+                prusa_sd_card_upload = false;
+                SERIAL_PROTOCOLLNRPGM(MSG_FILE_SAVED);
+            }
+        }
+        GcodeUpload(move(uploadParams), move(*slot), json_errors, *parser.content_length, file_idx, move(get<PartialFile::Ptr>(preallocated)), uploaded)
+    }
 }
 
 /**
