@@ -54,6 +54,11 @@ PhasesWarning warning_type_phase(WarningType warning) {
 
 constexpr uint32_t warning_lifespan_sec_constexpr(WarningType type) {
     switch (type) {
+#if PRINTER_IS_PRUSA_COREONE()
+    case WarningType::OpenChamberVents:
+    case WarningType::CloseChamberVents:
+        return 60;
+#endif
     default:
         return uint32_t(-1); // Unlimited
     }
