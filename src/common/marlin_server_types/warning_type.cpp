@@ -51,3 +51,14 @@ PhasesWarning warning_type_phase(WarningType warning) {
         //
     }
 }
+
+constexpr uint32_t warning_lifespan_sec_constexpr(WarningType type) {
+    switch (type) {
+    default:
+        return uint32_t(-1); // Unlimited
+    }
+}
+
+uint32_t warning_lifespan_sec(WarningType type) {
+    return warning_lifespan_sec_constexpr(type);
+}
