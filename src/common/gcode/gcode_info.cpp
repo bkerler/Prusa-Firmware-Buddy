@@ -181,7 +181,8 @@ void GCodeInfo::EvaluateToolsValid() {
         // Make sure that MMU gcode is sliced with the correct nozzle.
         // Slicing with a non-HF nozzle while HF nozzle is installed results in unsufficient purging.
         // Slicing for a HF nozzle without having it leads to extruder skipping.
-        if (per_extruder_info[e].requires_high_flow_nozzle.has_value() && (config_store().nozzle_is_high_flow.get()[e] != *per_extruder_info[e].requires_high_flow_nozzle)
+        // Note: Always checking first bit in the config store, since nozzle_is_high_flow is set per toolhead and MMU always uses first one.
+        if (per_extruder_info[e].requires_high_flow_nozzle.has_value() && (config_store().nozzle_is_high_flow.get()[0] != *per_extruder_info[e].requires_high_flow_nozzle)
             && !is_singletool_gcode()
             && MMU2::mmu2.Enabled()) {
             valid_printer_settings.nozzle_flow_mismatch.fail();
