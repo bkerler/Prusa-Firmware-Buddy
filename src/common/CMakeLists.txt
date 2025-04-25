@@ -1,5 +1,7 @@
 target_include_directories(firmware PRIVATE . include)
 
+target_link_libraries(firmware PRIVATE buddy_utils)
+
 if(BOARD IN_LIST BUDDY_BOARDS)
   target_sources(
     firmware
