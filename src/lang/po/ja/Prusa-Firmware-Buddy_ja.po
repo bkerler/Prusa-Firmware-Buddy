@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: info@prusa3d.com\n"
-"POT-Creation-Date: 2025-03-26 12:26+0100\n"
+"POT-Creation-Date: 2025-04-25 10:37+0200\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,18 +58,6 @@ msgstr "ツール4"
 msgid "  Tool 5"
 msgstr "ツール5"
 
-#: src/common/filament.cpp:261
-msgid " (Custom)"
-msgstr "(カスタム)"
-
-#: src/common/filament.cpp:255
-msgid " (Preset)"
-msgstr "(プリセット)"
-
-#: src/common/filament.cpp:258
-msgid " (User)"
-msgstr "(ユーザー)"
-
 #. not calibrated would be too long
 #: src/gui/MItem_tools.cpp:670
 #, c-format
@@ -97,9 +85,9 @@ msgid "%d Dock Position Calibration"
 msgstr "%d ドックポジション キャリブレーション"
 
 #: src/gui/include_COREONE/selftest_snake_config.hpp:82
-#, fuzzy, c-format
+#, c-format
 msgid "%d Door Sensor"
-msgstr "ドアセンサー"
+msgstr "%d ドアセンサー"
 
 #: src/gui/include_iX/selftest_snake_config.hpp:80
 #: src/gui/include_XL/selftest_snake_config.hpp:117
@@ -271,7 +259,7 @@ msgstr ""
 msgid "---"
 msgstr "---"
 
-#: src/gui/screen_network_setup.cpp:438
+#: src/gui/screen_network_setup.cpp:416
 msgid ""
 "1. Open Prusa app on your mobile device.\n"
 "\n"
@@ -423,6 +411,8 @@ msgid ""
 "Adjusting the tensioning screw of the door sensor was not successful. Please "
 "repeat the last step."
 msgstr ""
+"ドアセンサーノ ハリネジヲ チョウセイシテモ ウマクイキマセンデシタ。サイゴノ "
+"ステップヲ クリカエシテクダサイ。"
 
 #: src/common/feature/chamber_filtration/chamber_filtration.cpp:29
 msgid "Adv. filtration"
@@ -495,7 +485,7 @@ msgstr "ホントウニ プリントヲ テイシシマスカ?"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:21
 msgid "Are you sure you want to skip the door sensor calibration for now?"
-msgstr ""
+msgstr "ドアセンサーノ キャリブレーションヲ スキップシテ ヨロシイデスカ?"
 
 #: src/gui/screen_tools_mapping.cpp:677
 msgid "Assigned tool(s) without filament"
@@ -540,9 +530,8 @@ msgid "Auto Home"
 msgstr "オートホーム"
 
 #: src/gui/dialogs/DialogLoadUnload.cpp:149
-#, fuzzy
 msgid "Auto-retracting filament"
-msgstr "フィラメント ノ カット"
+msgstr "フィラメントノ ジドウマキトリ"
 
 #. //MSG_PROGRESS_FEED_NOZZLE c=20
 #: src/mmu2/mmu2_progress_converter.cpp:15
@@ -624,7 +613,7 @@ msgstr ""
 msgid "Bed"
 msgstr "ベッド"
 
-#: src/gui/MItem_menus.hpp:194
+#: src/gui/MItem_menus.hpp:191
 msgid "Bed Level Correction"
 msgstr "ベッドレベルホセイ"
 
@@ -905,14 +894,13 @@ msgid "Calibration failed with error."
 msgstr "エラーニヨル キャリブレーションシッパイ"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:41
-#, fuzzy
 msgid ""
 "Calibration of door sensor is only necessary for user-assembled printers or "
 "services door sensor. In all other cases you can skip this step."
 msgstr ""
-"ギアボックスノ キャリブレーションガ ヒツヨウナノハ、ユーザーガ クミタテタ ギ"
-"アボックスヤ セイビズミノ ギアボックスノ バアイダケデス。ソレイガイハ、コノス"
-"テップヲ ショウリャクデキマス。"
+"ドアセンサーノ キャリブレーションガ ヒツヨウナノハ、ユーザーガ クミタテタプリ"
+"ンタ マタハ サービスドアセンサーノミデス。ソレイガイノ バアイハ、コノステップ"
+"ヲ ショウリャクデキマス。"
 
 #: tmp_error_headers/error_list_xl.hpp:51
 msgid ""
@@ -921,7 +909,7 @@ msgstr ""
 "キャリブレーションピンガ トドキマセン。ピンノ ソウチャクジョウタイヲ カクニン"
 "シテクダサイ。"
 
-#: src/gui/MItem_menus.hpp:188
+#: src/gui/MItem_menus.hpp:185
 msgid "Calibrations & Tests"
 msgstr "キャリブレーション&テスト"
 
@@ -1001,7 +989,7 @@ msgid "Chamber Fans Limit"
 msgstr "チャンバーファンノ ゲンカイ"
 
 #: src/gui/menu_item/specific/menu_items_chamber_filtration.cpp:13
-#: src/gui/MItem_menus.hpp:213
+#: src/gui/MItem_menus.hpp:210
 msgid "Chamber Filtration"
 msgstr "チャンバーフィルター"
 
@@ -1326,7 +1314,7 @@ msgstr "セツゾク シマシタ"
 msgid "Connecting"
 msgstr "セツゾクチュウ"
 
-#: src/gui/screen_network_setup.cpp:318 src/gui/screen_network_setup.cpp:325
+#: src/gui/screen_network_setup.cpp:319 src/gui/screen_network_setup.cpp:326
 msgid "Connecting to:"
 msgstr "ツナゲル:"
 
@@ -1348,7 +1336,7 @@ msgstr "ツヅケル"
 msgid "Continue running Calibrations & Tests?"
 msgstr "キャリブレーショント テストヲ ツヅケマスカ?"
 
-#: src/gui/screen_home.cpp:135
+#: src/gui/screen_home.cpp:136
 msgid "Control"
 msgstr "コントロール"
 
@@ -1376,7 +1364,7 @@ msgstr "ショウトツケンチフィルター"
 msgid "Crash Sensitivity XY"
 msgstr "XYクラッシュケンシュツ カンド"
 
-#: src/gui/screen_home.cpp:288
+#: src/gui/screen_home.cpp:289
 msgid ""
 "Crash detected. Save it to USB?\n"
 "\n"
@@ -1396,11 +1384,11 @@ msgstr "Xジクデ クラッシュ"
 msgid "Crashes on Y Axis"
 msgstr "Yジクデ クラッシュ"
 
-#: src/gui/screen_network_setup.cpp:361
+#: src/gui/screen_network_setup.cpp:362
 msgid "Credentials from INI"
 msgstr "INI カラノ ニンショウジョウホウ"
 
-#: src/gui/screen_network_setup.cpp:437 src/gui/screen_network_setup.cpp:447
+#: src/gui/screen_network_setup.cpp:415 src/gui/screen_network_setup.cpp:425
 msgid "Credentials via NFC"
 msgstr "NFC ニンショウジョウホウ"
 
@@ -1408,7 +1396,8 @@ msgstr "NFC ニンショウジョウホウ"
 msgid "Current tool"
 msgstr "ゲンザイノ ツール"
 
-#: src/gui/screen/screen_preheat.cpp:128
+#. Used in filament type context (user-defined ad-hoc), for example: "XX (User)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:264 src/gui/screen/screen_preheat.cpp:128
 msgid "Custom"
 msgstr "カスタム"
 
@@ -1477,9 +1466,8 @@ msgid "DOOR OPEN"
 msgstr "ドア ハ ヒライテイマス"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:141
-#, fuzzy
 msgid "DOOR SENSOR CALIBRATION"
-msgstr "ファーストレイヤーキャリブレーション"
+msgstr "ドアセンサーキャリブレーション"
 
 #: src/gui/screen_move_z.hpp:23
 msgid "DOWN"
@@ -1493,11 +1481,11 @@ msgstr "DWARFエラー"
 msgid "Debug"
 msgstr "デバッグ"
 
-#: src/gui/screen_network_setup.cpp:369
+#: src/gui/screen_network_setup.cpp:370
 msgid "Delete INI file"
 msgstr "INIファイル ショウキョ"
 
-#: src/gui/screen_network_setup.cpp:369
+#: src/gui/screen_network_setup.cpp:370
 msgid "Delete credentials INI file? (Recommended)"
 msgstr "ニンショウジョウホウファイル ヲ サクジョ シマスカ?(スイショウ)"
 
@@ -1584,11 +1572,11 @@ msgstr "デフォルトノ フィラメントセッテイニ モドシマスカ?
 msgid "Do you really want to restore default input shaper configuration?"
 msgstr "インプットシェーパー ノ セッティング ヲ フッキシマスカ?"
 
-#: src/gui/screen_network_setup.cpp:466
+#: src/gui/screen_network_setup.cpp:444
 msgid "Do you want to add your printer to Prusa Connect?"
 msgstr "プルサコネクトニ プリンタヲ ツイカシマスカ?"
 
-#: src/gui/screen_network_setup.cpp:427
+#: src/gui/screen_network_setup.cpp:405
 msgid ""
 "Do you want to connect to the Wi-Fi with the Prusa app on your phone using "
 "NFC?"
@@ -1953,7 +1941,7 @@ msgstr ""
 "テキセツナ エアフローヲ カクホスルタメ、ウエノ カンキマドガ アイテイルコトヲ "
 "カクニンシテクダサイ。"
 
-#: src/gui/screen_network_setup.cpp:85
+#: src/gui/screen_network_setup.cpp:86
 msgid "Enter credentials manually"
 msgstr "シュドウ デ ジョウホウヲ ニュウリョク"
 
@@ -1974,7 +1962,7 @@ msgstr ""
 "ジカンガ カカリマス。"
 
 #: src/guiapi/src/window_msgbox.cpp:292 src/gui/screen_menu_connect.cpp:50
-#: src/gui/screen_network_setup.cpp:340 src/gui/screen_menu_connect.hpp:33
+#: src/gui/screen_network_setup.cpp:341 src/gui/screen_menu_connect.hpp:33
 #: src/gui/wizard/screen_belt_tuning_wizard.cpp:25
 msgid "Error"
 msgstr "エラー"
@@ -2008,7 +1996,7 @@ msgstr ""
 "USBドライブヘ クラッシュダンプレポートノ ホゾンチュウニ エラーガ ハッセイシマ"
 "シタ。USBドライブヲ イチドハズシ、リトライシテクダサイ。"
 
-#: src/gui/screen_network_setup.cpp:350 src/gui/MItem_menus.hpp:86
+#: src/gui/screen_network_setup.cpp:351 src/gui/MItem_menus.hpp:86
 msgid "Ethernet"
 msgstr "イーサネット"
 
@@ -2441,7 +2429,7 @@ msgstr "フィラメントセンサートラブルシューティング"
 
 #: src/common/footer_def.cpp:12
 #: src/gui/screen/filament/screen_filaments_loaded.cpp:30
-#: src/gui/screen_home.cpp:134 src/gui/MItem_tools.hpp:444
+#: src/gui/screen_home.cpp:135 src/gui/MItem_tools.hpp:444
 msgid "Filament"
 msgstr "フィラメント"
 
@@ -2518,7 +2506,7 @@ msgstr ""
 msgid "Filament inserted, press continue."
 msgstr "フィラメントガ ソウニュウサレマシタ、ツヅケテクダサイ"
 
-#: src/common/filament.cpp:380
+#: src/common/filament.cpp:385
 msgid "Filament is not customizable"
 msgstr "フィラメントハ カスタマイズデキマセン"
 
@@ -2603,7 +2591,7 @@ msgstr ""
 "ガ サドウシマシタ。PTFEチューブニ ナニカ ツマッテイナイカ、センサーガ タダシ"
 "クサドウシテイルカ カクニンシテクダサイ。"
 
-#: src/gui/MItem_menus.hpp:182
+#: src/gui/MItem_menus.hpp:179
 msgid "Filament sensors"
 msgstr "フィラメントセンサー"
 
@@ -2626,7 +2614,7 @@ msgstr "フィラメントセンサーガ キャリブレーションサレマ�
 msgid "Filament sensors calibration"
 msgstr "フィラメントセンサー キャリブレーション"
 
-#: src/common/filament.cpp:410
+#: src/common/filament.cpp:415
 msgid "Filament with this name already exists"
 msgstr "コノ ナマエノ フィラメントハ スデニ ソンザイシマス"
 
@@ -3086,6 +3074,7 @@ msgid ""
 "Grab the door in the middle, place your fingers behind it, and close it as "
 "shown in the picture. Then confirm."
 msgstr ""
+"マンナカノ ドアヲツカミ、ウシロニ ユビヲオキ、シャシンノ ヨウニシメマス。"
 
 #: tmp_error_headers/error_list_coreone.hpp:289
 #: tmp_error_headers/error_list_mk35.hpp:212
@@ -3232,14 +3221,12 @@ msgid "HEPA Filter Check"
 msgstr "HEPAフィルターチェック"
 
 #: tmp_error_headers/error_list_coreone.hpp:792
-#, fuzzy
 msgid "HEPA Filter Expired"
-msgstr "HEPAフィルターチェック"
+msgstr "HEPAフィルター キゲンギレ"
 
 #: tmp_error_headers/error_list_coreone.hpp:785
-#, fuzzy
 msgid "HEPA Filter Expiring"
-msgstr "HEPAフィルターチェック"
+msgstr "HEPAフィルター ジュミョウ"
 
 #: tmp_error_headers/error_list_coreone.hpp:204
 #: tmp_error_headers/error_list_mk35.hpp:127
@@ -3490,7 +3477,7 @@ msgstr "ノズルヲ カネツ"
 msgid "Heating..."
 msgstr "カネツチュウ"
 
-#: src/gui/screen_network_setup.cpp:53
+#: src/gui/screen_network_setup.cpp:54
 msgid "Help"
 msgstr "ヘルプ"
 
@@ -3819,7 +3806,7 @@ msgstr "インアクティブ"
 msgid "Increasing distance to bed"
 msgstr "ベッドマデノ キョリノ エンチョウ"
 
-#: src/gui/screen_home.cpp:137 src/gui/MItem_menus.hpp:137
+#: src/gui/screen_home.cpp:138 src/gui/MItem_menus.hpp:137
 msgid "Info"
 msgstr "ジョウホウ"
 
@@ -3848,14 +3835,12 @@ msgid "Input Voltage"
 msgstr "ニュウリョクデンアツ"
 
 #: tmp_error_headers/error_list_coreone.hpp:590
-#, fuzzy
 msgid ""
 "Insert the bundled USB drive, restart the printer and click the knob once "
 "during the boot. This will install the MK4 firmware."
 msgstr ""
 "フゾクノ USBドライブヲ イレテ、プリンタヲ サイキドウシマス。キドウチュウニ ノ"
-"ブヲ ワンクリックシマス。コレデ MK4/MK3.9ファームウェアガ インストールサレマ"
-"ス。"
+"ブヲ ワンクリックシマス。ファームウェアガ インストールサレマス。"
 
 #: tmp_error_headers/error_list_mk35.hpp:415
 msgid ""
@@ -3867,14 +3852,12 @@ msgstr ""
 "ス。"
 
 #: tmp_error_headers/error_list_mk4.hpp:436
-#, fuzzy
 msgid ""
 "Insert the bundled USB drive, restart the printer and click the knob once "
 "during the boot. This will install the correct firmware for your hardware."
 msgstr ""
 "フゾクノ USBドライブヲ イレテ、プリンタヲ サイキドウシマス。キドウチュウニ ノ"
-"ブヲ ワンクリックシマス。コレデ MK4/MK3.9ファームウェアガ インストールサレマ"
-"ス。"
+"ブヲ ワンクリックシマス。ファームウェアガ インストールサレマス。"
 
 #: src/gui/screen_help_fw_update.cpp:47
 msgid ""
@@ -3941,7 +3924,7 @@ msgstr "ケンマセイ ザイリョウ"
 
 #: src/gui/screen/filament/screen_filament_detail.cpp:119
 msgid "Is Flexible"
-msgstr ""
+msgstr "ジュウナン"
 
 #: src/gui/wizard/screen_fan_selftest.cpp:64
 msgid "Is Hotend fan (left) spinning?"
@@ -3962,6 +3945,7 @@ msgstr "フィラメントセンサーニ フィラメントガ ソウニュウ�
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:52
 msgid "Is the chamber door closed? If not, please close it and confirm."
 msgstr ""
+"チャンバーノ ドアハ シマッテイマスカ?シマッテイナケレバ シメテクダサイ。"
 
 #: src/gui/wizard/selftest_frame_fsensor.cpp:104
 msgid "Is there any filament in the tool or side filament sensors?"
@@ -4118,7 +4102,7 @@ msgstr "セッティングヲ ロード"
 msgid "Load Settings from File"
 msgstr "セッティングヲ ロードスル"
 
-#: src/gui/screen_network_setup.cpp:60
+#: src/gui/screen_network_setup.cpp:61
 msgid "Load config from file"
 msgstr "コンフィグファイル ノ ヨミコミ"
 
@@ -4286,14 +4270,13 @@ msgstr "MACアドレス"
 #: tmp_error_headers/error_list_mk35.hpp:29
 #: tmp_error_headers/error_list_mk4.hpp:36
 msgid "MAINTENANCE FAILURE WARNING"
-msgstr ""
+msgstr "メンテナンスシッパイノ ケイコク"
 
 #: tmp_error_headers/error_list_coreone.hpp:78
 #: tmp_error_headers/error_list_mk35.hpp:36
 #: tmp_error_headers/error_list_mk4.hpp:43
-#, fuzzy
 msgid "MAINTENANCE WARNING"
-msgstr "ジョウブクリアランスノ ケイコク"
+msgstr "メンテナンスノ ケイコク"
 
 #: src/gui/screen_menu_enclosure.hpp:52
 msgid "MANUAL SETTINGS"
@@ -4800,7 +4783,7 @@ msgstr "NCAL"
 msgid "NETWORK"
 msgstr "ネットワーク"
 
-#: src/gui/screen_network_setup.cpp:510
+#: src/gui/screen_network_setup.cpp:488
 msgid "NETWORK SETUP"
 msgstr "ネットワーク セットアップ"
 
@@ -4867,15 +4850,15 @@ msgstr "ノズル オフセット"
 msgid "Name"
 msgstr "ネーム"
 
-#: src/common/filament.cpp:397
+#: src/common/filament.cpp:402
 msgid "Name must contain only 'A-Z0-9_-' characters"
 msgstr "ナマエニハ、'A-Z0-9_-'モジダケヲ シヨウスルコト。"
 
-#: src/common/filament.cpp:390
+#: src/common/filament.cpp:395
 msgid "Name must not be '---'"
 msgstr "ナマエハ '---' デハイケマセン"
 
-#: src/common/filament.cpp:385
+#: src/common/filament.cpp:390
 msgid "Name must not be empty"
 msgstr "ナマエヲ カラニスルコトハ デキマセン。"
 
@@ -4937,7 +4920,7 @@ msgstr "APナシ"
 msgid "No Config"
 msgstr "コウセイファイルガ アリマセン"
 
-#: src/gui/screen_home.cpp:138
+#: src/gui/screen_home.cpp:139
 msgid "No USB"
 msgstr "USBガ アリマセン"
 
@@ -4963,7 +4946,7 @@ msgstr ""
 "サイショニ ファームウェアノ\n"
 "カキコミヲ ジッコウシテクダサイ!"
 
-#: src/gui/screen_network_setup.cpp:332
+#: src/gui/screen_network_setup.cpp:333
 msgid "No network interface"
 msgstr "ネットワーク インターフェースナシ"
 
@@ -5014,7 +4997,7 @@ msgstr ""
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:73
 msgid "Now fully open the door and confirm that it is open."
-msgstr ""
+msgstr "ドアヲ カンゼンニアケテ、カクニンシマス。"
 
 #: src/gui/wizard/selftest_frame_firstlayer_questions.cpp:54
 msgid ""
@@ -5108,9 +5091,8 @@ msgstr ""
 "ニタイシテ スイチョクデアルコトヲ カクニン シテクダサイ。"
 
 #: src/gui/window_msgbox_wrong_printer.cpp:39
-#, fuzzy
 msgid "Nozzle flow rate doesn't match"
-msgstr "ノズルノ チョッケイガ アッテイマセン"
+msgstr "ノズルノ フローレートガ アッテイマセン"
 
 #: src/gui/wizard/selftest_frame_tool_offsets.cpp:44
 msgid ""
@@ -5214,18 +5196,24 @@ msgid ""
 "Open the door and loosen the tensioning screw by about a half turn. Then "
 "leave the door open and confirm."
 msgstr ""
+"ドアヲ アケ、テンションスクリューヲ ハンカイテン ユルメマス。ドアハ アケタマ"
+"マ カクニンシマス。"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:62
 msgid ""
 "Open the door and tighten the tensioning screw by about a half turn. Then "
 "close the door and confirm."
 msgstr ""
+"ドアヲ アケ、テンションスクリューヲ ハンカイテン ユルメマス。ソノアト ドアヲ "
+"トジテクダサイ。"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:106
 msgid ""
 "Open the door and tighten the tensioning screw by about a quarter turn. Then "
 "close the door and confirm."
 msgstr ""
+"ドアヲ アケ、テンションスクリューヲ ハンカイテン ユルメマス。ソノアト ドアヲ "
+"トジテクダサイ。"
 
 #: tmp_error_headers/error_list_coreone.hpp:219
 #: tmp_error_headers/error_list_mk35.hpp:142
@@ -5460,7 +5448,7 @@ msgid "Parking tool"
 msgstr "ツールパーキング"
 
 #: src/gui/screen_prusa_link.hpp:40 src/gui/screen_prusa_link.hpp:53
-#: src/gui/screen_network_setup.cpp:32
+#: src/gui/screen_network_setup.cpp:33
 msgid "Password"
 msgstr "パスワード"
 
@@ -5591,7 +5579,7 @@ msgid "Please follow the XY gantry alignment process in the manual."
 msgstr ""
 "マニュアルノ XYガントリーノ アライメントプロセスニ シタガッテクダサイ。"
 
-#: src/gui/screen_network_setup.cpp:361
+#: src/gui/screen_network_setup.cpp:362
 msgid ""
 "Please insert a flash drive with a network configuration file.\n"
 "\n"
@@ -5705,7 +5693,7 @@ msgstr ""
 "スタートアップノトキニ パワーパニック ガ ケンシュツサレマシタ。ケーブル ヲ カ"
 "クニンシテクダサイ。"
 
-#: src/gui/screen_home.cpp:133
+#: src/gui/screen_home.cpp:134
 msgid "Preheat"
 msgstr "プレヒート"
 
@@ -5766,6 +5754,11 @@ msgstr "キャリブレーションピンノ トリツケノ ジュンビヲシ�
 msgid "Preparing to ram"
 msgstr "RAMノ ジュンビ"
 
+#. Used in filament type context, for example: "PLA (Preset)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:256
+msgid "Preset"
+msgstr "プリセット"
+
 #: src/gui/dialogs/DialogLoadUnload.cpp:96
 msgid "Press CONTINUE and push filament into MMU."
 msgstr "ツヅケルヲ オシ、フィラメントヲ MMUニ オシコミマス。"
@@ -5786,7 +5779,7 @@ msgstr ""
 msgid "Prime tower %dg"
 msgstr "プライムタワー %dg"
 
-#: src/common/selftest/selftest_fans.hpp:28 src/gui/screen_home.cpp:132
+#: src/common/selftest/selftest_fans.hpp:28 src/gui/screen_home.cpp:133
 #: src/gui/dialogs/resolution_480x320/radio_button_preview.cpp:14
 msgid "Print"
 msgstr "プリント"
@@ -6316,8 +6309,8 @@ msgstr "FINDAカラノ リトラクト"
 
 #: src/guiapi/include/WindowMenuItems.hpp:54
 #: src/guiapi/include/window_tool_action_box.hpp:100
-#: src/gui/screen/screen_preheat.cpp:96 src/gui/screen_network_setup.cpp:33
-#: src/gui/screen_network_setup.cpp:39 src/gui/screen_network_setup.cpp:143
+#: src/gui/screen/screen_preheat.cpp:96 src/gui/screen_network_setup.cpp:34
+#: src/gui/screen_network_setup.cpp:40 src/gui/screen_network_setup.cpp:144
 msgid "Return"
 msgstr "モドル"
 
@@ -6395,7 +6388,7 @@ msgstr "ユックリ"
 msgid "SPOOL JOIN"
 msgstr "スプールジョイン"
 
-#: src/gui/MItem_network.hpp:50 src/gui/screen_network_setup.cpp:90
+#: src/gui/MItem_network.hpp:50 src/gui/screen_network_setup.cpp:91
 msgid "SSID"
 msgstr "SSID"
 
@@ -6447,11 +6440,11 @@ msgstr "ログヲ ファイルニホゾン"
 msgid "Save and return"
 msgstr "ホゾンシテ モドル"
 
-#: src/gui/screen_home.cpp:304
+#: src/gui/screen_home.cpp:305
 msgid "Saving to USB"
 msgstr "USBヘ ホゾン"
 
-#: src/gui/screen_network_setup.cpp:78
+#: src/gui/screen_network_setup.cpp:79
 msgid "Scan networks"
 msgstr "ネットワーク ノ スキャン"
 
@@ -6466,11 +6459,11 @@ msgstr ""
 msgid "Scanning"
 msgstr "スキャンチュウ"
 
-#: src/gui/screen_network_setup.cpp:210
+#: src/gui/screen_network_setup.cpp:211
 msgid "Scanning for networks..."
 msgstr "ネットワーク ノ スキャンチュウ..."
 
-#: src/gui/screen_network_setup.cpp:210
+#: src/gui/screen_network_setup.cpp:211
 msgid "Scanning..."
 msgstr "スキャンチュウ..."
 
@@ -6516,7 +6509,7 @@ msgstr "センサージョウホウ"
 msgid "Serial Number"
 msgstr "シリアルナンバー"
 
-#: src/gui/MItem_menus.hpp:198
+#: src/gui/MItem_menus.hpp:195
 msgid "Serial Printing Screen"
 msgstr "シリアル プリンティング スクリーン"
 
@@ -6524,7 +6517,7 @@ msgstr "シリアル プリンティング スクリーン"
 msgid "Set Ready"
 msgstr "ジュンビ カンリョウ"
 
-#: src/gui/screen_network_setup.cpp:466
+#: src/gui/screen_network_setup.cpp:444
 msgid "Set up Prusa Connect?"
 msgstr "プルサコネクト ヲ セットアップシマスカ?"
 
@@ -6537,11 +6530,11 @@ msgstr ""
 "プリンタヲ キャリブレーションスル ジョウタイニ セットアップシテイマス。\n"
 "オマチクダサイ。"
 
-#: src/gui/screen_home.cpp:136
+#: src/gui/screen_home.cpp:137
 msgid "Settings"
 msgstr "セッティング"
 
-#: src/gui/screen_network_setup.cpp:68
+#: src/gui/screen_network_setup.cpp:69
 msgid "Setup via NFC"
 msgstr "NFC セットアップ"
 
@@ -6658,7 +6651,7 @@ msgstr "サイレント"
 msgid "Skip"
 msgstr "スキップ"
 
-#: src/gui/screen_network_setup.cpp:46
+#: src/gui/screen_network_setup.cpp:47
 msgid "Skip network setup"
 msgstr "ネットワーク セットアップ ヲ ショウリャク"
 
@@ -6728,7 +6721,7 @@ msgstr "ステータス"
 msgid "Stealth Mode"
 msgstr "ステルスモード"
 
-#: src/gui/MItem_menus.hpp:176 src/gui/screen_menu_steel_sheets.hpp:115
+#: src/gui/MItem_menus.hpp:173 src/gui/screen_menu_steel_sheets.hpp:115
 msgid "Steel Sheets"
 msgstr "スチールシート"
 
@@ -6771,7 +6764,7 @@ msgstr "ゲンミツ"
 msgid "Stuck Filament Detection"
 msgstr "フィラメントスタックノ ケンシュツ"
 
-#: src/gui/screen_network_setup.cpp:348
+#: src/gui/screen_network_setup.cpp:349
 msgid "Successfully connected to:"
 msgstr "セツゾクニセイコウシマシタ:"
 
@@ -6788,7 +6781,7 @@ msgstr ""
 "SuperPINDAセンサーガ コワレテイルカ ハズレテイル カノウセイガ アリ、Zジクヲ "
 "タダシク ゲンテンフッキ デキマセン。"
 
-#: src/gui/screen_network_setup.cpp:288
+#: src/gui/screen_network_setup.cpp:289
 msgid "Switch to Wi-Fi"
 msgstr "Wi-Fi ニ ヘンコウ"
 
@@ -7101,13 +7094,11 @@ msgid "The G-code isn't fully compatible"
 msgstr "Gコードニ ゴカンセイガ アリマセン"
 
 #: tmp_error_headers/error_list_coreone.hpp:793
-#, fuzzy
 msgid ""
 "The HEPA filter has expired. Change the HEPA filter before your next print."
 msgstr ""
-"HEPAフィルターノ ユウコウキゲンガ キレテイマス。ツギノ インサツノマエニ HEPA"
-"フィルターヲ コウカンシテクダサイ。クワシクハ prusa.io/xl-filter ヲ ゴランク"
-"ダサイ。"
+"HEPAフィルターノ ジュミョウデス。ツギノ プリントマエニ HEPAフィルターヲ コウ"
+"カンシテクダサイ。"
 
 #: tmp_error_headers/error_list_xl.hpp:863
 msgid ""
@@ -7129,14 +7120,11 @@ msgstr ""
 "prusa.io/xl-filter ヲ ゴランクダサイ。"
 
 #: tmp_error_headers/error_list_coreone.hpp:786
-#, fuzzy
 msgid ""
 "The HEPA filter is nearing the end of its life span. We recommend purchasing "
 "a new one."
 msgstr ""
-"HEPAフィルターノ ジュミョウガ チカヅイテイマス(ノコリプリントジカンハ"
-"100hours)。アタラシイモノヲ コウニュウスルコトヲ オススメシマス。クワシクハ "
-"prusa.io/xl-filter ヲ ゴランクダサイ。"
+"HEPAフィルターノ ジュミョウガ チカヅイテイマス。カイカエヲ オススメシマス。"
 
 #: tmp_error_headers/error_list_mmu.hpp:81
 msgid ""
@@ -7184,7 +7172,7 @@ msgstr ""
 "セレクターガ ドウサシマセン。セレクターノ ウゴキヲ サマタゲルモノガ ナイカ、"
 "ハイセンガ タダシイカ カクニンシテクダサイ。"
 
-#: src/gui/screen_network_setup.cpp:332
+#: src/gui/screen_network_setup.cpp:333
 msgid ""
 "The Wi-Fi module is not working properly or is missing.\n"
 "\n"
@@ -7220,9 +7208,8 @@ msgid "The calibration should take a little over 7 minutes."
 msgstr "キャリブレーションニハ 7フン ホド カカリマス。"
 
 #: src/feature/door_sensor_calibration/screen_door_sensor_calibration.cpp:117
-#, fuzzy
 msgid "The door sensor is successfully calibrated now."
-msgstr "ドックキャリブレーション セイコウ"
+msgstr "ドアセンサーガ タダシク キャリブレーションサレマシタ。"
 
 #: tmp_error_headers/error_list_coreone.hpp:9
 #: tmp_error_headers/error_list_xl.hpp:58
@@ -7342,7 +7329,7 @@ msgid ""
 msgstr ""
 "ソクテイサンプルヲ マッテイルアイダニ タイムアウトガ ハッセイシマシタ。"
 
-#: src/gui/screen_network_setup.cpp:340
+#: src/gui/screen_network_setup.cpp:341
 msgid "There was an error connecting to the Wi-Fi."
 msgstr "Wi-Fi セツゾクチュウ ニ エラーガ ハッセイ"
 
@@ -7557,7 +7544,7 @@ msgstr ""
 "ファームウェア ノ ダウングレード ヲ フクム ショウサイニ ツイテハ、コチラヲ ゴ"
 "ランクダサイ:"
 
-#: src/gui/screen_network_setup.cpp:418
+#: src/gui/screen_network_setup.cpp:397
 msgid "To setup or troubleshoot your Wi-Fi, please visit:"
 msgstr ""
 "Wi-Fiセッテイヤ トラブルシューティングニツイテハ、コチラヲ カクニンシテクダサ"
@@ -8069,7 +8056,8 @@ msgstr ""
 msgid "Used Amount"
 msgstr "シヨウリョウ"
 
-#: src/gui/screen_prusa_link.hpp:63
+#. Used in filament type context (user-defined preset), for example: "PCCF (User)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:260 src/gui/screen_prusa_link.hpp:63
 msgid "User"
 msgstr "ユーザー"
 
@@ -8370,7 +8358,7 @@ msgstr "Wi-Fi ノ ジョウキョウ"
 msgid "Wi-Fi Wizard"
 msgstr "Wi-Fi ノ ウィザード"
 
-#: src/gui/screen_home.cpp:394
+#: src/gui/screen_home.cpp:388
 msgid ""
 "Wi-Fi credentials (SSID and password) discovered on the USB flash drive. "
 "Would you like to connect your printer to Wi-Fi now?"
@@ -8378,7 +8366,7 @@ msgstr ""
 "USBフラッシュドライブニ Wi-Fiニンショウジョウホウ(SSIDト パスワード)ガ ケン"
 "シュツサレマシタ。プリンタヲ Wi-Fiセツゾクシマスカ?"
 
-#: src/gui/screen_network_setup.cpp:448
+#: src/gui/screen_network_setup.cpp:426
 #, c-format
 msgid ""
 "Wi-Fi credentials loaded via NFC.\n"
@@ -8532,13 +8520,13 @@ msgstr ""
 "\n"
 "クワシクハ:prusa.io/nozzle-types"
 
-#: src/gui/screen_network_setup.cpp:348
+#: src/gui/screen_network_setup.cpp:349
 msgid "You can now fully use all network features of the printer."
 msgstr ""
 "コレデ、プリンタノスベテノネットワークキノウヲカンゼンニシヨウデキルヨウニナ"
 "リマシタ。"
 
-#: src/gui/screen_network_setup.cpp:318
+#: src/gui/screen_network_setup.cpp:319
 msgid "You can press 'Finish' to continue connecting on the background."
 msgstr "フィニッシュ ヲ オシテ バックグラウンドデ セツゾクスルコトガ デキマス"
 
@@ -8550,7 +8538,7 @@ msgid ""
 msgstr ""
 "ノズルヲ タップデキテイナイカ、タップガ ハヤスギマス。リトライシマスカ?"
 
-#: src/gui/screen_network_setup.cpp:288
+#: src/gui/screen_network_setup.cpp:289
 msgid ""
 "You're already successfully connected through the ethernet cable.\n"
 "Switch to Wi-Fi and continue?"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: info@prusa3d.com\n"
-"POT-Creation-Date: 2025-03-26 12:26+0100\n"
+"POT-Creation-Date: 2025-04-25 10:37+0200\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,18 +57,6 @@ msgstr "Cabezal 4"
 #: src/gui/screen_menu_tools.hpp:42
 msgid "  Tool 5"
 msgstr "Cabezal 5"
-
-#: src/common/filament.cpp:261
-msgid " (Custom)"
-msgstr "(Personalizado)"
-
-#: src/common/filament.cpp:255
-msgid " (Preset)"
-msgstr "(Ajuste)"
-
-#: src/common/filament.cpp:258
-msgid " (User)"
-msgstr "(Usuario)"
 
 #. not calibrated would be too long
 #: src/gui/MItem_tools.cpp:670
@@ -271,7 +259,7 @@ msgstr ""
 msgid "---"
 msgstr "---"
 
-#: src/gui/screen_network_setup.cpp:438
+#: src/gui/screen_network_setup.cpp:416
 msgid ""
 "1. Open Prusa app on your mobile device.\n"
 "\n"
@@ -626,7 +614,7 @@ msgstr ""
 msgid "Bed"
 msgstr "Base"
 
-#: src/gui/MItem_menus.hpp:194
+#: src/gui/MItem_menus.hpp:191
 msgid "Bed Level Correction"
 msgstr "Corrección Nivelación Base"
 
@@ -921,7 +909,7 @@ msgstr ""
 "No se ha alcanzado el pin de calibración. Por favor, comprueba la "
 "instalación del pin."
 
-#: src/gui/MItem_menus.hpp:188
+#: src/gui/MItem_menus.hpp:185
 msgid "Calibrations & Tests"
 msgstr "Calibración y Tests"
 
@@ -1001,7 +989,7 @@ msgid "Chamber Fans Limit"
 msgstr "Límite Ventiladores Cámara"
 
 #: src/gui/menu_item/specific/menu_items_chamber_filtration.cpp:13
-#: src/gui/MItem_menus.hpp:213
+#: src/gui/MItem_menus.hpp:210
 msgid "Chamber Filtration"
 msgstr "Filtración Cámara"
 
@@ -1315,7 +1303,7 @@ msgstr "Conectado"
 msgid "Connecting"
 msgstr "Conectando"
 
-#: src/gui/screen_network_setup.cpp:318 src/gui/screen_network_setup.cpp:325
+#: src/gui/screen_network_setup.cpp:319 src/gui/screen_network_setup.cpp:326
 msgid "Connecting to:"
 msgstr "Conectando a:"
 
@@ -1337,7 +1325,7 @@ msgstr "Continuar"
 msgid "Continue running Calibrations & Tests?"
 msgstr "Continuar con las Calibraciones y Test?"
 
-#: src/gui/screen_home.cpp:135
+#: src/gui/screen_home.cpp:136
 msgid "Control"
 msgstr "Control"
 
@@ -1365,7 +1353,7 @@ msgstr "Filtro Detección de Choques"
 msgid "Crash Sensitivity XY"
 msgstr "Sensibilidad Choques XY"
 
-#: src/gui/screen_home.cpp:288
+#: src/gui/screen_home.cpp:289
 msgid ""
 "Crash detected. Save it to USB?\n"
 "\n"
@@ -1385,11 +1373,11 @@ msgstr "Choques en el Eje X"
 msgid "Crashes on Y Axis"
 msgstr "Choques en el Eje Y"
 
-#: src/gui/screen_network_setup.cpp:361
+#: src/gui/screen_network_setup.cpp:362
 msgid "Credentials from INI"
 msgstr "Credentiales desde un INI"
 
-#: src/gui/screen_network_setup.cpp:437 src/gui/screen_network_setup.cpp:447
+#: src/gui/screen_network_setup.cpp:415 src/gui/screen_network_setup.cpp:425
 msgid "Credentials via NFC"
 msgstr "Credenciales via NFC"
 
@@ -1397,7 +1385,8 @@ msgstr "Credenciales via NFC"
 msgid "Current tool"
 msgstr "Cabezal actual"
 
-#: src/gui/screen/screen_preheat.cpp:128
+#. Used in filament type context (user-defined ad-hoc), for example: "XX (User)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:264 src/gui/screen/screen_preheat.cpp:128
 msgid "Custom"
 msgstr "Personalizado"
 
@@ -1481,11 +1470,11 @@ msgstr "ERROR DWARF"
 msgid "Debug"
 msgstr "Depurar"
 
-#: src/gui/screen_network_setup.cpp:369
+#: src/gui/screen_network_setup.cpp:370
 msgid "Delete INI file"
 msgstr "Borrar archivo INI"
 
-#: src/gui/screen_network_setup.cpp:369
+#: src/gui/screen_network_setup.cpp:370
 msgid "Delete credentials INI file? (Recommended)"
 msgstr "¿Borrar el archivo INI de credenciales? (Recomendado)"
 
@@ -1572,11 +1561,11 @@ msgid "Do you really want to restore default input shaper configuration?"
 msgstr ""
 "¿Realmente deseas restaurar la configuración predeterminada de input shaper?"
 
-#: src/gui/screen_network_setup.cpp:466
+#: src/gui/screen_network_setup.cpp:444
 msgid "Do you want to add your printer to Prusa Connect?"
 msgstr "¿Quieres añadir tu impresora a Prusa Connect?"
 
-#: src/gui/screen_network_setup.cpp:427
+#: src/gui/screen_network_setup.cpp:405
 msgid ""
 "Do you want to connect to the Wi-Fi with the Prusa app on your phone using "
 "NFC?"
@@ -1943,7 +1932,7 @@ msgstr ""
 "Asegúrate de que la rejilla de ventilación superior está abierta para que el "
 "aire circule correctamente."
 
-#: src/gui/screen_network_setup.cpp:85
+#: src/gui/screen_network_setup.cpp:86
 msgid "Enter credentials manually"
 msgstr "Introduce las credenciales manualmente"
 
@@ -1964,7 +1953,7 @@ msgstr ""
 "tardará algún tiempo..."
 
 #: src/guiapi/src/window_msgbox.cpp:292 src/gui/screen_menu_connect.cpp:50
-#: src/gui/screen_network_setup.cpp:340 src/gui/screen_menu_connect.hpp:33
+#: src/gui/screen_network_setup.cpp:341 src/gui/screen_menu_connect.hpp:33
 #: src/gui/wizard/screen_belt_tuning_wizard.cpp:25
 msgid "Error"
 msgstr "Error"
@@ -1998,7 +1987,7 @@ msgstr ""
 "Error al guardar los detalles del error de memoria en la unidad USB. Vuelve "
 "a insertar la unidad USB e intentalo otra vez."
 
-#: src/gui/screen_network_setup.cpp:350 src/gui/MItem_menus.hpp:86
+#: src/gui/screen_network_setup.cpp:351 src/gui/MItem_menus.hpp:86
 msgid "Ethernet"
 msgstr "Ethernet"
 
@@ -2429,7 +2418,7 @@ msgstr "Resolución de Problemas Sensor Fil."
 
 #: src/common/footer_def.cpp:12
 #: src/gui/screen/filament/screen_filaments_loaded.cpp:30
-#: src/gui/screen_home.cpp:134 src/gui/MItem_tools.hpp:444
+#: src/gui/screen_home.cpp:135 src/gui/MItem_tools.hpp:444
 msgid "Filament"
 msgstr "Filamento"
 
@@ -2504,7 +2493,7 @@ msgstr ""
 msgid "Filament inserted, press continue."
 msgstr "Filamento insertado, presiona continuar."
 
-#: src/common/filament.cpp:380
+#: src/common/filament.cpp:385
 msgid "Filament is not customizable"
 msgstr "El filamento no es personalizable"
 
@@ -2582,7 +2571,7 @@ msgstr ""
 "Comprueba que no haya nada atascado en el tubo de teflón y que el sensor va "
 "ok."
 
-#: src/gui/MItem_menus.hpp:182
+#: src/gui/MItem_menus.hpp:179
 msgid "Filament sensors"
 msgstr "Sensores de Filamento"
 
@@ -2605,7 +2594,7 @@ msgstr "Sensores de filamento calibrados."
 msgid "Filament sensors calibration"
 msgstr "Calibración sensores de filamento"
 
-#: src/common/filament.cpp:410
+#: src/common/filament.cpp:415
 msgid "Filament with this name already exists"
 msgstr "Ya existe un filamento con este nombre"
 
@@ -3449,7 +3438,7 @@ msgstr "Calentando la boquilla"
 msgid "Heating..."
 msgstr "Calentando..."
 
-#: src/gui/screen_network_setup.cpp:53
+#: src/gui/screen_network_setup.cpp:54
 msgid "Help"
 msgstr "Ayuda"
 
@@ -3778,7 +3767,7 @@ msgstr "Inactivo"
 msgid "Increasing distance to bed"
 msgstr "Aumentando la distancia a la cama"
 
-#: src/gui/screen_home.cpp:137 src/gui/MItem_menus.hpp:137
+#: src/gui/screen_home.cpp:138 src/gui/MItem_menus.hpp:137
 msgid "Info"
 msgstr "Info"
 
@@ -4070,7 +4059,7 @@ msgstr "Cargar configuración"
 msgid "Load Settings from File"
 msgstr "Cargar Configuración Del Archivo"
 
-#: src/gui/screen_network_setup.cpp:60
+#: src/gui/screen_network_setup.cpp:61
 msgid "Load config from file"
 msgstr "Cargar configuración desde archivo"
 
@@ -4745,7 +4734,7 @@ msgstr "NCAL "
 msgid "NETWORK"
 msgstr "RED"
 
-#: src/gui/screen_network_setup.cpp:510
+#: src/gui/screen_network_setup.cpp:488
 msgid "NETWORK SETUP"
 msgstr "CONFIGURACIÓN DE RED"
 
@@ -4812,15 +4801,15 @@ msgstr "OFFSET_BOQUILLA"
 msgid "Name"
 msgstr "Nombre"
 
-#: src/common/filament.cpp:397
+#: src/common/filament.cpp:402
 msgid "Name must contain only 'A-Z0-9_-' characters"
 msgstr "El nombre debe contener solo caracteres 'A-Z0-9_-'"
 
-#: src/common/filament.cpp:390
+#: src/common/filament.cpp:395
 msgid "Name must not be '---'"
 msgstr "El nombre no debe ser '---'"
 
-#: src/common/filament.cpp:385
+#: src/common/filament.cpp:390
 msgid "Name must not be empty"
 msgstr "El nombre no debe estar vacío"
 
@@ -4882,7 +4871,7 @@ msgstr "No AP"
 msgid "No Config"
 msgstr "Sin Config"
 
-#: src/gui/screen_home.cpp:138
+#: src/gui/screen_home.cpp:139
 msgid "No USB"
 msgstr "No hay USB"
 
@@ -4908,7 +4897,7 @@ msgstr ""
 "¡Por favor, flashea \n"
 "el FW primero!"
 
-#: src/gui/screen_network_setup.cpp:332
+#: src/gui/screen_network_setup.cpp:333
 msgid "No network interface"
 msgstr "Sin interfaz de red"
 
@@ -5409,7 +5398,7 @@ msgid "Parking tool"
 msgstr "Aparcando cabezal"
 
 #: src/gui/screen_prusa_link.hpp:40 src/gui/screen_prusa_link.hpp:53
-#: src/gui/screen_network_setup.cpp:32
+#: src/gui/screen_network_setup.cpp:33
 msgid "Password"
 msgstr "Contraseña"
 
@@ -5537,7 +5526,7 @@ msgstr ""
 msgid "Please follow the XY gantry alignment process in the manual."
 msgstr "Sigue el proceso de alineación del sistema XY indicado en el manual."
 
-#: src/gui/screen_network_setup.cpp:361
+#: src/gui/screen_network_setup.cpp:362
 msgid ""
 "Please insert a flash drive with a network configuration file.\n"
 "\n"
@@ -5652,7 +5641,7 @@ msgstr ""
 "Se ha detectado el modo pánico al arrancar. Comprueba el cable del modo "
 "pánico."
 
-#: src/gui/screen_home.cpp:133
+#: src/gui/screen_home.cpp:134
 msgid "Preheat"
 msgstr "Precalentar"
 
@@ -5713,6 +5702,11 @@ msgstr "Preparación para la instalación del pin de calibración."
 msgid "Preparing to ram"
 msgstr "Preparando para expulsar"
 
+#. Used in filament type context, for example: "PLA (Preset)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:256
+msgid "Preset"
+msgstr "Perfil"
+
 #: src/gui/dialogs/DialogLoadUnload.cpp:96
 msgid "Press CONTINUE and push filament into MMU."
 msgstr "Presiona CONTINUAR y empuja el filamento en el MMU."
@@ -5732,7 +5726,7 @@ msgstr ""
 msgid "Prime tower %dg"
 msgstr "Torre de purga %dg"
 
-#: src/common/selftest/selftest_fans.hpp:28 src/gui/screen_home.cpp:132
+#: src/common/selftest/selftest_fans.hpp:28 src/gui/screen_home.cpp:133
 #: src/gui/dialogs/resolution_480x320/radio_button_preview.cpp:14
 msgid "Print"
 msgstr "Imprimir"
@@ -6261,8 +6255,8 @@ msgstr "Retraer del FINDA"
 
 #: src/guiapi/include/WindowMenuItems.hpp:54
 #: src/guiapi/include/window_tool_action_box.hpp:100
-#: src/gui/screen/screen_preheat.cpp:96 src/gui/screen_network_setup.cpp:33
-#: src/gui/screen_network_setup.cpp:39 src/gui/screen_network_setup.cpp:143
+#: src/gui/screen/screen_preheat.cpp:96 src/gui/screen_network_setup.cpp:34
+#: src/gui/screen_network_setup.cpp:40 src/gui/screen_network_setup.cpp:144
 msgid "Return"
 msgstr "Volver"
 
@@ -6339,7 +6333,7 @@ msgstr "LENTAMENTE"
 msgid "SPOOL JOIN"
 msgstr "UNIR BOBINA"
 
-#: src/gui/MItem_network.hpp:50 src/gui/screen_network_setup.cpp:90
+#: src/gui/MItem_network.hpp:50 src/gui/screen_network_setup.cpp:91
 msgid "SSID"
 msgstr "SSID"
 
@@ -6391,11 +6385,11 @@ msgstr "Guardar Registros en Archivo"
 msgid "Save and return"
 msgstr "Guardar y volver"
 
-#: src/gui/screen_home.cpp:304
+#: src/gui/screen_home.cpp:305
 msgid "Saving to USB"
 msgstr "Guardar al USB"
 
-#: src/gui/screen_network_setup.cpp:78
+#: src/gui/screen_network_setup.cpp:79
 msgid "Scan networks"
 msgstr "Explorar redes"
 
@@ -6410,11 +6404,11 @@ msgstr ""
 msgid "Scanning"
 msgstr "Escaneando"
 
-#: src/gui/screen_network_setup.cpp:210
+#: src/gui/screen_network_setup.cpp:211
 msgid "Scanning for networks..."
 msgstr "Escaneando redes..."
 
-#: src/gui/screen_network_setup.cpp:210
+#: src/gui/screen_network_setup.cpp:211
 msgid "Scanning..."
 msgstr "Escaneando..."
 
@@ -6460,7 +6454,7 @@ msgstr "Info Sensor"
 msgid "Serial Number"
 msgstr "Número de Serie"
 
-#: src/gui/MItem_menus.hpp:198
+#: src/gui/MItem_menus.hpp:195
 msgid "Serial Printing Screen"
 msgstr "Pantalla de Impresión en Serie"
 
@@ -6468,7 +6462,7 @@ msgstr "Pantalla de Impresión en Serie"
 msgid "Set Ready"
 msgstr "Configurar como Lista"
 
-#: src/gui/screen_network_setup.cpp:466
+#: src/gui/screen_network_setup.cpp:444
 msgid "Set up Prusa Connect?"
 msgstr "¿Configurar Prusa Connect?"
 
@@ -6482,11 +6476,11 @@ msgstr ""
 "\n"
 "Por favor, espere."
 
-#: src/gui/screen_home.cpp:136
+#: src/gui/screen_home.cpp:137
 msgid "Settings"
 msgstr "Ajustes"
 
-#: src/gui/screen_network_setup.cpp:68
+#: src/gui/screen_network_setup.cpp:69
 msgid "Setup via NFC"
 msgstr "Configurar via NFC"
 
@@ -6601,7 +6595,7 @@ msgstr "Silencio"
 msgid "Skip"
 msgstr "Saltar"
 
-#: src/gui/screen_network_setup.cpp:46
+#: src/gui/screen_network_setup.cpp:47
 msgid "Skip network setup"
 msgstr "Saltar configuración de red"
 
@@ -6671,7 +6665,7 @@ msgstr "Estado"
 msgid "Stealth Mode"
 msgstr "Modo Silencioso"
 
-#: src/gui/MItem_menus.hpp:176 src/gui/screen_menu_steel_sheets.hpp:115
+#: src/gui/MItem_menus.hpp:173 src/gui/screen_menu_steel_sheets.hpp:115
 msgid "Steel Sheets"
 msgstr "Lámina Acero"
 
@@ -6713,7 +6707,7 @@ msgstr "Estricto"
 msgid "Stuck Filament Detection"
 msgstr "Detección Atasco Filamento"
 
-#: src/gui/screen_network_setup.cpp:348
+#: src/gui/screen_network_setup.cpp:349
 msgid "Successfully connected to:"
 msgstr "Conectado con éxito a:"
 
@@ -6730,7 +6724,7 @@ msgstr ""
 "El sensor SuperPINDA está probablemente roto o desconectado, no se ha podido "
 "hacer home el eje Z correctamente."
 
-#: src/gui/screen_network_setup.cpp:288
+#: src/gui/screen_network_setup.cpp:289
 msgid "Switch to Wi-Fi"
 msgstr "Cambiar a Wi-Fi"
 
@@ -7121,7 +7115,7 @@ msgstr ""
 "El Selector no puede moverse. Comprueba si hay algo que bloquea su "
 "movimiento. Comprueba si el cableado es correcto."
 
-#: src/gui/screen_network_setup.cpp:332
+#: src/gui/screen_network_setup.cpp:333
 msgid ""
 "The Wi-Fi module is not working properly or is missing.\n"
 "\n"
@@ -7283,7 +7277,7 @@ msgstr ""
 "Se ha producido un tiempo de espera mientras se esperaba la muestra de "
 "medición, por favor, repita la acción."
 
-#: src/gui/screen_network_setup.cpp:340
+#: src/gui/screen_network_setup.cpp:341
 msgid "There was an error connecting to the Wi-Fi."
 msgstr "Hubo un error al conectarse al Wi-Fi."
 
@@ -7494,7 +7488,7 @@ msgid "To learn more including firmware downgrade, please visit:"
 msgstr ""
 "Para aprender más incluyendo instalar un firmware anterior, por favor visita:"
 
-#: src/gui/screen_network_setup.cpp:418
+#: src/gui/screen_network_setup.cpp:397
 msgid "To setup or troubleshoot your Wi-Fi, please visit:"
 msgstr "Para configurar o solucionar los problemas de tu Wi-Fi, visita:"
 
@@ -8004,7 +7998,8 @@ msgstr ""
 msgid "Used Amount"
 msgstr "Cantidad Usada"
 
-#: src/gui/screen_prusa_link.hpp:63
+#. Used in filament type context (user-defined preset), for example: "PCCF (User)". Please try to fit the text in 6 characters.
+#: src/common/filament.cpp:260 src/gui/screen_prusa_link.hpp:63
 msgid "User"
 msgstr "Usuario"
 
@@ -8300,7 +8295,7 @@ msgstr "Estado Wi-Fi"
 msgid "Wi-Fi Wizard"
 msgstr "Asistente Wi-Fi"
 
-#: src/gui/screen_home.cpp:394
+#: src/gui/screen_home.cpp:388
 msgid ""
 "Wi-Fi credentials (SSID and password) discovered on the USB flash drive. "
 "Would you like to connect your printer to Wi-Fi now?"
@@ -8308,7 +8303,7 @@ msgstr ""
 "Credenciales Wi-Fi (SSID y contraseña) encontradas en la memoria USB. ¿Te "
 "gustaría conectar tu impresora al Wi-Fi ahora?"
 
-#: src/gui/screen_network_setup.cpp:448
+#: src/gui/screen_network_setup.cpp:426
 #, c-format
 msgid ""
 "Wi-Fi credentials loaded via NFC.\n"
@@ -8462,12 +8457,12 @@ msgstr ""
 "\n"
 "Para más información, visita prusa.io/nozzle-types"
 
-#: src/gui/screen_network_setup.cpp:348
+#: src/gui/screen_network_setup.cpp:349
 msgid "You can now fully use all network features of the printer."
 msgstr ""
 "Ahora puedes utilizar plenamente todas las funciones de red de la impresora."
 
-#: src/gui/screen_network_setup.cpp:318
+#: src/gui/screen_network_setup.cpp:319
 msgid "You can press 'Finish' to continue connecting on the background."
 msgstr "Puedes pulsar 'Finalizar' para seguir conectándote en segundo plano."
 
@@ -8479,7 +8474,7 @@ msgid ""
 msgstr ""
 "No has golpeado la boquilla o lo has hecho demasiado pronto. ¿Reintentar?"
 
-#: src/gui/screen_network_setup.cpp:288
+#: src/gui/screen_network_setup.cpp:289
 msgid ""
 "You're already successfully connected through the ethernet cable.\n"
 "Switch to Wi-Fi and continue?"
