@@ -5,6 +5,7 @@
 #include <option/has_selftest.h>
 #include <option/has_gui.h>
 #include <option/has_side_leds.h>
+#include <option/has_emergency_stop.h>
 
 namespace config_store_ns {
 namespace deprecated_ids {
@@ -62,6 +63,11 @@ namespace deprecated_ids {
     inline constexpr uint16_t hotend_type_single_hotend[] {
         decltype(DeprecatedStore::hotend_type_single_hotend)::hashed_id,
     };
+#if HAS_EMERGENCY_STOP()
+    inline constexpr uint16_t emergency_stop_enable[] {
+        decltype(DeprecatedStore::emergency_stop_enable)::hashed_id,
+    };
+#endif
 } // namespace deprecated_ids
 
 namespace migrations {
@@ -87,6 +93,9 @@ namespace migrations {
     void side_leds_enable(journal::Backend &backend);
 #endif
     void hotend_type(journal::Backend &backend);
+#if HAS_EMERGENCY_STOP()
+    void emergency_stop(journal::Backend &backend);
+#endif
 } // namespace migrations
 
 /**
@@ -116,6 +125,9 @@ inline constexpr journal::Backend::MigrationFunction migration_functions[] {
         { migrations::side_leds_enable, deprecated_ids::side_leds_enable },
 #endif
         { migrations::hotend_type, deprecated_ids::hotend_type_single_hotend },
+#if HAS_EMERGENCY_STOP()
+        { migrations::emergency_stop, deprecated_ids::emergency_stop_enable },
+#endif
 };
 
 // Span of migration versions to simplify passing it around
