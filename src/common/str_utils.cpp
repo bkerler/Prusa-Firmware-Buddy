@@ -5,6 +5,7 @@
 #include <math.h>
 #include <cinttypes>
 #include <string_view_utf8.hpp>
+#include <algorithm>
 
 #include <bsod.h>
 
@@ -357,7 +358,7 @@ StringBuilder &StringBuilder::append_float(double val, const AppendFloatConfig &
 
     const bool is_negative = val < 0;
     uint32_t precision_mult = dumb_pow_10(config.max_decimal_places);
-    uint64_t accum = static_cast<uint64_t>(round(abs(val) * precision_mult));
+    uint64_t accum = static_cast<uint64_t>(round(std::abs(val) * precision_mult));
 
     if (accum == 0) {
         append_char('0');
