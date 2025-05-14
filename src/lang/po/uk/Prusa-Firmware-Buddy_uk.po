@@ -1378,7 +1378,7 @@ msgstr "Поточний інструмент"
 #. Used in filament type context (user-defined ad-hoc), for example: "XX (User)". Please try to fit the text in 6 characters.
 #: src/common/filament.cpp:264 src/gui/screen/screen_preheat.cpp:128
 msgid "Custom"
-msgstr "Користувацький"
+msgstr "Власн."
 
 #: src/gui/screen_menu_mmu_cut_filament.hpp:21 src/gui/MItem_mmu.hpp:61
 msgid "Cut Filament"
