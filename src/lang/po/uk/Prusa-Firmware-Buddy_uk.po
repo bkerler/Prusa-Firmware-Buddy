@@ -2917,6 +2917,10 @@ msgstr "Передня сторона"
 msgid "Front Side [um]"
 msgstr "Передня сторона [мкм]"
 
+#: src/gui/menu_item/specific/menu_items_hw_mmu.cpp
+msgid "Front PTFE Length"
+msgstr "Довжина передньої PTFE"
+
 #: tmp_error_headers/error_list_coreone.hpp:330
 #: tmp_error_headers/error_list_mk35.hpp:253
 #: tmp_error_headers/error_list_xl.hpp:365
