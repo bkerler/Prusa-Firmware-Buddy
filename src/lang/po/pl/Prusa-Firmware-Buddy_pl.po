@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: info@prusa3d.com\n"
-"POT-Creation-Date: 2025-04-25 10:37+0200\n"
+"POT-Creation-Date: 2025-05-21 17:20+0200\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,20 +91,20 @@ msgstr "%d Kalibracja pozycji doku"
 msgid "%d Door Sensor"
 msgstr "%d Czujnik drzwi"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:80
 #: src/gui/include_XL/selftest_snake_config.hpp:117
-#: src/gui/include_MK4/selftest_snake_config.hpp:79
 #: src/gui/include_COREONE/selftest_snake_config.hpp:81
 #: src/gui/include_MK3.5/selftest_snake_config.hpp:77
 #: src/gui/include_MINI/selftest_snake_config.hpp:76
+#: src/gui/include_iX/selftest_snake_config.hpp:80
+#: src/gui/include_MK4/selftest_snake_config.hpp:79
 #, c-format
 msgid "%d Fan Test"
 msgstr "%d Test wentylatora"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:87
 #: src/gui/include_XL/selftest_snake_config.hpp:126
-#: src/gui/include_MK4/selftest_snake_config.hpp:86
 #: src/gui/include_COREONE/selftest_snake_config.hpp:90
+#: src/gui/include_iX/selftest_snake_config.hpp:87
+#: src/gui/include_MK4/selftest_snake_config.hpp:86
 #, c-format
 msgid "%d Filament Sensor Calibration"
 msgstr "%d Kalibracja czujnika filamentu"
@@ -115,26 +115,26 @@ msgstr "%d Kalibracja czujnika filamentu"
 msgid "%d First Layer Calibration"
 msgstr "%d Kalibracja pierwszej warstwy"
 
-#: src/gui/include_MK4/selftest_snake_config.hpp:85
 #: src/gui/include_COREONE/selftest_snake_config.hpp:89
+#: src/gui/include_MK4/selftest_snake_config.hpp:85
 #, c-format
 msgid "%d Gears Calibration"
 msgstr "%d Osiowanie przekładni"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:86
 #: src/gui/include_XL/selftest_snake_config.hpp:125
-#: src/gui/include_MK4/selftest_snake_config.hpp:84
 #: src/gui/include_COREONE/selftest_snake_config.hpp:88
 #: src/gui/include_MK3.5/selftest_snake_config.hpp:81
 #: src/gui/include_MINI/selftest_snake_config.hpp:79
+#: src/gui/include_iX/selftest_snake_config.hpp:86
+#: src/gui/include_MK4/selftest_snake_config.hpp:84
 #, c-format
 msgid "%d Heater Test"
 msgstr "%d Test grzałki"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:84
 #: src/gui/include_XL/selftest_snake_config.hpp:122
-#: src/gui/include_MK4/selftest_snake_config.hpp:82
 #: src/gui/include_COREONE/selftest_snake_config.hpp:86
+#: src/gui/include_iX/selftest_snake_config.hpp:84
+#: src/gui/include_MK4/selftest_snake_config.hpp:82
 #, c-format
 msgid "%d Loadcell Test"
 msgstr "%d Test tensometru"
@@ -144,8 +144,8 @@ msgstr "%d Test tensometru"
 msgid "%d Nozzle Heaters Test"
 msgstr "%d Test grzałek dysz"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:88
 #: src/gui/include_XL/selftest_snake_config.hpp:129
+#: src/gui/include_iX/selftest_snake_config.hpp:88
 #, c-format
 msgid "%d Phase Stepping Calibration"
 msgstr "%d Kalibracja Phase Stepping"
@@ -155,42 +155,42 @@ msgstr "%d Kalibracja Phase Stepping"
 msgid "%d Tool Offset Calibration"
 msgstr "%d Kalibracja przesunięcia narzędzi"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:83
 #: src/gui/include_XL/selftest_snake_config.hpp:120
 #: src/gui/include_COREONE/selftest_snake_config.hpp:85
+#: src/gui/include_iX/selftest_snake_config.hpp:83
 #, c-format
 msgid "%d X Axis Test"
 msgstr "%d Test osi X"
 
-#: src/gui/include_MK4/selftest_snake_config.hpp:81
 #: src/gui/include_MK3.5/selftest_snake_config.hpp:79
 #: src/gui/include_MINI/selftest_snake_config.hpp:77
+#: src/gui/include_MK4/selftest_snake_config.hpp:81
 #, c-format
 msgid "%d XY Axis Test"
 msgstr "%d Test osi XY"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:82
 #: src/gui/include_XL/selftest_snake_config.hpp:119
 #: src/gui/include_COREONE/selftest_snake_config.hpp:84
+#: src/gui/include_iX/selftest_snake_config.hpp:82
 #, c-format
 msgid "%d Y Axis Test"
 msgstr "%d Test osi Y"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:81
 #: src/gui/include_XL/selftest_snake_config.hpp:118
-#: src/gui/include_MK4/selftest_snake_config.hpp:80
 #: src/gui/include_COREONE/selftest_snake_config.hpp:83
 #: src/gui/include_MK3.5/selftest_snake_config.hpp:78
+#: src/gui/include_iX/selftest_snake_config.hpp:81
+#: src/gui/include_MK4/selftest_snake_config.hpp:80
 #, c-format
 msgid "%d Z Alignment Calibration"
 msgstr "%d Kalibracja wyrównania Z"
 
-#: src/gui/include_iX/selftest_snake_config.hpp:85
 #: src/gui/include_XL/selftest_snake_config.hpp:124
-#: src/gui/include_MK4/selftest_snake_config.hpp:83
 #: src/gui/include_COREONE/selftest_snake_config.hpp:87
 #: src/gui/include_MK3.5/selftest_snake_config.hpp:80
 #: src/gui/include_MINI/selftest_snake_config.hpp:78
+#: src/gui/include_iX/selftest_snake_config.hpp:85
+#: src/gui/include_MK4/selftest_snake_config.hpp:83
 #, c-format
 msgid "%d Z Axis Test"
 msgstr "%d Test osi Z"
@@ -257,7 +257,7 @@ msgstr ""
 "- Zdejmij arkusz druku.\n"
 "- Wkręć trzpień kalibracyjny."
 
-#: src/gui/screen/screen_preheat.cpp:189 src/gui/screen_menu_connect.cpp:67
+#: src/gui/screen_menu_connect.cpp:67 src/gui/screen/screen_preheat.cpp:189
 msgid "---"
 msgstr "---"
 
@@ -323,11 +323,11 @@ msgstr "Zrzut pamięci jest zapisywany."
 msgid "A crash dump report (file dump.bin) has been saved to the USB drive."
 msgstr "Raport zrzutu pamięci (plik dump.bin) został zapisany w pamięci USB."
 
-#: tmp_error_headers/error_list_coreone.hpp:639
-#: tmp_error_headers/error_list_mk35.hpp:464
 #: tmp_error_headers/error_list_xl.hpp:688
-#: tmp_error_headers/error_list_mk4.hpp:485
 #: tmp_error_headers/error_list_ix.hpp:646
+#: tmp_error_headers/error_list_mk4.hpp:485
+#: tmp_error_headers/error_list_mk35.hpp:464
+#: tmp_error_headers/error_list_coreone.hpp:639
 msgid "A filament specified in the G-code is either not loaded or wrong type."
 msgstr ""
 "Filament podany w G-code nie jest załadowany lub załadowany jest "
@@ -352,12 +352,12 @@ msgstr "PRZERWIJ"
 msgid "ABORTING ..."
 msgstr "ANULOWANIE ..."
 
-#: tmp_error_headers/error_list_coreone.hpp:316
-#: tmp_error_headers/error_list_mk35.hpp:239
-#: tmp_error_headers/error_list_xl.hpp:351
-#: tmp_error_headers/error_list_mk4.hpp:246
 #: tmp_error_headers/error_list_mini.hpp:211
+#: tmp_error_headers/error_list_xl.hpp:351
 #: tmp_error_headers/error_list_ix.hpp:330
+#: tmp_error_headers/error_list_mk4.hpp:246
+#: tmp_error_headers/error_list_mk35.hpp:239
+#: tmp_error_headers/error_list_coreone.hpp:316
 msgid "ACCELEROMETER COMMUNICATION FAILED"
 msgstr "BŁĄD KOMUNIKACJI Z AKCELEROMETREM"
 
@@ -387,9 +387,9 @@ msgstr "Aktywny interfejs"
 msgid "Add Printer to Connect"
 msgstr "Dodaj drukarkę do Connect"
 
-#: tmp_error_headers/error_list_coreone.hpp:345
 #: tmp_error_headers/error_list_xl.hpp:394
 #: tmp_error_headers/error_list_ix.hpp:366
+#: tmp_error_headers/error_list_coreone.hpp:345
 msgid "Address assignment error"
 msgstr "Błąd przypisania adresu"
 
@@ -414,7 +414,7 @@ msgstr ""
 msgid "Adv. filtration"
 msgstr "Zaaw. filtracja"
 
-#: src/gui/MItem_menus.hpp:107
+#: src/gui/MItem_menus.hpp:108
 msgid "Advanced"
 msgstr "Zaawansowane"
 
@@ -550,30 +550,30 @@ msgstr "Pominięto kontrolę osi, ponieważ kontrola tensometru nie powiodła si
 msgid "BACK"
 msgstr "WSTECZ"
 
-#: tmp_error_headers/error_list_coreone.hpp:456
-#: tmp_error_headers/error_list_mk35.hpp:281
-#: tmp_error_headers/error_list_xl.hpp:505
-#: tmp_error_headers/error_list_mk4.hpp:302
 #: tmp_error_headers/error_list_mini.hpp:246
+#: tmp_error_headers/error_list_xl.hpp:505
 #: tmp_error_headers/error_list_ix.hpp:477
+#: tmp_error_headers/error_list_mk4.hpp:302
+#: tmp_error_headers/error_list_mk35.hpp:281
+#: tmp_error_headers/error_list_coreone.hpp:456
 msgid "BBF ALLOCATION FAILED"
 msgstr "NIEPOWODZENIE ALOKACJI BBF"
 
-#: tmp_error_headers/error_list_coreone.hpp:463
-#: tmp_error_headers/error_list_mk35.hpp:288
-#: tmp_error_headers/error_list_xl.hpp:512
-#: tmp_error_headers/error_list_mk4.hpp:309
 #: tmp_error_headers/error_list_mini.hpp:253
+#: tmp_error_headers/error_list_xl.hpp:512
 #: tmp_error_headers/error_list_ix.hpp:484
+#: tmp_error_headers/error_list_mk4.hpp:309
+#: tmp_error_headers/error_list_mk35.hpp:288
+#: tmp_error_headers/error_list_coreone.hpp:463
 msgid "BBF INITIALIZATION FAILED"
 msgstr "INICJALIZACJA BBF NIE POWIODŁA SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:464
-#: tmp_error_headers/error_list_mk35.hpp:289
-#: tmp_error_headers/error_list_xl.hpp:513
-#: tmp_error_headers/error_list_mk4.hpp:310
 #: tmp_error_headers/error_list_mini.hpp:254
+#: tmp_error_headers/error_list_xl.hpp:513
 #: tmp_error_headers/error_list_ix.hpp:485
+#: tmp_error_headers/error_list_mk4.hpp:310
+#: tmp_error_headers/error_list_mk35.hpp:289
+#: tmp_error_headers/error_list_coreone.hpp:464
 msgid "BBF initialization failed, repeat the action or try another USB drive."
 msgstr ""
 "Inicjalizacja BBF nie powiodła się, powtórz czynność lub spróbuj użyć innej "
@@ -607,7 +607,7 @@ msgstr ""
 msgid "Bed"
 msgstr "Stół"
 
-#: src/gui/MItem_menus.hpp:191
+#: src/gui/MItem_menus.hpp:195
 msgid "Bed Level Correction"
 msgstr "Korekta poziomowania stołu"
 
@@ -631,12 +631,12 @@ msgstr ""
 "\n"
 "Jeśli płyty nie ma na stole grzewczym, połóż ją i naciśnij przycisk Ponów."
 
-#: tmp_error_headers/error_list_coreone.hpp:800
-#: tmp_error_headers/error_list_mk35.hpp:618
-#: tmp_error_headers/error_list_xl.hpp:870
-#: tmp_error_headers/error_list_mk4.hpp:632
 #: tmp_error_headers/error_list_mini.hpp:541
+#: tmp_error_headers/error_list_xl.hpp:870
 #: tmp_error_headers/error_list_ix.hpp:779
+#: tmp_error_headers/error_list_mk4.hpp:632
+#: tmp_error_headers/error_list_mk35.hpp:618
+#: tmp_error_headers/error_list_coreone.hpp:800
 msgid "Bed leveling failed. Try again?"
 msgstr "Niepowodzenie poziomowania. Spróbować ponownie?"
 
@@ -725,8 +725,8 @@ msgstr "BŁĄD MAXTEMP KOMORY"
 msgid "CHAMBER MINTEMP ERROR"
 msgstr "BŁĄD MINTEMP KOMORY"
 
-#: tmp_error_headers/error_list_coreone.hpp:176
 #: tmp_error_headers/error_list_xl.hpp:190
+#: tmp_error_headers/error_list_coreone.hpp:176
 msgid "CHAMBER WARMING UP"
 msgstr "NAGRZEWANIE KOMORY"
 
@@ -746,12 +746,12 @@ msgstr "COLD PULL"
 msgid "COMMUNICATION ERROR"
 msgstr "BŁĄD KOMUNIKACJI"
 
-#: tmp_error_headers/error_list_coreone.hpp:323
-#: tmp_error_headers/error_list_mk35.hpp:246
-#: tmp_error_headers/error_list_xl.hpp:358
-#: tmp_error_headers/error_list_mk4.hpp:253
 #: tmp_error_headers/error_list_mini.hpp:218
+#: tmp_error_headers/error_list_xl.hpp:358
 #: tmp_error_headers/error_list_ix.hpp:337
+#: tmp_error_headers/error_list_mk4.hpp:253
+#: tmp_error_headers/error_list_mk35.hpp:246
+#: tmp_error_headers/error_list_coreone.hpp:323
 msgid "CONNECT REGISTRATION FAILED"
 msgstr "REJESTRACJA W CONNECT NIE POWIODŁA SIĘ"
 
@@ -773,31 +773,31 @@ msgstr "Obciążenie CPU"
 
 #. don't close on menu timeout
 #: src/gui/screen_crash_recovery.cpp:266
-#: tmp_error_headers/error_list_coreone.hpp:666
-#: tmp_error_headers/error_list_coreone.hpp:673
-#: tmp_error_headers/error_list_coreone.hpp:680
-#: tmp_error_headers/error_list_coreone.hpp:687
-#: tmp_error_headers/error_list_mk35.hpp:491
-#: tmp_error_headers/error_list_mk35.hpp:498
-#: tmp_error_headers/error_list_mk35.hpp:505
-#: tmp_error_headers/error_list_mk35.hpp:512
+#: tmp_error_headers/error_list_mini.hpp:435
+#: tmp_error_headers/error_list_mini.hpp:442
+#: tmp_error_headers/error_list_mini.hpp:449
+#: tmp_error_headers/error_list_mini.hpp:456
 #: tmp_error_headers/error_list_xl.hpp:708
 #: tmp_error_headers/error_list_xl.hpp:715
 #: tmp_error_headers/error_list_xl.hpp:722
 #: tmp_error_headers/error_list_xl.hpp:729
 #: tmp_error_headers/error_list_xl.hpp:736
-#: tmp_error_headers/error_list_mk4.hpp:512
-#: tmp_error_headers/error_list_mk4.hpp:519
-#: tmp_error_headers/error_list_mk4.hpp:526
-#: tmp_error_headers/error_list_mk4.hpp:533
-#: tmp_error_headers/error_list_mini.hpp:435
-#: tmp_error_headers/error_list_mini.hpp:442
-#: tmp_error_headers/error_list_mini.hpp:449
-#: tmp_error_headers/error_list_mini.hpp:456
 #: tmp_error_headers/error_list_ix.hpp:666
 #: tmp_error_headers/error_list_ix.hpp:673
 #: tmp_error_headers/error_list_ix.hpp:680
 #: tmp_error_headers/error_list_ix.hpp:687
+#: tmp_error_headers/error_list_mk4.hpp:512
+#: tmp_error_headers/error_list_mk4.hpp:519
+#: tmp_error_headers/error_list_mk4.hpp:526
+#: tmp_error_headers/error_list_mk4.hpp:533
+#: tmp_error_headers/error_list_mk35.hpp:491
+#: tmp_error_headers/error_list_mk35.hpp:498
+#: tmp_error_headers/error_list_mk35.hpp:505
+#: tmp_error_headers/error_list_mk35.hpp:512
+#: tmp_error_headers/error_list_coreone.hpp:666
+#: tmp_error_headers/error_list_coreone.hpp:673
+#: tmp_error_headers/error_list_coreone.hpp:680
+#: tmp_error_headers/error_list_coreone.hpp:687
 msgid "CRASH DETECTED"
 msgstr "WYKRYTO ZDERZENIE"
 
@@ -825,8 +825,8 @@ msgstr "Kalibruj dok 4"
 msgid "Calibrate Dock 5"
 msgstr "Kalibruj dok 5"
 
-#: src/gui/screen/toolhead/screen_toolhead_settings_dock.cpp:50
 #: src/gui/MItem_tools.hpp:723
+#: src/gui/screen/toolhead/screen_toolhead_settings_dock.cpp:50
 msgid "Calibrate Dock Position"
 msgstr "Kalibruj pozycję doku"
 
@@ -898,7 +898,7 @@ msgstr ""
 "Trzpień kalibracyjny nie został znaleziony. Sprawdź poprawność montażu "
 "trzpienia."
 
-#: src/gui/MItem_menus.hpp:185
+#: src/gui/MItem_menus.hpp:189
 msgid "Calibrations & Tests"
 msgstr "Kalibracje i testy"
 
@@ -977,13 +977,13 @@ msgstr "Wentylatory komory"
 msgid "Chamber Fans Limit"
 msgstr "Limit wentylatorów komory"
 
+#: src/gui/MItem_menus.hpp:214
 #: src/gui/menu_item/specific/menu_items_chamber_filtration.cpp:13
-#: src/gui/MItem_menus.hpp:210
 msgid "Chamber Filtration"
 msgstr "Filtracja komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:848
 #: tmp_error_headers/error_list_xl.hpp:897
+#: tmp_error_headers/error_list_coreone.hpp:848
 msgid "Chamber Filtration Fan Error"
 msgstr "Błąd wentylatora filtracji komory"
 
@@ -991,8 +991,8 @@ msgstr "Błąd wentylatora filtracji komory"
 msgid "Chamber Lights"
 msgstr "Oświetlenie komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:183
 #: tmp_error_headers/error_list_xl.hpp:197
+#: tmp_error_headers/error_list_coreone.hpp:183
 msgid "Chamber Overheating"
 msgstr "Przegrzewanie komory"
 
@@ -1001,8 +1001,8 @@ msgstr "Przegrzewanie komory"
 msgid "Chamber Temperature"
 msgstr "Temperatura komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:190
 #: tmp_error_headers/error_list_xl.hpp:204
+#: tmp_error_headers/error_list_coreone.hpp:190
 msgid "Chamber Temperature Is Critical"
 msgstr "Krytyczna temperatura komory"
 
@@ -1014,8 +1014,8 @@ msgstr ""
 "Wentylator chłodzenia komory nie obraca się. Sprawdź, czy nie jest "
 "zablokowany przez zanieczyszczenia, następnie sprawdź przewody."
 
-#: tmp_error_headers/error_list_coreone.hpp:849
 #: tmp_error_headers/error_list_xl.hpp:898
+#: tmp_error_headers/error_list_coreone.hpp:849
 msgid ""
 "Chamber filtration fan is not spinning. Check it for possible debris, then "
 "inspect the wiring."
@@ -1028,14 +1028,14 @@ msgstr ""
 msgid "Chamber temperature"
 msgstr "Temperatura komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:184
 #: tmp_error_headers/error_list_xl.hpp:198
+#: tmp_error_headers/error_list_coreone.hpp:184
 msgid "Chamber temperature above safety limit. Ensure better ventilation."
 msgstr ""
 "Temperatura komory powyżej bezpiecznego limitu. Zapewnij lepszą wentylację."
 
-#: tmp_error_headers/error_list_coreone.hpp:191
 #: tmp_error_headers/error_list_xl.hpp:205
+#: tmp_error_headers/error_list_coreone.hpp:191
 msgid "Chamber temperature critical. Aborting print to prevent printer damage."
 msgstr ""
 "Krytyczna temperatura komory. Zatrzymywanie druku w celu uniknięcia "
@@ -1061,10 +1061,10 @@ msgstr "Zmień tabelę fal XYZ"
 msgid "Change to"
 msgstr "Zmień na"
 
-#: tmp_error_headers/error_list_coreone.hpp:695
-#: tmp_error_headers/error_list_mk35.hpp:520
 #: tmp_error_headers/error_list_xl.hpp:744
 #: tmp_error_headers/error_list_mk4.hpp:541
+#: tmp_error_headers/error_list_mk35.hpp:520
+#: tmp_error_headers/error_list_coreone.hpp:695
 msgid ""
 "Changes of mapping available only in the Printer UI. Select Print to start "
 "the print with defaults."
@@ -1085,12 +1085,12 @@ msgid "Check all tools if they are properly parked or picked."
 msgstr ""
 "Sprawdź, czy wszystkie narzędzia są prawidłowo zaparkowane lub pobrane."
 
-#: tmp_error_headers/error_list_coreone.hpp:317
-#: tmp_error_headers/error_list_mk35.hpp:240
-#: tmp_error_headers/error_list_xl.hpp:352
-#: tmp_error_headers/error_list_mk4.hpp:247
 #: tmp_error_headers/error_list_mini.hpp:212
+#: tmp_error_headers/error_list_xl.hpp:352
 #: tmp_error_headers/error_list_ix.hpp:331
+#: tmp_error_headers/error_list_mk4.hpp:247
+#: tmp_error_headers/error_list_mk35.hpp:240
+#: tmp_error_headers/error_list_coreone.hpp:317
 msgid "Check that the accelerometer cable is plugged in and not damaged."
 msgstr ""
 "Sprawdź, czy przewód akcelerometru jest podłączony i czy nie jest uszkodzony."
@@ -1100,45 +1100,45 @@ msgstr ""
 msgid "Check the chamber thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody termistora komory nie są uszkodzone."
 
-#: tmp_error_headers/error_list_coreone.hpp:86
-#: tmp_error_headers/error_list_mk35.hpp:44
-#: tmp_error_headers/error_list_mk4.hpp:51
 #: tmp_error_headers/error_list_mini.hpp:23
 #: tmp_error_headers/error_list_ix.hpp:44
+#: tmp_error_headers/error_list_mk4.hpp:51
+#: tmp_error_headers/error_list_mk35.hpp:44
+#: tmp_error_headers/error_list_coreone.hpp:86
 msgid "Check the heatbed heater & thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody grzałki i termistora stołu nie są uszkodzone."
 
-#: tmp_error_headers/error_list_coreone.hpp:100
-#: tmp_error_headers/error_list_coreone.hpp:114
-#: tmp_error_headers/error_list_coreone.hpp:128
-#: tmp_error_headers/error_list_mk35.hpp:58
-#: tmp_error_headers/error_list_mk35.hpp:72
-#: tmp_error_headers/error_list_mk35.hpp:86
-#: tmp_error_headers/error_list_xl.hpp:86
-#: tmp_error_headers/error_list_mk4.hpp:65
-#: tmp_error_headers/error_list_mk4.hpp:79
-#: tmp_error_headers/error_list_mk4.hpp:93
 #: tmp_error_headers/error_list_mini.hpp:37
 #: tmp_error_headers/error_list_mini.hpp:51
 #: tmp_error_headers/error_list_mini.hpp:65
+#: tmp_error_headers/error_list_xl.hpp:86
 #: tmp_error_headers/error_list_ix.hpp:58
 #: tmp_error_headers/error_list_ix.hpp:72
 #: tmp_error_headers/error_list_ix.hpp:86
+#: tmp_error_headers/error_list_mk4.hpp:65
+#: tmp_error_headers/error_list_mk4.hpp:79
+#: tmp_error_headers/error_list_mk4.hpp:93
+#: tmp_error_headers/error_list_mk35.hpp:58
+#: tmp_error_headers/error_list_mk35.hpp:72
+#: tmp_error_headers/error_list_mk35.hpp:86
+#: tmp_error_headers/error_list_coreone.hpp:100
+#: tmp_error_headers/error_list_coreone.hpp:114
+#: tmp_error_headers/error_list_coreone.hpp:128
 msgid "Check the heatbed thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody termistora stołu nie są uszkodzone."
 
-#: tmp_error_headers/error_list_coreone.hpp:142
-#: tmp_error_headers/error_list_coreone.hpp:149
-#: tmp_error_headers/error_list_mk35.hpp:100
-#: tmp_error_headers/error_list_mk35.hpp:107
-#: tmp_error_headers/error_list_xl.hpp:114
-#: tmp_error_headers/error_list_xl.hpp:121
-#: tmp_error_headers/error_list_mk4.hpp:107
-#: tmp_error_headers/error_list_mk4.hpp:114
 #: tmp_error_headers/error_list_mini.hpp:79
 #: tmp_error_headers/error_list_mini.hpp:86
+#: tmp_error_headers/error_list_xl.hpp:114
+#: tmp_error_headers/error_list_xl.hpp:121
 #: tmp_error_headers/error_list_ix.hpp:100
 #: tmp_error_headers/error_list_ix.hpp:107
+#: tmp_error_headers/error_list_mk4.hpp:107
+#: tmp_error_headers/error_list_mk4.hpp:114
+#: tmp_error_headers/error_list_mk35.hpp:100
+#: tmp_error_headers/error_list_mk35.hpp:107
+#: tmp_error_headers/error_list_coreone.hpp:142
+#: tmp_error_headers/error_list_coreone.hpp:149
 msgid "Check the heatbreak thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody termistora bariery cieplnej nie są uszkodzone."
 
@@ -1147,29 +1147,29 @@ msgid "Check the heater and thermistor wiring for potential damage."
 msgstr ""
 "Sprawdź okablowanie grzałki i termistora pod kątem ewentualnych uszkodzeń."
 
-#: tmp_error_headers/error_list_coreone.hpp:93
-#: tmp_error_headers/error_list_mk35.hpp:51
-#: tmp_error_headers/error_list_mk4.hpp:58
 #: tmp_error_headers/error_list_mini.hpp:30
 #: tmp_error_headers/error_list_ix.hpp:51
+#: tmp_error_headers/error_list_mk4.hpp:58
+#: tmp_error_headers/error_list_mk35.hpp:51
+#: tmp_error_headers/error_list_coreone.hpp:93
 msgid "Check the print head heater & thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody grzałki i termistora hotendu nie są uszkodzone."
 
-#: tmp_error_headers/error_list_coreone.hpp:107
-#: tmp_error_headers/error_list_coreone.hpp:121
-#: tmp_error_headers/error_list_coreone.hpp:135
-#: tmp_error_headers/error_list_mk35.hpp:65
-#: tmp_error_headers/error_list_mk35.hpp:79
-#: tmp_error_headers/error_list_mk35.hpp:93
-#: tmp_error_headers/error_list_mk4.hpp:72
-#: tmp_error_headers/error_list_mk4.hpp:86
-#: tmp_error_headers/error_list_mk4.hpp:100
 #: tmp_error_headers/error_list_mini.hpp:44
 #: tmp_error_headers/error_list_mini.hpp:58
 #: tmp_error_headers/error_list_mini.hpp:72
 #: tmp_error_headers/error_list_ix.hpp:65
 #: tmp_error_headers/error_list_ix.hpp:79
 #: tmp_error_headers/error_list_ix.hpp:93
+#: tmp_error_headers/error_list_mk4.hpp:72
+#: tmp_error_headers/error_list_mk4.hpp:86
+#: tmp_error_headers/error_list_mk4.hpp:100
+#: tmp_error_headers/error_list_mk35.hpp:65
+#: tmp_error_headers/error_list_mk35.hpp:79
+#: tmp_error_headers/error_list_mk35.hpp:93
+#: tmp_error_headers/error_list_coreone.hpp:107
+#: tmp_error_headers/error_list_coreone.hpp:121
+#: tmp_error_headers/error_list_coreone.hpp:135
 msgid "Check the print head thermistor wiring for possible damage."
 msgstr "Sprawdź czy przewody termistora hotendu nie są uszkodzone."
 
@@ -1179,8 +1179,8 @@ msgstr "Sprawdź czy przewody termistora hotendu nie są uszkodzone."
 msgid "Check the thermistor wiring for potential damage."
 msgstr "Sprawdź okablowanie termistora pod kątem ewentualnych uszkodzeń."
 
-#: src/gui/screen_crash_recovery.cpp:92
 #: src/gui/wizard/selftest_frame_axis.cpp:28
+#: src/gui/screen_crash_recovery.cpp:92
 msgid "Checking axes"
 msgstr "Sprawdzanie osi"
 
@@ -1219,10 +1219,10 @@ msgstr ""
 msgid "Code: %s"
 msgstr "Kod: %s"
 
-#: src/gui/MItem_tools.hpp:598 tmp_error_headers/error_list_coreone.hpp:596
-#: tmp_error_headers/error_list_mk35.hpp:421
-#: tmp_error_headers/error_list_xl.hpp:645
+#: src/gui/MItem_tools.hpp:598 tmp_error_headers/error_list_xl.hpp:645
 #: tmp_error_headers/error_list_mk4.hpp:442
+#: tmp_error_headers/error_list_mk35.hpp:421
+#: tmp_error_headers/error_list_coreone.hpp:596
 msgid "Cold Pull"
 msgstr "Cold pull"
 
@@ -1265,7 +1265,7 @@ msgstr "Obliczanie najlepszego shapera..."
 msgid "Confirm"
 msgstr "Potwierdź"
 
-#: src/gui/screen_menu_network_status.hpp:39 src/gui/MItem_tools.cpp:986
+#: src/gui/MItem_tools.cpp:986 src/gui/screen_menu_network_status.hpp:39
 msgid "Connect"
 msgstr "Connect"
 
@@ -1290,9 +1290,9 @@ msgstr "Łączenie"
 msgid "Connecting to:"
 msgstr "Łączenie z:"
 
-#: tmp_error_headers/error_list_coreone.hpp:16
 #: tmp_error_headers/error_list_xl.hpp:16
 #: tmp_error_headers/error_list_ix.hpp:16
+#: tmp_error_headers/error_list_coreone.hpp:16
 msgid "Consider adjusting belt tension."
 msgstr "Rozważ regulację naprężenia pasków."
 
@@ -1405,7 +1405,7 @@ msgstr "WYŁĄCZ MMU"
 msgid "DIY"
 msgstr "DIY"
 
-#: src/gui/screen_menu_network_status.hpp:31 src/gui/MItem_network.hpp:154
+#: src/gui/MItem_network.hpp:154 src/gui/screen_menu_network_status.hpp:31
 msgid "DNS"
 msgstr "DNS"
 
@@ -1655,7 +1655,7 @@ msgstr "Nie dotykaj ekstrudera."
 msgid "Done"
 msgstr "Gotowe"
 
-#: src/gui/MItem_hardware.hpp:67 src/gui/MItem_tools.cpp:816
+#: src/gui/MItem_tools.cpp:816 src/gui/MItem_hardware.hpp:67
 msgid "Door Sensor"
 msgstr "Czujnik drzwi"
 
@@ -1717,7 +1717,7 @@ msgstr "Dynamicznie"
 msgid "E3D Revo"
 msgstr "E3D Revo"
 
-#: src/gui/MItem_menus.hpp:101
+#: src/gui/MItem_menus.hpp:102
 msgid "EEPROM"
 msgstr "EEPROM"
 
@@ -1725,12 +1725,12 @@ msgstr "EEPROM"
 msgid "EJECT FROM MMU"
 msgstr "WYSUŃ Z MMU"
 
-#: tmp_error_headers/error_list_coreone.hpp:337
-#: tmp_error_headers/error_list_mk35.hpp:260
-#: tmp_error_headers/error_list_xl.hpp:386
-#: tmp_error_headers/error_list_mk4.hpp:267
 #: tmp_error_headers/error_list_mini.hpp:232
+#: tmp_error_headers/error_list_xl.hpp:386
 #: tmp_error_headers/error_list_ix.hpp:358
+#: tmp_error_headers/error_list_mk4.hpp:267
+#: tmp_error_headers/error_list_mk35.hpp:260
+#: tmp_error_headers/error_list_coreone.hpp:337
 msgid "EMERGENCY STOP"
 msgstr "AWARYJNE WYŁĄCZENIE"
 
@@ -1804,12 +1804,12 @@ msgstr "BŁĄD MAXTEMP EKSTRUDERA"
 msgid "EXTRUDER MINTEMP ERROR"
 msgstr "BŁĄD MINTEMP EKSTRUDERA"
 
-#: tmp_error_headers/error_list_coreone.hpp:582
-#: tmp_error_headers/error_list_mk35.hpp:407
-#: tmp_error_headers/error_list_xl.hpp:638
-#: tmp_error_headers/error_list_mk4.hpp:428
 #: tmp_error_headers/error_list_mini.hpp:372
+#: tmp_error_headers/error_list_xl.hpp:638
 #: tmp_error_headers/error_list_ix.hpp:603
+#: tmp_error_headers/error_list_mk4.hpp:428
+#: tmp_error_headers/error_list_mk35.hpp:407
+#: tmp_error_headers/error_list_coreone.hpp:582
 msgid "EXTRUDER NOT DETECTED"
 msgstr "NIE WYKRYTO EKSTRUDERA"
 
@@ -1821,7 +1821,7 @@ msgstr "BŁĄD NAGRZEWANIA EKSTRUDERA"
 msgid "EXTRUDER THERMAL RUNAWAY"
 msgstr "THERMAL RUNAWAY - EKSTRUDER"
 
-#: src/gui/MItem_menus.hpp:50
+#: src/gui/MItem_menus.hpp:51
 msgid "Edit Filaments"
 msgstr "Edytuj filamenty"
 
@@ -1840,12 +1840,12 @@ msgstr "Wysuwanie"
 msgid "Ejecting filament"
 msgstr "Wysuwanie filamentu"
 
-#: tmp_error_headers/error_list_coreone.hpp:338
-#: tmp_error_headers/error_list_mk35.hpp:261
-#: tmp_error_headers/error_list_xl.hpp:387
-#: tmp_error_headers/error_list_mk4.hpp:268
 #: tmp_error_headers/error_list_mini.hpp:233
+#: tmp_error_headers/error_list_xl.hpp:387
 #: tmp_error_headers/error_list_ix.hpp:359
+#: tmp_error_headers/error_list_mk4.hpp:268
+#: tmp_error_headers/error_list_mk35.hpp:261
+#: tmp_error_headers/error_list_coreone.hpp:338
 msgid "Emergency stop invoked by G-code (M112)."
 msgstr "Zatrzymanie awaryjne wywołane z G-code (M112)."
 
@@ -1853,7 +1853,7 @@ msgstr "Zatrzymanie awaryjne wywołane z G-code (M112)."
 msgid "Emulate Watchdog"
 msgstr "Emuluj Watchdog"
 
-#: src/gui/MItem_menus.hpp:56
+#: src/gui/MItem_menus.hpp:57
 msgid "Enable Filaments"
 msgstr "Włącz filamenty"
 
@@ -1861,7 +1861,7 @@ msgstr "Włącz filamenty"
 msgid "Enable Metrics"
 msgstr "Włącz dane diagnostyczne"
 
-#: src/gui/screen_prusa_link.hpp:30 src/gui/screen_menu_connect.hpp:12
+#: src/gui/screen_menu_connect.hpp:12 src/gui/screen_prusa_link.hpp:30
 msgid "Enabled"
 msgstr "Włączono"
 
@@ -1934,17 +1934,18 @@ msgstr ""
 "to zajmie trochę czasu..."
 
 #: src/guiapi/src/window_msgbox.cpp:292 src/gui/screen_menu_connect.cpp:50
-#: src/gui/screen_network_setup.cpp:341 src/gui/screen_menu_connect.hpp:33
+#: src/gui/screen_menu_connect.hpp:33
 #: src/gui/wizard/screen_belt_tuning_wizard.cpp:25
+#: src/gui/screen_network_setup.cpp:341
 msgid "Error"
 msgstr "Błąd"
 
-#: tmp_error_headers/error_list_coreone.hpp:513
-#: tmp_error_headers/error_list_mk35.hpp:338
-#: tmp_error_headers/error_list_xl.hpp:569
-#: tmp_error_headers/error_list_mk4.hpp:359
 #: tmp_error_headers/error_list_mini.hpp:303
+#: tmp_error_headers/error_list_xl.hpp:569
 #: tmp_error_headers/error_list_ix.hpp:534
+#: tmp_error_headers/error_list_mk4.hpp:359
+#: tmp_error_headers/error_list_mk35.hpp:338
+#: tmp_error_headers/error_list_coreone.hpp:513
 msgid ""
 "Error erasing\n"
 " flash! Restart\n"
@@ -1968,7 +1969,7 @@ msgstr ""
 "Błąd zapisywania zrzutu pamięci w pamięci USB. Odłącz i podłącz pamięć USB, "
 "następnie spróbuj ponownie."
 
-#: src/gui/screen_network_setup.cpp:351 src/gui/MItem_menus.hpp:86
+#: src/gui/MItem_menus.hpp:87 src/gui/screen_network_setup.cpp:351
 msgid "Ethernet"
 msgstr "Ethernet"
 
@@ -1984,7 +1985,7 @@ msgstr "Połączenie Ethernet"
 msgid "Exit"
 msgstr "Wyjście"
 
-#: src/gui/MItem_menus.hpp:110
+#: src/gui/MItem_menus.hpp:111
 msgid "Experimental Settings"
 msgstr "Ustawienia eksperymentalne"
 
@@ -2058,8 +2059,8 @@ msgstr "FILAMENT MMU"
 msgid "FILAMENT REMOVED"
 msgstr "FILAMENT WYCIĄGNIĘTY"
 
-#: src/gui/screen_menu_filament_sensors.hpp:91
 #: src/gui/screen/toolhead/screen_toolhead_settings_fs.cpp:85
+#: src/gui/screen_menu_filament_sensors.hpp:91
 msgid "FILAMENT SENSORS"
 msgstr "CZUJNIKI FILAMENTU"
 
@@ -2119,21 +2120,21 @@ msgstr ""
 msgid "FINISHED"
 msgstr "ZAKOŃCZONO"
 
-#: tmp_error_headers/error_list_coreone.hpp:561
-#: tmp_error_headers/error_list_mk35.hpp:386
-#: tmp_error_headers/error_list_xl.hpp:617
-#: tmp_error_headers/error_list_mk4.hpp:407
 #: tmp_error_headers/error_list_mini.hpp:351
+#: tmp_error_headers/error_list_xl.hpp:617
 #: tmp_error_headers/error_list_ix.hpp:582
+#: tmp_error_headers/error_list_mk4.hpp:407
+#: tmp_error_headers/error_list_mk35.hpp:386
+#: tmp_error_headers/error_list_coreone.hpp:561
 msgid "FIRMWARE MISSING"
 msgstr "BRAK FIRMWARE"
 
-#: tmp_error_headers/error_list_coreone.hpp:540
-#: tmp_error_headers/error_list_mk35.hpp:365
-#: tmp_error_headers/error_list_xl.hpp:596
-#: tmp_error_headers/error_list_mk4.hpp:386
 #: tmp_error_headers/error_list_mini.hpp:330
+#: tmp_error_headers/error_list_xl.hpp:596
 #: tmp_error_headers/error_list_ix.hpp:561
+#: tmp_error_headers/error_list_mk4.hpp:386
+#: tmp_error_headers/error_list_mk35.hpp:365
+#: tmp_error_headers/error_list_coreone.hpp:540
 msgid "FIRMWARExPRINTER MISMATCH"
 msgstr "NIEZGODNOŚĆ FIRMWARE Z DRUKARKĄ"
 
@@ -2141,12 +2142,12 @@ msgstr "NIEZGODNOŚĆ FIRMWARE Z DRUKARKĄ"
 msgid "FIRST LAYER CALIBRATION"
 msgstr "KALIBRACJA PIERWSZEJ WARSTWY"
 
-#: tmp_error_headers/error_list_coreone.hpp:512
-#: tmp_error_headers/error_list_mk35.hpp:337
-#: tmp_error_headers/error_list_xl.hpp:568
-#: tmp_error_headers/error_list_mk4.hpp:358
 #: tmp_error_headers/error_list_mini.hpp:302
+#: tmp_error_headers/error_list_xl.hpp:568
 #: tmp_error_headers/error_list_ix.hpp:533
+#: tmp_error_headers/error_list_mk4.hpp:358
+#: tmp_error_headers/error_list_mk35.hpp:337
+#: tmp_error_headers/error_list_coreone.hpp:512
 msgid "FLASH ERASE ERROR"
 msgstr "BŁĄD WYMAZYWANIA PAMIĘCI FLASH"
 
@@ -2190,12 +2191,12 @@ msgstr "Boczny czujnik filamentu"
 msgid "FSensors Disabled"
 msgstr "Wyłączono FSensory"
 
-#: tmp_error_headers/error_list_coreone.hpp:533
-#: tmp_error_headers/error_list_mk35.hpp:358
-#: tmp_error_headers/error_list_xl.hpp:589
-#: tmp_error_headers/error_list_mk4.hpp:379
 #: tmp_error_headers/error_list_mini.hpp:323
+#: tmp_error_headers/error_list_xl.hpp:589
 #: tmp_error_headers/error_list_ix.hpp:554
+#: tmp_error_headers/error_list_mk4.hpp:379
+#: tmp_error_headers/error_list_mk35.hpp:358
+#: tmp_error_headers/error_list_coreone.hpp:533
 msgid "FW IN INTERNAL FLASH CORRUPTED"
 msgstr "FW W WEWNĘTRZNEJ PAMIĘCI FLASH USZKODZONY"
 
@@ -2207,7 +2208,7 @@ msgstr "BŁĄD DZIAŁANIA FW"
 msgid "FW UPDATE"
 msgstr "AKTUALIZACJA FW"
 
-#: src/gui/screen_menu_fw_update.hpp:38 src/gui/MItem_menus.hpp:80
+#: src/gui/screen_menu_fw_update.hpp:38 src/gui/MItem_menus.hpp:81
 msgid "FW Update"
 msgstr "Aktualizacja FW"
 
@@ -2223,11 +2224,11 @@ msgstr "Aktualizacja FW"
 msgid "FW updated"
 msgstr "Zaktualizowano FW"
 
-#: src/gui/MItem_menus.hpp:140
+#: src/gui/MItem_menus.hpp:141
 msgid "Factory Reset"
 msgstr "Ustawienia fabryczne"
 
-#: src/gui/MItem_menus.hpp:71
+#: src/gui/MItem_menus.hpp:72
 msgid "Fail Stats"
 msgstr "Statystyki błędów"
 
@@ -2255,10 +2256,10 @@ msgstr ""
 "Bazowanie w osi Y nie powiodło się. Upewnij się, że na osi X oraz Y nie ma "
 "żadnych przeszkód."
 
-#: tmp_error_headers/error_list_coreone.hpp:212
-#: tmp_error_headers/error_list_mk35.hpp:135
-#: tmp_error_headers/error_list_mk4.hpp:142
 #: tmp_error_headers/error_list_mini.hpp:114
+#: tmp_error_headers/error_list_mk4.hpp:142
+#: tmp_error_headers/error_list_mk35.hpp:135
+#: tmp_error_headers/error_list_coreone.hpp:212
 msgid "Failed to home the Y-axis, make sure there is no obstacle on Y-axis."
 msgstr ""
 "Bazowanie osi Y nie powiodło się. Upewnij się, że na osi Y nie ma żadnych "
@@ -2270,11 +2271,11 @@ msgstr ""
 "Bazowanie w osi Z nie powiodło się. Upewnij się, że czujnik tensometryczny "
 "działa poprawnie."
 
-#: tmp_error_headers/error_list_coreone.hpp:205
-#: tmp_error_headers/error_list_mk35.hpp:128
-#: tmp_error_headers/error_list_mk4.hpp:135
 #: tmp_error_headers/error_list_mini.hpp:107
 #: tmp_error_headers/error_list_ix.hpp:205
+#: tmp_error_headers/error_list_mk4.hpp:135
+#: tmp_error_headers/error_list_mk35.hpp:128
+#: tmp_error_headers/error_list_coreone.hpp:205
 msgid ""
 "Failed to home the extruder in X-axis, make sure there is no obstacle on X-"
 "axis."
@@ -2290,9 +2291,9 @@ msgstr ""
 "Bazowanie ekstrudera w osi Y nie powiodło się. Upewnij się, że na osi Y nie "
 "ma żadnych przeszkód."
 
-#: tmp_error_headers/error_list_coreone.hpp:198
-#: tmp_error_headers/error_list_mk4.hpp:128
 #: tmp_error_headers/error_list_ix.hpp:184
+#: tmp_error_headers/error_list_mk4.hpp:128
+#: tmp_error_headers/error_list_coreone.hpp:198
 msgid ""
 "Failed to home the extruder in Z-axis, make sure the loadcell is working."
 msgstr ""
@@ -2386,20 +2387,20 @@ msgstr "Podawanie do czujnika filamentu"
 msgid "Feeding to nozzle"
 msgstr "Podawanie do dyszy"
 
-#: tmp_error_headers/error_list_coreone.hpp:50
-#: tmp_error_headers/error_list_coreone.hpp:57
-#: tmp_error_headers/error_list_mk35.hpp:8
-#: tmp_error_headers/error_list_mk35.hpp:15
 #: tmp_error_headers/error_list_xl.hpp:64
+#: tmp_error_headers/error_list_ix.hpp:29
 #: tmp_error_headers/error_list_mk4.hpp:15
 #: tmp_error_headers/error_list_mk4.hpp:22
-#: tmp_error_headers/error_list_ix.hpp:29
+#: tmp_error_headers/error_list_mk35.hpp:8
+#: tmp_error_headers/error_list_mk35.hpp:15
+#: tmp_error_headers/error_list_coreone.hpp:50
+#: tmp_error_headers/error_list_coreone.hpp:57
 msgid "Fil. Sensor Troubleshooting"
 msgstr "Rozw. prob. z czuj. filamentu"
 
-#: src/common/footer_def.cpp:12
+#: src/common/footer_def.cpp:12 src/gui/MItem_tools.hpp:444
 #: src/gui/screen/filament/screen_filaments_loaded.cpp:30
-#: src/gui/screen_home.cpp:135 src/gui/MItem_tools.hpp:444
+#: src/gui/screen_home.cpp:135
 msgid "Filament"
 msgstr "Filament"
 
@@ -2430,11 +2431,11 @@ msgstr "Wykrywanie filamentu"
 msgid "Filament Sensor"
 msgstr "Czujnik filamentu"
 
-#: tmp_error_headers/error_list_coreone.hpp:64
-#: tmp_error_headers/error_list_mk35.hpp:22
 #: tmp_error_headers/error_list_xl.hpp:71
-#: tmp_error_headers/error_list_mk4.hpp:29
 #: tmp_error_headers/error_list_ix.hpp:36
+#: tmp_error_headers/error_list_mk4.hpp:29
+#: tmp_error_headers/error_list_mk35.hpp:22
+#: tmp_error_headers/error_list_coreone.hpp:64
 msgid "Filament Sensors Disabled"
 msgstr "Wyłączono czujniki filamentu"
 
@@ -2461,9 +2462,9 @@ msgstr ""
 "Nieoczekiwane wykrycie filamentu. Upewnij się, że filament nie jest "
 "załadowany. Sprawdź czujniki i okablowanie."
 
-#: tmp_error_headers/error_list_coreone.hpp:646
-#: tmp_error_headers/error_list_mk35.hpp:471
 #: tmp_error_headers/error_list_mk4.hpp:492
+#: tmp_error_headers/error_list_mk35.hpp:471
+#: tmp_error_headers/error_list_coreone.hpp:646
 msgid ""
 "Filament detected. Unload filament now? Select NO to start the print with "
 "the currently loaded filament."
@@ -2479,21 +2480,21 @@ msgstr "Filament wprowadzony, naciśnij Kontynuuj."
 msgid "Filament is not customizable"
 msgstr "Nie można dostosować filamentu"
 
-#: tmp_error_headers/error_list_coreone.hpp:821
-#: tmp_error_headers/error_list_mk35.hpp:632
-#: tmp_error_headers/error_list_xl.hpp:891
-#: tmp_error_headers/error_list_mk4.hpp:653
 #: tmp_error_headers/error_list_mini.hpp:555
+#: tmp_error_headers/error_list_xl.hpp:891
 #: tmp_error_headers/error_list_ix.hpp:800
+#: tmp_error_headers/error_list_mk4.hpp:653
+#: tmp_error_headers/error_list_mk35.hpp:632
+#: tmp_error_headers/error_list_coreone.hpp:821
 msgid "Filament loading timed out."
 msgstr "Timeout ładowania filamentu."
 
-#: tmp_error_headers/error_list_coreone.hpp:632
-#: tmp_error_headers/error_list_mk35.hpp:457
-#: tmp_error_headers/error_list_xl.hpp:681
-#: tmp_error_headers/error_list_mk4.hpp:478
 #: tmp_error_headers/error_list_mini.hpp:408
+#: tmp_error_headers/error_list_xl.hpp:681
 #: tmp_error_headers/error_list_ix.hpp:639
+#: tmp_error_headers/error_list_mk4.hpp:478
+#: tmp_error_headers/error_list_mk35.hpp:457
+#: tmp_error_headers/error_list_coreone.hpp:632
 msgid ""
 "Filament not detected. Load filament now?\n"
 "Select NO to cancel the print.\n"
@@ -2553,16 +2554,16 @@ msgstr ""
 "ekstrudera. Sprawdź czy nic nie utknęło w rurce PTFE. Sprawdź czy czujnik "
 "działa prawidłowo."
 
-#: src/gui/MItem_menus.hpp:179
+#: src/gui/MItem_menus.hpp:183
 msgid "Filament sensors"
 msgstr "Czujniki filamentu"
 
-#: tmp_error_headers/error_list_coreone.hpp:65
-#: tmp_error_headers/error_list_mk35.hpp:23
-#: tmp_error_headers/error_list_xl.hpp:72
-#: tmp_error_headers/error_list_mk4.hpp:30
 #: tmp_error_headers/error_list_mini.hpp:16
+#: tmp_error_headers/error_list_xl.hpp:72
 #: tmp_error_headers/error_list_ix.hpp:37
+#: tmp_error_headers/error_list_mk4.hpp:30
+#: tmp_error_headers/error_list_mk35.hpp:23
+#: tmp_error_headers/error_list_coreone.hpp:65
 msgid "Filament sensors are disabled. Enable them manually after printing."
 msgstr "Czujniki filamentu są wyłączone. Włącz je ręcznie po wydruku."
 
@@ -2586,18 +2587,18 @@ msgstr "Uszkodzony plik"
 msgid "File doesn't contain any print instructions"
 msgstr "Plik nie zawiera żadnych instrukcji drukowania"
 
-#: tmp_error_headers/error_list_coreone.hpp:652
-#: tmp_error_headers/error_list_coreone.hpp:653
-#: tmp_error_headers/error_list_mk35.hpp:477
-#: tmp_error_headers/error_list_mk35.hpp:478
-#: tmp_error_headers/error_list_xl.hpp:694
-#: tmp_error_headers/error_list_xl.hpp:695
-#: tmp_error_headers/error_list_mk4.hpp:498
-#: tmp_error_headers/error_list_mk4.hpp:499
 #: tmp_error_headers/error_list_mini.hpp:421
 #: tmp_error_headers/error_list_mini.hpp:422
+#: tmp_error_headers/error_list_xl.hpp:694
+#: tmp_error_headers/error_list_xl.hpp:695
 #: tmp_error_headers/error_list_ix.hpp:652
 #: tmp_error_headers/error_list_ix.hpp:653
+#: tmp_error_headers/error_list_mk4.hpp:498
+#: tmp_error_headers/error_list_mk4.hpp:499
+#: tmp_error_headers/error_list_mk35.hpp:477
+#: tmp_error_headers/error_list_mk35.hpp:478
+#: tmp_error_headers/error_list_coreone.hpp:652
+#: tmp_error_headers/error_list_coreone.hpp:653
 msgid "File error"
 msgstr "Błąd pliku"
 
@@ -2609,12 +2610,12 @@ msgstr "Błąd odczytu pliku"
 msgid "File removed or transfer aborted"
 msgstr "Plik usunięty lub przesyłanie przerwane"
 
-#: tmp_error_headers/error_list_coreone.hpp:569
-#: tmp_error_headers/error_list_mk35.hpp:394
-#: tmp_error_headers/error_list_xl.hpp:625
-#: tmp_error_headers/error_list_mk4.hpp:415
 #: tmp_error_headers/error_list_mini.hpp:359
+#: tmp_error_headers/error_list_xl.hpp:625
 #: tmp_error_headers/error_list_ix.hpp:590
+#: tmp_error_headers/error_list_mk4.hpp:415
+#: tmp_error_headers/error_list_mk35.hpp:394
+#: tmp_error_headers/error_list_coreone.hpp:569
 msgid ""
 "File system error!\n"
 "Try a different USB\n"
@@ -2674,9 +2675,9 @@ msgstr ""
 "Przymocuj solidnie akcelerometr do stołu grzewczego. W następnym kroku stół "
 "grzewczy zacznie wibrować, a przyspieszenie zostanie zmierzone."
 
-#: tmp_error_headers/error_list_coreone.hpp:589
-#: tmp_error_headers/error_list_mk35.hpp:414
 #: tmp_error_headers/error_list_mk4.hpp:435
+#: tmp_error_headers/error_list_mk35.hpp:414
+#: tmp_error_headers/error_list_coreone.hpp:589
 msgid "Firmware Update Required"
 msgstr "Wymagana jest aktualizacja firmware"
 
@@ -2704,11 +2705,11 @@ msgstr ""
 "plik firmware dla\n"
 "drukarki."
 
-#: tmp_error_headers/error_list_coreone.hpp:541
-#: tmp_error_headers/error_list_mk35.hpp:366
 #: tmp_error_headers/error_list_xl.hpp:597
-#: tmp_error_headers/error_list_mk4.hpp:387
 #: tmp_error_headers/error_list_ix.hpp:562
+#: tmp_error_headers/error_list_mk4.hpp:387
+#: tmp_error_headers/error_list_mk35.hpp:366
+#: tmp_error_headers/error_list_coreone.hpp:541
 msgid ""
 "Firmware and hardware versions do\n"
 "not match. Make sure you have\n"
@@ -2718,12 +2719,12 @@ msgstr ""
 "Wersje firmware i hardware nie są zgodne. Upewnij się, że masz właściwy\n"
 "plik firmware dla drukarki."
 
-#: tmp_error_headers/error_list_coreone.hpp:506
-#: tmp_error_headers/error_list_mk35.hpp:331
-#: tmp_error_headers/error_list_xl.hpp:562
-#: tmp_error_headers/error_list_mk4.hpp:352
 #: tmp_error_headers/error_list_mini.hpp:296
+#: tmp_error_headers/error_list_xl.hpp:562
 #: tmp_error_headers/error_list_ix.hpp:527
+#: tmp_error_headers/error_list_mk4.hpp:352
+#: tmp_error_headers/error_list_mk35.hpp:331
+#: tmp_error_headers/error_list_coreone.hpp:506
 msgid ""
 "Firmware file\n"
 "missing in the USB\n"
@@ -2733,12 +2734,12 @@ msgstr ""
 "w pamięci USB\n"
 "flash!"
 
-#: tmp_error_headers/error_list_coreone.hpp:499
-#: tmp_error_headers/error_list_mk35.hpp:324
-#: tmp_error_headers/error_list_xl.hpp:555
-#: tmp_error_headers/error_list_mk4.hpp:345
 #: tmp_error_headers/error_list_mini.hpp:289
+#: tmp_error_headers/error_list_xl.hpp:555
 #: tmp_error_headers/error_list_ix.hpp:520
+#: tmp_error_headers/error_list_mk4.hpp:345
+#: tmp_error_headers/error_list_mk35.hpp:324
+#: tmp_error_headers/error_list_coreone.hpp:499
 msgid ""
 "Firmware file has\n"
 "invalid size!\n"
@@ -2752,12 +2753,12 @@ msgstr ""
 "w pamięci USB\n"
 "i spróbuj ponownie."
 
-#: tmp_error_headers/error_list_coreone.hpp:527
-#: tmp_error_headers/error_list_mk35.hpp:352
-#: tmp_error_headers/error_list_xl.hpp:583
-#: tmp_error_headers/error_list_mk4.hpp:373
 #: tmp_error_headers/error_list_mini.hpp:317
+#: tmp_error_headers/error_list_xl.hpp:583
 #: tmp_error_headers/error_list_ix.hpp:548
+#: tmp_error_headers/error_list_mk4.hpp:373
+#: tmp_error_headers/error_list_mk35.hpp:352
+#: tmp_error_headers/error_list_coreone.hpp:527
 msgid ""
 "Firmware hash\n"
 "verification failed!\n"
@@ -2775,12 +2776,12 @@ msgstr ""
 "skopiować go na\n"
 "USB ponownie."
 
-#: tmp_error_headers/error_list_coreone.hpp:534
-#: tmp_error_headers/error_list_mk35.hpp:359
-#: tmp_error_headers/error_list_xl.hpp:590
-#: tmp_error_headers/error_list_mk4.hpp:380
 #: tmp_error_headers/error_list_mini.hpp:324
+#: tmp_error_headers/error_list_xl.hpp:590
 #: tmp_error_headers/error_list_ix.hpp:555
+#: tmp_error_headers/error_list_mk4.hpp:380
+#: tmp_error_headers/error_list_mk35.hpp:359
+#: tmp_error_headers/error_list_coreone.hpp:534
 msgid ""
 "Firmware in the\n"
 "internal flash\n"
@@ -2794,12 +2795,12 @@ msgstr ""
 "firmware \n"
 "ponownie."
 
-#: tmp_error_headers/error_list_coreone.hpp:520
-#: tmp_error_headers/error_list_mk35.hpp:345
-#: tmp_error_headers/error_list_xl.hpp:576
-#: tmp_error_headers/error_list_mk4.hpp:366
 #: tmp_error_headers/error_list_mini.hpp:310
+#: tmp_error_headers/error_list_xl.hpp:576
 #: tmp_error_headers/error_list_ix.hpp:541
+#: tmp_error_headers/error_list_mk4.hpp:366
+#: tmp_error_headers/error_list_mk35.hpp:345
+#: tmp_error_headers/error_list_coreone.hpp:520
 msgid ""
 "Firmware signature\n"
 "verification failed!\n"
@@ -2813,12 +2814,12 @@ msgstr ""
 "podpisane firmware\n"
 "może być flashowane."
 
-#: tmp_error_headers/error_list_coreone.hpp:548
-#: tmp_error_headers/error_list_mk35.hpp:373
-#: tmp_error_headers/error_list_xl.hpp:604
-#: tmp_error_headers/error_list_mk4.hpp:394
 #: tmp_error_headers/error_list_mini.hpp:338
+#: tmp_error_headers/error_list_xl.hpp:604
 #: tmp_error_headers/error_list_ix.hpp:569
+#: tmp_error_headers/error_list_mk4.hpp:394
+#: tmp_error_headers/error_list_mk35.hpp:373
+#: tmp_error_headers/error_list_coreone.hpp:548
 msgid ""
 "Firmware/printer\n"
 "types do not match.\n"
@@ -2834,12 +2835,12 @@ msgstr ""
 "dla danego\n"
 "modelu drukarki."
 
-#: tmp_error_headers/error_list_coreone.hpp:555
-#: tmp_error_headers/error_list_mk35.hpp:380
-#: tmp_error_headers/error_list_xl.hpp:611
-#: tmp_error_headers/error_list_mk4.hpp:401
 #: tmp_error_headers/error_list_mini.hpp:345
+#: tmp_error_headers/error_list_xl.hpp:611
 #: tmp_error_headers/error_list_ix.hpp:576
+#: tmp_error_headers/error_list_mk4.hpp:401
+#: tmp_error_headers/error_list_mk35.hpp:380
+#: tmp_error_headers/error_list_coreone.hpp:555
 msgid ""
 "Firmware/printer\n"
 "versions do not\n"
@@ -2887,7 +2888,7 @@ msgstr "Przepływ"
 msgid "Following features are required:"
 msgstr "Wymagane są następujące funkcje:"
 
-#: src/gui/MItem_menus.hpp:104
+#: src/gui/MItem_menus.hpp:105
 msgid "Footer"
 msgstr "Stopka"
 
@@ -2900,6 +2901,10 @@ msgstr "Przy wymianie filamentu, nagrzej"
 msgid "Fri"
 msgstr "Pt"
 
+#: src/gui/menu_item/specific/menu_items_hw_mmu.cpp:16
+msgid "Front PTFE Length"
+msgstr "Przednia rurka PTFE"
+
 #: src/gui/screen_menu_bed_level_correction.hpp:54
 msgid "Front Side"
 msgstr "Przód"
@@ -2908,12 +2913,12 @@ msgstr "Przód"
 msgid "Front Side [um]"
 msgstr "Przód [um]"
 
-#: tmp_error_headers/error_list_coreone.hpp:330
-#: tmp_error_headers/error_list_mk35.hpp:253
-#: tmp_error_headers/error_list_xl.hpp:365
-#: tmp_error_headers/error_list_mk4.hpp:260
 #: tmp_error_headers/error_list_mini.hpp:225
+#: tmp_error_headers/error_list_xl.hpp:365
 #: tmp_error_headers/error_list_ix.hpp:344
+#: tmp_error_headers/error_list_mk4.hpp:260
+#: tmp_error_headers/error_list_mk35.hpp:253
+#: tmp_error_headers/error_list_coreone.hpp:330
 msgid "G-CODE METRICS CONFIG CHANGE"
 msgstr "ZMIANA KONGIF. DANYCH DIAGN. Z G-CODE"
 
@@ -2929,12 +2934,12 @@ msgstr "Poziom G-code"
 msgid "G-Code filaments"
 msgstr "Filamenty w G-code"
 
-#: tmp_error_headers/error_list_coreone.hpp:758
-#: tmp_error_headers/error_list_mk35.hpp:590
-#: tmp_error_headers/error_list_xl.hpp:807
-#: tmp_error_headers/error_list_mk4.hpp:604
 #: tmp_error_headers/error_list_mini.hpp:513
+#: tmp_error_headers/error_list_xl.hpp:807
 #: tmp_error_headers/error_list_ix.hpp:744
+#: tmp_error_headers/error_list_mk4.hpp:604
+#: tmp_error_headers/error_list_mk35.hpp:590
+#: tmp_error_headers/error_list_coreone.hpp:758
 msgid ""
 "G-Code transfer running too slow. Check your network for issues or use "
 "different USB drive. Press Continue to resume printing."
@@ -2942,12 +2947,12 @@ msgstr ""
 "Transfer G-code przebiega zbyt wolno. Sprawdź sieć pod kątem problemów lub "
 "użyj innej pamięci USB. Naciśnij przycisk Kontynuuj, aby wznowić drukowanie."
 
-#: tmp_error_headers/error_list_coreone.hpp:478
-#: tmp_error_headers/error_list_mk35.hpp:303
-#: tmp_error_headers/error_list_xl.hpp:527
-#: tmp_error_headers/error_list_mk4.hpp:324
 #: tmp_error_headers/error_list_mini.hpp:268
+#: tmp_error_headers/error_list_xl.hpp:527
 #: tmp_error_headers/error_list_ix.hpp:499
+#: tmp_error_headers/error_list_mk4.hpp:324
+#: tmp_error_headers/error_list_mk35.hpp:303
+#: tmp_error_headers/error_list_coreone.hpp:478
 msgid ""
 "G-code command was too long and did not fit in the internal buffers. As a "
 "result, it may have been executed incorrectly."
@@ -2959,34 +2964,34 @@ msgstr ""
 msgid "G-code version doesn't match"
 msgstr "Rozbieżność wersji G-code"
 
-#: src/gui/screen_menu_network_status.hpp:24 src/gui/MItem_network.hpp:145
+#: src/gui/MItem_network.hpp:145 src/gui/screen_menu_network_status.hpp:24
 msgid "Gateway"
 msgstr "Bramka"
 
-#: tmp_error_headers/error_list_coreone.hpp:470
-#: tmp_error_headers/error_list_mk35.hpp:295
-#: tmp_error_headers/error_list_xl.hpp:519
-#: tmp_error_headers/error_list_mk4.hpp:316
 #: tmp_error_headers/error_list_mini.hpp:260
+#: tmp_error_headers/error_list_xl.hpp:519
 #: tmp_error_headers/error_list_ix.hpp:491
+#: tmp_error_headers/error_list_mk4.hpp:316
+#: tmp_error_headers/error_list_mk35.hpp:295
+#: tmp_error_headers/error_list_coreone.hpp:470
 msgid "Gcode Corruption"
 msgstr "Uszkodzenie G-code"
 
-#: tmp_error_headers/error_list_coreone.hpp:477
-#: tmp_error_headers/error_list_mk35.hpp:302
-#: tmp_error_headers/error_list_xl.hpp:526
-#: tmp_error_headers/error_list_mk4.hpp:323
 #: tmp_error_headers/error_list_mini.hpp:267
+#: tmp_error_headers/error_list_xl.hpp:526
 #: tmp_error_headers/error_list_ix.hpp:498
+#: tmp_error_headers/error_list_mk4.hpp:323
+#: tmp_error_headers/error_list_mk35.hpp:302
+#: tmp_error_headers/error_list_coreone.hpp:477
 msgid "Gcode Cropped"
 msgstr "G-code przycięty"
 
-#: tmp_error_headers/error_list_coreone.hpp:331
-#: tmp_error_headers/error_list_mk35.hpp:254
-#: tmp_error_headers/error_list_xl.hpp:366
-#: tmp_error_headers/error_list_mk4.hpp:261
 #: tmp_error_headers/error_list_mini.hpp:226
+#: tmp_error_headers/error_list_xl.hpp:366
 #: tmp_error_headers/error_list_ix.hpp:345
+#: tmp_error_headers/error_list_mk4.hpp:261
+#: tmp_error_headers/error_list_mk35.hpp:254
+#: tmp_error_headers/error_list_coreone.hpp:331
 msgid ""
 "Gcode is trying to change metrics configuration.\n"
 "\n"
@@ -2996,12 +3001,12 @@ msgstr ""
 "\n"
 "Zezwolić na zmiany?"
 
-#: tmp_error_headers/error_list_coreone.hpp:471
-#: tmp_error_headers/error_list_mk35.hpp:296
-#: tmp_error_headers/error_list_xl.hpp:520
-#: tmp_error_headers/error_list_mk4.hpp:317
 #: tmp_error_headers/error_list_mini.hpp:261
+#: tmp_error_headers/error_list_xl.hpp:520
 #: tmp_error_headers/error_list_ix.hpp:492
+#: tmp_error_headers/error_list_mk4.hpp:317
+#: tmp_error_headers/error_list_mk35.hpp:296
+#: tmp_error_headers/error_list_coreone.hpp:471
 msgid "Gcode on the USB drive is corrupt. Fix manually before resuming."
 msgstr ""
 "G-code w pamięci USB jest uszkodzony. Napraw ręcznie przed wznowieniem."
@@ -3034,91 +3039,91 @@ msgstr ""
 "Chwyć drzwi z tyłu pośrodku i zamknij w sposób pokazany na ilustracji. "
 "Następnie potwierdź."
 
-#: tmp_error_headers/error_list_coreone.hpp:289
-#: tmp_error_headers/error_list_mk35.hpp:212
-#: tmp_error_headers/error_list_xl.hpp:303
-#: tmp_error_headers/error_list_mk4.hpp:219
 #: tmp_error_headers/error_list_mini.hpp:191
+#: tmp_error_headers/error_list_xl.hpp:303
 #: tmp_error_headers/error_list_ix.hpp:289
+#: tmp_error_headers/error_list_mk4.hpp:219
+#: tmp_error_headers/error_list_mk35.hpp:212
+#: tmp_error_headers/error_list_coreone.hpp:289
 msgid "HAL detected an I2C busy state when receiving data via I2C."
 msgstr "HAL wykrył zajętość I2C podczas odbierania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:261
-#: tmp_error_headers/error_list_mk35.hpp:184
-#: tmp_error_headers/error_list_xl.hpp:275
-#: tmp_error_headers/error_list_mk4.hpp:191
 #: tmp_error_headers/error_list_mini.hpp:163
+#: tmp_error_headers/error_list_xl.hpp:275
 #: tmp_error_headers/error_list_ix.hpp:261
+#: tmp_error_headers/error_list_mk4.hpp:191
+#: tmp_error_headers/error_list_mk35.hpp:184
+#: tmp_error_headers/error_list_coreone.hpp:261
 msgid "HAL detected an I2C busy state when sending data via I2C."
 msgstr "HAL wykrył zajętość I2C podczas wysyłania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:282
-#: tmp_error_headers/error_list_mk35.hpp:205
-#: tmp_error_headers/error_list_xl.hpp:296
-#: tmp_error_headers/error_list_mk4.hpp:212
 #: tmp_error_headers/error_list_mini.hpp:184
+#: tmp_error_headers/error_list_xl.hpp:296
 #: tmp_error_headers/error_list_ix.hpp:282
+#: tmp_error_headers/error_list_mk4.hpp:212
+#: tmp_error_headers/error_list_mk35.hpp:205
+#: tmp_error_headers/error_list_coreone.hpp:282
 msgid "HAL detected an I2C error when receiving data via I2C."
 msgstr "HAL wykrył błąd I2C podczas odbierania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:254
-#: tmp_error_headers/error_list_mk35.hpp:177
-#: tmp_error_headers/error_list_xl.hpp:268
-#: tmp_error_headers/error_list_mk4.hpp:184
 #: tmp_error_headers/error_list_mini.hpp:156
+#: tmp_error_headers/error_list_xl.hpp:268
 #: tmp_error_headers/error_list_ix.hpp:254
+#: tmp_error_headers/error_list_mk4.hpp:184
+#: tmp_error_headers/error_list_mk35.hpp:177
+#: tmp_error_headers/error_list_coreone.hpp:254
 msgid "HAL detected an I2C error when sending data via I2C."
 msgstr "HAL wykrył błąd I2C podczas wysyłania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:296
-#: tmp_error_headers/error_list_mk35.hpp:219
-#: tmp_error_headers/error_list_xl.hpp:310
-#: tmp_error_headers/error_list_mk4.hpp:226
 #: tmp_error_headers/error_list_mini.hpp:198
+#: tmp_error_headers/error_list_xl.hpp:310
 #: tmp_error_headers/error_list_ix.hpp:296
+#: tmp_error_headers/error_list_mk4.hpp:226
+#: tmp_error_headers/error_list_mk35.hpp:219
+#: tmp_error_headers/error_list_coreone.hpp:296
 msgid "HAL detected an I2C timeout when receiving data via I2C."
 msgstr "HAL wykrył timeout I2C podczas odbierania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:268
-#: tmp_error_headers/error_list_mk35.hpp:191
-#: tmp_error_headers/error_list_xl.hpp:282
-#: tmp_error_headers/error_list_mk4.hpp:198
 #: tmp_error_headers/error_list_mini.hpp:170
+#: tmp_error_headers/error_list_xl.hpp:282
 #: tmp_error_headers/error_list_ix.hpp:268
+#: tmp_error_headers/error_list_mk4.hpp:198
+#: tmp_error_headers/error_list_mk35.hpp:191
+#: tmp_error_headers/error_list_coreone.hpp:268
 msgid "HAL detected an I2C timeout when sending data via I2C."
 msgstr "HAL wykrył timeout I2C podczas wysłania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:303
-#: tmp_error_headers/error_list_mk35.hpp:226
-#: tmp_error_headers/error_list_xl.hpp:317
-#: tmp_error_headers/error_list_mk4.hpp:233
 #: tmp_error_headers/error_list_mini.hpp:205
+#: tmp_error_headers/error_list_xl.hpp:317
 #: tmp_error_headers/error_list_ix.hpp:303
+#: tmp_error_headers/error_list_mk4.hpp:233
+#: tmp_error_headers/error_list_mk35.hpp:226
+#: tmp_error_headers/error_list_coreone.hpp:303
 msgid "HAL detected an I2C undefined error when receiving data via I2C."
 msgstr ""
 "HAL wykrył niezdefiniowany błąd I2C podczas odbierania danych przez I2C."
 
-#: tmp_error_headers/error_list_coreone.hpp:275
-#: tmp_error_headers/error_list_mk35.hpp:198
-#: tmp_error_headers/error_list_xl.hpp:289
-#: tmp_error_headers/error_list_mk4.hpp:205
 #: tmp_error_headers/error_list_mini.hpp:177
+#: tmp_error_headers/error_list_xl.hpp:289
 #: tmp_error_headers/error_list_ix.hpp:275
+#: tmp_error_headers/error_list_mk4.hpp:205
+#: tmp_error_headers/error_list_mk35.hpp:198
+#: tmp_error_headers/error_list_coreone.hpp:275
 msgid "HAL detected an I2C undefined error when sending data via I2C."
 msgstr ""
 "HAL wykrył niezdefiniowany błąd I2C podczas wysyłania danych przez I2C."
 
-#: src/gui/screen_menu_hardware.hpp:104
 #: src/gui/screen_menu_hardware_tune.hpp:24
+#: src/gui/screen_menu_hardware.hpp:111
 msgid "HARDWARE"
 msgstr "HARDWARE"
 
-#: tmp_error_headers/error_list_coreone.hpp:526
-#: tmp_error_headers/error_list_mk35.hpp:351
-#: tmp_error_headers/error_list_xl.hpp:582
-#: tmp_error_headers/error_list_mk4.hpp:372
 #: tmp_error_headers/error_list_mini.hpp:316
+#: tmp_error_headers/error_list_xl.hpp:582
 #: tmp_error_headers/error_list_ix.hpp:547
+#: tmp_error_headers/error_list_mk4.hpp:372
+#: tmp_error_headers/error_list_mk35.hpp:351
+#: tmp_error_headers/error_list_coreone.hpp:526
 msgid "HASH VERIFICATION FAILED"
 msgstr "WERYFIKACJA HASH NIE POWIODŁA SIĘ"
 
@@ -3126,29 +3131,29 @@ msgstr "WERYFIKACJA HASH NIE POWIODŁA SIĘ"
 msgid "HB Fan RPM"
 msgstr "RPM went. HB"
 
-#: tmp_error_headers/error_list_coreone.hpp:239
-#: tmp_error_headers/error_list_mk35.hpp:162
-#: tmp_error_headers/error_list_mk4.hpp:169
 #: tmp_error_headers/error_list_mini.hpp:141
 #: tmp_error_headers/error_list_ix.hpp:239
+#: tmp_error_headers/error_list_mk4.hpp:169
+#: tmp_error_headers/error_list_mk35.hpp:162
+#: tmp_error_headers/error_list_coreone.hpp:239
 msgid "HEATBED PORT OVERCURRENT"
 msgstr "ZBYT DUŻY PRĄD NA PODGRZEWANYM STOLE"
 
-#: tmp_error_headers/error_list_coreone.hpp:148
-#: tmp_error_headers/error_list_mk35.hpp:106
-#: tmp_error_headers/error_list_xl.hpp:120
-#: tmp_error_headers/error_list_mk4.hpp:113
 #: tmp_error_headers/error_list_mini.hpp:85
+#: tmp_error_headers/error_list_xl.hpp:120
 #: tmp_error_headers/error_list_ix.hpp:106
+#: tmp_error_headers/error_list_mk4.hpp:113
+#: tmp_error_headers/error_list_mk35.hpp:106
+#: tmp_error_headers/error_list_coreone.hpp:148
 msgid "HEATBREAK MAXTEMP ERROR"
 msgstr "MAXTEMP - BARIERA CIEPLNA"
 
-#: tmp_error_headers/error_list_coreone.hpp:141
-#: tmp_error_headers/error_list_mk35.hpp:99
-#: tmp_error_headers/error_list_xl.hpp:113
-#: tmp_error_headers/error_list_mk4.hpp:106
 #: tmp_error_headers/error_list_mini.hpp:78
+#: tmp_error_headers/error_list_xl.hpp:113
 #: tmp_error_headers/error_list_ix.hpp:99
+#: tmp_error_headers/error_list_mk4.hpp:106
+#: tmp_error_headers/error_list_mk35.hpp:99
+#: tmp_error_headers/error_list_coreone.hpp:141
 msgid "HEATBREAK MINTEMP ERROR"
 msgstr "MINTEMP - BARIERA CIEPLNA"
 
@@ -3172,30 +3177,30 @@ msgstr "Koniec eksploatacji filtra HEPA"
 msgid "HEPA Filter Expiring"
 msgstr "Wygasanie eksploatacji filtra HEPA"
 
-#: tmp_error_headers/error_list_coreone.hpp:204
-#: tmp_error_headers/error_list_mk35.hpp:127
-#: tmp_error_headers/error_list_xl.hpp:232
-#: tmp_error_headers/error_list_mk4.hpp:134
 #: tmp_error_headers/error_list_mini.hpp:106
+#: tmp_error_headers/error_list_xl.hpp:232
 #: tmp_error_headers/error_list_ix.hpp:204
+#: tmp_error_headers/error_list_mk4.hpp:134
+#: tmp_error_headers/error_list_mk35.hpp:127
+#: tmp_error_headers/error_list_coreone.hpp:204
 msgid "HOMING ERROR X"
 msgstr "BŁĄD BAZOWANIA X"
 
-#: tmp_error_headers/error_list_coreone.hpp:211
-#: tmp_error_headers/error_list_mk35.hpp:134
-#: tmp_error_headers/error_list_xl.hpp:239
-#: tmp_error_headers/error_list_mk4.hpp:141
 #: tmp_error_headers/error_list_mini.hpp:113
+#: tmp_error_headers/error_list_xl.hpp:239
 #: tmp_error_headers/error_list_ix.hpp:211
+#: tmp_error_headers/error_list_mk4.hpp:141
+#: tmp_error_headers/error_list_mk35.hpp:134
+#: tmp_error_headers/error_list_coreone.hpp:211
 msgid "HOMING ERROR Y"
 msgstr "BŁĄD BAZOWANIA Y"
 
-#: tmp_error_headers/error_list_coreone.hpp:197
-#: tmp_error_headers/error_list_mk35.hpp:120
-#: tmp_error_headers/error_list_xl.hpp:211
-#: tmp_error_headers/error_list_mk4.hpp:127
 #: tmp_error_headers/error_list_mini.hpp:99
+#: tmp_error_headers/error_list_xl.hpp:211
 #: tmp_error_headers/error_list_ix.hpp:183
+#: tmp_error_headers/error_list_mk4.hpp:127
+#: tmp_error_headers/error_list_mk35.hpp:120
+#: tmp_error_headers/error_list_coreone.hpp:197
 msgid "HOMING ERROR Z"
 msgstr "BŁĄD BAZOWANIA Z"
 
@@ -3243,7 +3248,7 @@ msgstr "Udanego drukowania!"
 msgid "Hard Reset (USB with FW needed)"
 msgstr "Twardy reset (wymagane USB z FW)"
 
-#: src/gui/MItem_menus.hpp:125 src/gui/MItem_menus.hpp:128
+#: src/gui/MItem_menus.hpp:126 src/gui/MItem_menus.hpp:129
 msgid "Hardware"
 msgstr "Sprzęt"
 
@@ -3348,7 +3353,7 @@ msgstr ""
 "Kafelek stołu grzewczego nr %d: \n"
 "Wykryto nieoczekiwany spadek temperatury."
 
-#: src/common/footer_def.cpp:31 src/common/selftest/selftest_fans.hpp:29
+#: src/common/selftest/selftest_fans.hpp:29 src/common/footer_def.cpp:31
 msgid "Heatbreak"
 msgstr "Bariera cieplna"
 
@@ -3364,12 +3369,12 @@ msgstr "Temperatura bariery cieplnej"
 msgid "Heatbreak status"
 msgstr "Stan bariery cieplnej"
 
-#: tmp_error_headers/error_list_coreone.hpp:751
-#: tmp_error_headers/error_list_mk35.hpp:576
-#: tmp_error_headers/error_list_xl.hpp:793
-#: tmp_error_headers/error_list_mk4.hpp:597
 #: tmp_error_headers/error_list_mini.hpp:506
+#: tmp_error_headers/error_list_xl.hpp:793
 #: tmp_error_headers/error_list_ix.hpp:737
+#: tmp_error_headers/error_list_mk4.hpp:597
+#: tmp_error_headers/error_list_mk35.hpp:576
+#: tmp_error_headers/error_list_coreone.hpp:751
 msgid "Heatbreak thermistor is disconnected. Inspect the wiring."
 msgstr "Termistor bariery cieplnej jest odłączony. Sprawdź okablowanie."
 
@@ -3398,16 +3403,16 @@ msgstr "Nagrzewanie"
 msgid "Heating disabled due to 10 minutes of inactivity."
 msgstr "Grzanie wyłączone po 10-minutowej bezczynności."
 
-#: tmp_error_headers/error_list_coreone.hpp:716
-#: tmp_error_headers/error_list_coreone.hpp:730
-#: tmp_error_headers/error_list_mk35.hpp:541
-#: tmp_error_headers/error_list_mk35.hpp:555
+#: tmp_error_headers/error_list_mini.hpp:471
+#: tmp_error_headers/error_list_mini.hpp:485
 #: tmp_error_headers/error_list_xl.hpp:758
 #: tmp_error_headers/error_list_xl.hpp:772
 #: tmp_error_headers/error_list_mk4.hpp:562
 #: tmp_error_headers/error_list_mk4.hpp:576
-#: tmp_error_headers/error_list_mini.hpp:471
-#: tmp_error_headers/error_list_mini.hpp:485
+#: tmp_error_headers/error_list_mk35.hpp:541
+#: tmp_error_headers/error_list_mk35.hpp:555
+#: tmp_error_headers/error_list_coreone.hpp:716
+#: tmp_error_headers/error_list_coreone.hpp:730
 msgid "Heating disabled due to 30 minutes of inactivity."
 msgstr "Grzanie wyłączone po 30-minutowej bezczynności."
 
@@ -3496,7 +3501,7 @@ msgstr ""
 "Przeprowadzę Cię przez \n"
 "proces konfiguracji."
 
-#: src/gui/MItem_crash.cpp:73 src/gui/MItem_tools.cpp:1091
+#: src/gui/MItem_tools.cpp:1091 src/gui/MItem_crash.cpp:73
 msgid "High"
 msgstr "Wysoka"
 
@@ -3505,8 +3510,8 @@ msgid "Home"
 msgstr "Ekran główny"
 
 #. //MSG_PROGRESS_RETRACT_FINDA c=20
-#: src/mmu2/mmu2_progress_converter.cpp:31 src/gui/screen_crash_recovery.cpp:93
-#: src/gui/screen_phase_stepping.cpp:32 src/gui/dialogs/DialogLoadUnload.cpp:85
+#: src/mmu2/mmu2_progress_converter.cpp:31 src/gui/screen_phase_stepping.cpp:32
+#: src/gui/dialogs/DialogLoadUnload.cpp:85 src/gui/screen_crash_recovery.cpp:93
 msgid "Homing"
 msgstr "Bazowanie"
 
@@ -3515,8 +3520,8 @@ msgid "Host"
 msgstr "Host"
 
 #. Printer's name within network
-#: src/gui/MItem_network.hpp:74 src/gui/MItem_network.cpp:145
-#: src/gui/screen_menu_connect.hpp:42
+#: src/gui/screen_menu_connect.hpp:42 src/gui/MItem_network.hpp:74
+#: src/gui/MItem_network.cpp:145
 msgid "Hostname"
 msgstr "Nazwa hosta"
 
@@ -3550,12 +3555,12 @@ msgstr "Went. hotendu"
 msgid "Hotend fan (test disabled)"
 msgstr "Wentylator hotendu (test wyłączony)"
 
-#: tmp_error_headers/error_list_coreone.hpp:772
-#: tmp_error_headers/error_list_mk35.hpp:604
-#: tmp_error_headers/error_list_xl.hpp:835
-#: tmp_error_headers/error_list_mk4.hpp:618
 #: tmp_error_headers/error_list_mini.hpp:527
+#: tmp_error_headers/error_list_xl.hpp:835
 #: tmp_error_headers/error_list_ix.hpp:765
+#: tmp_error_headers/error_list_mk4.hpp:618
+#: tmp_error_headers/error_list_mk35.hpp:604
+#: tmp_error_headers/error_list_coreone.hpp:772
 msgid ""
 "Hotend fan not spinning. Check it for possible debris, then inspect the "
 "wiring."
@@ -3567,75 +3572,75 @@ msgstr ""
 msgid "How to update firmware?"
 msgstr "Jak zaktualizować firmware?"
 
-#: tmp_error_headers/error_list_coreone.hpp:288
-#: tmp_error_headers/error_list_mk35.hpp:211
-#: tmp_error_headers/error_list_xl.hpp:302
-#: tmp_error_headers/error_list_mk4.hpp:218
 #: tmp_error_headers/error_list_mini.hpp:190
+#: tmp_error_headers/error_list_xl.hpp:302
 #: tmp_error_headers/error_list_ix.hpp:288
+#: tmp_error_headers/error_list_mk4.hpp:218
+#: tmp_error_headers/error_list_mk35.hpp:211
+#: tmp_error_headers/error_list_coreone.hpp:288
 msgid "I2C RECEIVE BUSY"
 msgstr "I2C ODBIÓR ZAJĘTY"
 
-#: tmp_error_headers/error_list_coreone.hpp:281
-#: tmp_error_headers/error_list_mk35.hpp:204
-#: tmp_error_headers/error_list_xl.hpp:295
-#: tmp_error_headers/error_list_mk4.hpp:211
 #: tmp_error_headers/error_list_mini.hpp:183
+#: tmp_error_headers/error_list_xl.hpp:295
 #: tmp_error_headers/error_list_ix.hpp:281
+#: tmp_error_headers/error_list_mk4.hpp:211
+#: tmp_error_headers/error_list_mk35.hpp:204
+#: tmp_error_headers/error_list_coreone.hpp:281
 msgid "I2C RECEIVE FAILED"
 msgstr "I2C ODBIÓR NIE POWIÓDŁ SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:295
-#: tmp_error_headers/error_list_mk35.hpp:218
-#: tmp_error_headers/error_list_xl.hpp:309
-#: tmp_error_headers/error_list_mk4.hpp:225
 #: tmp_error_headers/error_list_mini.hpp:197
+#: tmp_error_headers/error_list_xl.hpp:309
 #: tmp_error_headers/error_list_ix.hpp:295
+#: tmp_error_headers/error_list_mk4.hpp:225
+#: tmp_error_headers/error_list_mk35.hpp:218
+#: tmp_error_headers/error_list_coreone.hpp:295
 msgid "I2C RECEIVE TIMEOUT"
 msgstr "I2C TIMEOUT ODBIORU"
 
-#: tmp_error_headers/error_list_coreone.hpp:302
-#: tmp_error_headers/error_list_mk35.hpp:225
-#: tmp_error_headers/error_list_xl.hpp:316
-#: tmp_error_headers/error_list_mk4.hpp:232
 #: tmp_error_headers/error_list_mini.hpp:204
+#: tmp_error_headers/error_list_xl.hpp:316
 #: tmp_error_headers/error_list_ix.hpp:302
+#: tmp_error_headers/error_list_mk4.hpp:232
+#: tmp_error_headers/error_list_mk35.hpp:225
+#: tmp_error_headers/error_list_coreone.hpp:302
 msgid "I2C RECEIVE UNDEFINED"
 msgstr "I2C ODBIÓR NIEOKREŚLONY"
 
-#: tmp_error_headers/error_list_coreone.hpp:260
-#: tmp_error_headers/error_list_mk35.hpp:183
-#: tmp_error_headers/error_list_xl.hpp:274
-#: tmp_error_headers/error_list_mk4.hpp:190
 #: tmp_error_headers/error_list_mini.hpp:162
+#: tmp_error_headers/error_list_xl.hpp:274
 #: tmp_error_headers/error_list_ix.hpp:260
+#: tmp_error_headers/error_list_mk4.hpp:190
+#: tmp_error_headers/error_list_mk35.hpp:183
+#: tmp_error_headers/error_list_coreone.hpp:260
 msgid "I2C SEND BUSY"
 msgstr "I2C WYSYŁANIE ZAJĘTE"
 
-#: tmp_error_headers/error_list_coreone.hpp:253
-#: tmp_error_headers/error_list_mk35.hpp:176
-#: tmp_error_headers/error_list_xl.hpp:267
-#: tmp_error_headers/error_list_mk4.hpp:183
 #: tmp_error_headers/error_list_mini.hpp:155
+#: tmp_error_headers/error_list_xl.hpp:267
 #: tmp_error_headers/error_list_ix.hpp:253
+#: tmp_error_headers/error_list_mk4.hpp:183
+#: tmp_error_headers/error_list_mk35.hpp:176
+#: tmp_error_headers/error_list_coreone.hpp:253
 msgid "I2C SEND FAILED"
 msgstr "I2C WYSYŁANIE NIE POWIODŁO SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:267
-#: tmp_error_headers/error_list_mk35.hpp:190
-#: tmp_error_headers/error_list_xl.hpp:281
-#: tmp_error_headers/error_list_mk4.hpp:197
 #: tmp_error_headers/error_list_mini.hpp:169
+#: tmp_error_headers/error_list_xl.hpp:281
 #: tmp_error_headers/error_list_ix.hpp:267
+#: tmp_error_headers/error_list_mk4.hpp:197
+#: tmp_error_headers/error_list_mk35.hpp:190
+#: tmp_error_headers/error_list_coreone.hpp:267
 msgid "I2C SEND TIMEOUT"
 msgstr "I2C TIMEOUT WYSYŁANIA"
 
-#: tmp_error_headers/error_list_coreone.hpp:274
-#: tmp_error_headers/error_list_mk35.hpp:197
-#: tmp_error_headers/error_list_xl.hpp:288
-#: tmp_error_headers/error_list_mk4.hpp:204
 #: tmp_error_headers/error_list_mini.hpp:176
+#: tmp_error_headers/error_list_xl.hpp:288
 #: tmp_error_headers/error_list_ix.hpp:274
+#: tmp_error_headers/error_list_mk4.hpp:204
+#: tmp_error_headers/error_list_mk35.hpp:197
+#: tmp_error_headers/error_list_coreone.hpp:274
 msgid "I2C SEND UNDEFINED"
 msgstr "I2C WYSYŁANIE NIEZDEFINIOWANE"
 
@@ -3651,12 +3656,12 @@ msgstr "DOCISK NIE RUSZA SIĘ"
 msgid "IGNORE"
 msgstr "IGNORUJ"
 
-#: tmp_error_headers/error_list_coreone.hpp:519
-#: tmp_error_headers/error_list_mk35.hpp:344
-#: tmp_error_headers/error_list_xl.hpp:575
-#: tmp_error_headers/error_list_mk4.hpp:365
 #: tmp_error_headers/error_list_mini.hpp:309
+#: tmp_error_headers/error_list_xl.hpp:575
 #: tmp_error_headers/error_list_ix.hpp:540
+#: tmp_error_headers/error_list_mk4.hpp:365
+#: tmp_error_headers/error_list_mk35.hpp:344
+#: tmp_error_headers/error_list_coreone.hpp:519
 msgid "IMPOSTER! FAKE SIGNATURE"
 msgstr "IMPOSTOR! FAŁSZYWA SYGNATURA"
 
@@ -3676,12 +3681,12 @@ msgstr "KALIBRACJA INPUT SHAPER"
 msgid "INSPECT FINDA"
 msgstr "SPRAWDŹ FINDĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:498
-#: tmp_error_headers/error_list_mk35.hpp:323
-#: tmp_error_headers/error_list_xl.hpp:554
-#: tmp_error_headers/error_list_mk4.hpp:344
 #: tmp_error_headers/error_list_mini.hpp:288
+#: tmp_error_headers/error_list_xl.hpp:554
 #: tmp_error_headers/error_list_ix.hpp:519
+#: tmp_error_headers/error_list_mk4.hpp:344
+#: tmp_error_headers/error_list_mk35.hpp:323
+#: tmp_error_headers/error_list_coreone.hpp:498
 msgid "INVALID FW SIZE ON USB FLASH DRIVE"
 msgstr "NIEPRAWIDŁOWY ROZMIAR FW NA USB"
 
@@ -3705,18 +3710,18 @@ msgstr "Bramka IPv4"
 msgid "IPv4 Netmask"
 msgstr "Maska sieci IPv4"
 
-#: tmp_error_headers/error_list_coreone.hpp:58
-#: tmp_error_headers/error_list_mk35.hpp:16
 #: tmp_error_headers/error_list_mk4.hpp:23
+#: tmp_error_headers/error_list_mk35.hpp:16
+#: tmp_error_headers/error_list_coreone.hpp:58
 msgid "If the filament sensor is unresponsive, clean it from debris."
 msgstr "Jeśli czujnik filamentu nie reaguje, oczyść go z zanieczyszczeń."
 
-#: tmp_error_headers/error_list_coreone.hpp:51
-#: tmp_error_headers/error_list_mk35.hpp:9
-#: tmp_error_headers/error_list_xl.hpp:65
-#: tmp_error_headers/error_list_mk4.hpp:16
 #: tmp_error_headers/error_list_mini.hpp:9
+#: tmp_error_headers/error_list_xl.hpp:65
 #: tmp_error_headers/error_list_ix.hpp:30
+#: tmp_error_headers/error_list_mk4.hpp:16
+#: tmp_error_headers/error_list_mk35.hpp:9
+#: tmp_error_headers/error_list_coreone.hpp:51
 msgid ""
 "If the filament sensor is unresponsive, clean it from debris. Alternatively, "
 "you can disable it."
@@ -3748,7 +3753,7 @@ msgstr "Nieaktywny"
 msgid "Increasing distance to bed"
 msgstr "Zwiększenie odległości od stołu"
 
-#: src/gui/screen_home.cpp:138 src/gui/MItem_menus.hpp:137
+#: src/gui/MItem_menus.hpp:138 src/gui/screen_home.cpp:138
 msgid "Info"
 msgstr "Info"
 
@@ -3760,7 +3765,7 @@ msgstr "Informacje"
 msgid "Input Current"
 msgstr "Prąd wejściowy"
 
-#: src/gui/MItem_menus.hpp:143
+#: src/gui/MItem_menus.hpp:144
 msgid "Input Shaper"
 msgstr "Input Shaper"
 
@@ -3903,11 +3908,11 @@ msgstr "JĘZYK I CZAS"
 msgid "LANGUAGES"
 msgstr "JĘZYKI"
 
-#: tmp_error_headers/error_list_coreone.hpp:442
-#: tmp_error_headers/error_list_mk35.hpp:267
 #: tmp_error_headers/error_list_xl.hpp:491
-#: tmp_error_headers/error_list_mk4.hpp:288
 #: tmp_error_headers/error_list_ix.hpp:463
+#: tmp_error_headers/error_list_mk4.hpp:288
+#: tmp_error_headers/error_list_mk35.hpp:267
+#: tmp_error_headers/error_list_coreone.hpp:442
 msgid "LED MEMORY ERROR"
 msgstr "BŁĄD PAMIĘCI LED"
 
@@ -3923,17 +3928,17 @@ msgstr "ZAŁADUJ"
 msgid "LOAD TO EXTR. FAILED"
 msgstr "ŁADOWANIE DO EKSTRUDERA NIE POWIODŁO SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:428
 #: tmp_error_headers/error_list_xl.hpp:477
-#: tmp_error_headers/error_list_mk4.hpp:274
 #: tmp_error_headers/error_list_ix.hpp:449
+#: tmp_error_headers/error_list_mk4.hpp:274
+#: tmp_error_headers/error_list_coreone.hpp:428
 msgid "LOADCELL MEASURE FAILED"
 msgstr "POMIAR TENSOMETREM NIEUDANY"
 
-#: tmp_error_headers/error_list_coreone.hpp:435
 #: tmp_error_headers/error_list_xl.hpp:484
-#: tmp_error_headers/error_list_mk4.hpp:281
 #: tmp_error_headers/error_list_ix.hpp:456
+#: tmp_error_headers/error_list_mk4.hpp:281
+#: tmp_error_headers/error_list_coreone.hpp:435
 msgid "LOADCELL TIMEOUT"
 msgstr "TIMEOUT TENSOMETRU"
 
@@ -3941,11 +3946,11 @@ msgstr "TIMEOUT TENSOMETRU"
 msgid "LOADED FILAMENTS"
 msgstr "ZAŁADOWANE FILAMENTY"
 
-#: src/gui/MItem_menus.hpp:160
+#: src/gui/MItem_menus.hpp:161
 msgid "Language"
 msgstr "Język"
 
-#: src/gui/MItem_menus.hpp:116
+#: src/gui/MItem_menus.hpp:117
 msgid "Language & Time"
 msgstr "Język i czas"
 
@@ -3970,12 +3975,12 @@ msgstr "Lewa"
 msgid "Left Side [um]"
 msgstr "Lewa [um]"
 
-#: tmp_error_headers/error_list_coreone.hpp:667
-#: tmp_error_headers/error_list_mk35.hpp:492
-#: tmp_error_headers/error_list_xl.hpp:709
-#: tmp_error_headers/error_list_mk4.hpp:513
 #: tmp_error_headers/error_list_mini.hpp:436
+#: tmp_error_headers/error_list_xl.hpp:709
 #: tmp_error_headers/error_list_ix.hpp:667
+#: tmp_error_headers/error_list_mk4.hpp:513
+#: tmp_error_headers/error_list_mk35.hpp:492
+#: tmp_error_headers/error_list_coreone.hpp:667
 msgid ""
 "Length of an axis is too long.\n"
 "Motor current is too low, probably.\n"
@@ -3985,12 +3990,12 @@ msgstr ""
 "Prawdopodobnie prąd silnika jest zbyt niski.\n"
 "Sprawdzić ponownie, wstrzymać czy wznowić drukowanie?"
 
-#: tmp_error_headers/error_list_coreone.hpp:674
-#: tmp_error_headers/error_list_mk35.hpp:499
-#: tmp_error_headers/error_list_xl.hpp:716
-#: tmp_error_headers/error_list_mk4.hpp:520
 #: tmp_error_headers/error_list_mini.hpp:443
+#: tmp_error_headers/error_list_xl.hpp:716
 #: tmp_error_headers/error_list_ix.hpp:674
+#: tmp_error_headers/error_list_mk4.hpp:520
+#: tmp_error_headers/error_list_mk35.hpp:499
+#: tmp_error_headers/error_list_coreone.hpp:674
 msgid ""
 "Length of an axis is too short.\n"
 "There's an obstacle or bearing issue.\n"
@@ -4067,10 +4072,10 @@ msgstr "Wartość tensometru"
 msgid "Loadcell check"
 msgstr "Sprawdzenie tensometru"
 
-#: tmp_error_headers/error_list_coreone.hpp:429
 #: tmp_error_headers/error_list_xl.hpp:478
-#: tmp_error_headers/error_list_mk4.hpp:275
 #: tmp_error_headers/error_list_ix.hpp:450
+#: tmp_error_headers/error_list_mk4.hpp:275
+#: tmp_error_headers/error_list_coreone.hpp:429
 msgid "Loadcell measured an inifinite or undefined load value."
 msgstr "Tensometr zmierzył nieskończoną lub nieokreśloną wartość obciążenia."
 
@@ -4107,12 +4112,12 @@ msgstr "Załadowano pomyślnie. Włącz Connect, aby aktywować."
 msgid "Loading Test"
 msgstr "Test ładowania"
 
-#: tmp_error_headers/error_list_coreone.hpp:820
-#: tmp_error_headers/error_list_mk35.hpp:631
-#: tmp_error_headers/error_list_xl.hpp:890
-#: tmp_error_headers/error_list_mk4.hpp:652
 #: tmp_error_headers/error_list_mini.hpp:554
+#: tmp_error_headers/error_list_xl.hpp:890
 #: tmp_error_headers/error_list_ix.hpp:799
+#: tmp_error_headers/error_list_mk4.hpp:652
+#: tmp_error_headers/error_list_mk35.hpp:631
+#: tmp_error_headers/error_list_coreone.hpp:820
 msgid "Loading Timeout"
 msgstr "Timeout ładowania"
 
@@ -4182,7 +4187,7 @@ msgstr "Głośno"
 msgid "Love Board"
 msgstr "LoveBoard"
 
-#: src/gui/MItem_crash.cpp:71 src/gui/MItem_tools.cpp:1091
+#: src/gui/MItem_tools.cpp:1091 src/gui/MItem_crash.cpp:71
 msgid "Low"
 msgstr "Niska"
 
@@ -4202,15 +4207,15 @@ msgstr "MAC"
 msgid "MAC Address"
 msgstr "Adres MAC"
 
-#: tmp_error_headers/error_list_coreone.hpp:71
-#: tmp_error_headers/error_list_mk35.hpp:29
 #: tmp_error_headers/error_list_mk4.hpp:36
+#: tmp_error_headers/error_list_mk35.hpp:29
+#: tmp_error_headers/error_list_coreone.hpp:71
 msgid "MAINTENANCE FAILURE WARNING"
 msgstr "MAINTENANCE FAILURE WARNING"
 
-#: tmp_error_headers/error_list_coreone.hpp:78
-#: tmp_error_headers/error_list_mk35.hpp:36
 #: tmp_error_headers/error_list_mk4.hpp:43
+#: tmp_error_headers/error_list_mk35.hpp:36
+#: tmp_error_headers/error_list_coreone.hpp:78
 msgid "MAINTENANCE WARNING"
 msgstr "MAINTENANCE WARNING"
 
@@ -4218,25 +4223,25 @@ msgstr "MAINTENANCE WARNING"
 msgid "MANUAL SETTINGS"
 msgstr "KONFIGURACJA RĘCZNA"
 
-#: tmp_error_headers/error_list_coreone.hpp:449
-#: tmp_error_headers/error_list_mk35.hpp:274
-#: tmp_error_headers/error_list_xl.hpp:498
-#: tmp_error_headers/error_list_mk4.hpp:295
 #: tmp_error_headers/error_list_mini.hpp:239
+#: tmp_error_headers/error_list_xl.hpp:498
 #: tmp_error_headers/error_list_ix.hpp:470
+#: tmp_error_headers/error_list_mk4.hpp:295
+#: tmp_error_headers/error_list_mk35.hpp:274
+#: tmp_error_headers/error_list_coreone.hpp:449
 msgid "MARLIN REQUEST TIMEOUT"
 msgstr "TIMEOUT ŻĄDANIA MARLINA"
 
-#: tmp_error_headers/error_list_coreone.hpp:113
-#: tmp_error_headers/error_list_coreone.hpp:120
-#: tmp_error_headers/error_list_mk35.hpp:71
-#: tmp_error_headers/error_list_mk35.hpp:78
-#: tmp_error_headers/error_list_mk4.hpp:78
-#: tmp_error_headers/error_list_mk4.hpp:85
 #: tmp_error_headers/error_list_mini.hpp:50
 #: tmp_error_headers/error_list_mini.hpp:57
 #: tmp_error_headers/error_list_ix.hpp:71
 #: tmp_error_headers/error_list_ix.hpp:78
+#: tmp_error_headers/error_list_mk4.hpp:78
+#: tmp_error_headers/error_list_mk4.hpp:85
+#: tmp_error_headers/error_list_mk35.hpp:71
+#: tmp_error_headers/error_list_mk35.hpp:78
+#: tmp_error_headers/error_list_coreone.hpp:113
+#: tmp_error_headers/error_list_coreone.hpp:120
 msgid "MAXTEMP ERROR"
 msgstr "BŁĄD MAXTEMP"
 
@@ -4244,12 +4249,12 @@ msgstr "BŁĄD MAXTEMP"
 msgid "MBed MCU Temp"
 msgstr "Temp. MCU stołu"
 
-#: tmp_error_headers/error_list_coreone.hpp:155
-#: tmp_error_headers/error_list_mk35.hpp:113
-#: tmp_error_headers/error_list_xl.hpp:127
-#: tmp_error_headers/error_list_mk4.hpp:120
 #: tmp_error_headers/error_list_mini.hpp:92
+#: tmp_error_headers/error_list_xl.hpp:127
 #: tmp_error_headers/error_list_ix.hpp:113
+#: tmp_error_headers/error_list_mk4.hpp:120
+#: tmp_error_headers/error_list_mk35.hpp:113
+#: tmp_error_headers/error_list_coreone.hpp:155
 msgid "MCU MAXTEMP ERROR"
 msgstr "BŁĄD MAXTEMP MCU"
 
@@ -4257,22 +4262,22 @@ msgstr "BŁĄD MAXTEMP MCU"
 msgid "MCU Temperature"
 msgstr "Temperatura MCU"
 
-#: tmp_error_headers/error_list_coreone.hpp:156
-#: tmp_error_headers/error_list_mk35.hpp:114
-#: tmp_error_headers/error_list_xl.hpp:128
-#: tmp_error_headers/error_list_mk4.hpp:121
 #: tmp_error_headers/error_list_mini.hpp:93
+#: tmp_error_headers/error_list_xl.hpp:128
 #: tmp_error_headers/error_list_ix.hpp:114
+#: tmp_error_headers/error_list_mk4.hpp:121
+#: tmp_error_headers/error_list_mk35.hpp:114
+#: tmp_error_headers/error_list_coreone.hpp:156
 #, c-format
 msgid "MCU in %s is overheated."
 msgstr "MCU %s jest przegrzany."
 
-#: tmp_error_headers/error_list_coreone.hpp:765
-#: tmp_error_headers/error_list_mk35.hpp:597
-#: tmp_error_headers/error_list_xl.hpp:814
-#: tmp_error_headers/error_list_mk4.hpp:611
 #: tmp_error_headers/error_list_mini.hpp:520
+#: tmp_error_headers/error_list_xl.hpp:814
 #: tmp_error_headers/error_list_ix.hpp:751
+#: tmp_error_headers/error_list_mk4.hpp:611
+#: tmp_error_headers/error_list_mk35.hpp:597
+#: tmp_error_headers/error_list_coreone.hpp:765
 msgid ""
 "MCU in Buddy is overheated, likely due to exceeding the printer's operating "
 "temperature. Prevent overheating for optimal performance."
@@ -4313,16 +4318,16 @@ msgstr "DANE DIAGN. I LOG"
 msgid "METRICS LIST"
 msgstr "LISTA DANYCH DIAGNOSTYCZNYCH"
 
-#: tmp_error_headers/error_list_coreone.hpp:127
-#: tmp_error_headers/error_list_coreone.hpp:134
-#: tmp_error_headers/error_list_mk35.hpp:85
-#: tmp_error_headers/error_list_mk35.hpp:92
-#: tmp_error_headers/error_list_mk4.hpp:92
-#: tmp_error_headers/error_list_mk4.hpp:99
 #: tmp_error_headers/error_list_mini.hpp:64
 #: tmp_error_headers/error_list_mini.hpp:71
 #: tmp_error_headers/error_list_ix.hpp:85
 #: tmp_error_headers/error_list_ix.hpp:92
+#: tmp_error_headers/error_list_mk4.hpp:92
+#: tmp_error_headers/error_list_mk4.hpp:99
+#: tmp_error_headers/error_list_mk35.hpp:85
+#: tmp_error_headers/error_list_mk35.hpp:92
+#: tmp_error_headers/error_list_coreone.hpp:127
+#: tmp_error_headers/error_list_coreone.hpp:134
 msgid "MINTEMP ERROR"
 msgstr "BŁĄD MINTEMP"
 
@@ -4334,7 +4339,8 @@ msgstr "Kompatybilność MK3"
 msgid "MK3 compatibility mode"
 msgstr "Tryb zgodności z MK3"
 
-#: src/gui/MItem_mmu.cpp:281
+#: src/gui/MItem_mmu.cpp:281 src/gui/screen/screen_hw_mmu.cpp:4
+#: src/gui/MItem_menus.cpp:194
 msgid "MMU"
 msgstr "MMU"
 
@@ -4346,9 +4352,9 @@ msgstr "Status MMU BL"
 msgid "MMU Current"
 msgstr "Prąd MMU"
 
-#: tmp_error_headers/error_list_coreone.hpp:701
-#: tmp_error_headers/error_list_mk35.hpp:526
 #: tmp_error_headers/error_list_mk4.hpp:547
+#: tmp_error_headers/error_list_mk35.hpp:526
+#: tmp_error_headers/error_list_coreone.hpp:701
 msgid "MMU Error"
 msgstr "Błąd MMU"
 
@@ -4380,12 +4386,12 @@ msgstr ""
 msgid "MMU NOT RESPONDING"
 msgstr "MMU NIE ODPOWIADA"
 
-#: tmp_error_headers/error_list_coreone.hpp:246
-#: tmp_error_headers/error_list_mk35.hpp:169
-#: tmp_error_headers/error_list_xl.hpp:260
-#: tmp_error_headers/error_list_mk4.hpp:176
 #: tmp_error_headers/error_list_mini.hpp:148
+#: tmp_error_headers/error_list_xl.hpp:260
 #: tmp_error_headers/error_list_ix.hpp:246
+#: tmp_error_headers/error_list_mk4.hpp:176
+#: tmp_error_headers/error_list_mk35.hpp:169
+#: tmp_error_headers/error_list_coreone.hpp:246
 msgid "MMU OVERCURRENT"
 msgstr "ZBYT DUŻY PRĄD MMU"
 
@@ -4510,8 +4516,8 @@ msgstr ""
 "Przypomnienie o konserwacji. Liczba zmian filamentu osiągnęła 30k. Przejrzyj "
 "i wyczyść ekstruder. Otwórz prusa.io/mmu-care"
 
-#: tmp_error_headers/error_list_coreone.hpp:79
 #: tmp_error_headers/error_list_mk4.hpp:44
+#: tmp_error_headers/error_list_coreone.hpp:79
 msgid ""
 "Maintenance Reminder. Filament changes have reached main-plate lifespan. "
 "Inspect the part and ensure you have a spare plate available. Visit prusa.io/"
@@ -4525,7 +4531,7 @@ msgstr ""
 msgid "Make sure the filament is inserted through the sensor."
 msgstr "Upewnij się, że filament przechodzi przez czujnik filamentu."
 
-#: src/gui/MItem_menus.hpp:47
+#: src/gui/MItem_menus.hpp:48
 msgid "Manage Filaments"
 msgstr "Zarządzaj filamentami"
 
@@ -4533,12 +4539,12 @@ msgstr "Zarządzaj filamentami"
 msgid "Manual Settings"
 msgstr "Konfiguracja ręczna"
 
-#: tmp_error_headers/error_list_coreone.hpp:450
-#: tmp_error_headers/error_list_mk35.hpp:275
-#: tmp_error_headers/error_list_xl.hpp:499
-#: tmp_error_headers/error_list_mk4.hpp:296
 #: tmp_error_headers/error_list_mini.hpp:240
+#: tmp_error_headers/error_list_xl.hpp:499
 #: tmp_error_headers/error_list_ix.hpp:471
+#: tmp_error_headers/error_list_mk4.hpp:296
+#: tmp_error_headers/error_list_mk35.hpp:275
+#: tmp_error_headers/error_list_coreone.hpp:450
 msgid ""
 "Marlin client could not send message to Marlin server and timeout was "
 "reached."
@@ -4563,12 +4569,12 @@ msgstr "Max temperatura komory"
 msgid "Maximum Chamber Temperature"
 msgstr "Maksymalna temperatura komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:723
-#: tmp_error_headers/error_list_mk35.hpp:548
-#: tmp_error_headers/error_list_xl.hpp:765
-#: tmp_error_headers/error_list_mk4.hpp:569
 #: tmp_error_headers/error_list_mini.hpp:478
+#: tmp_error_headers/error_list_xl.hpp:765
 #: tmp_error_headers/error_list_ix.hpp:709
+#: tmp_error_headers/error_list_mk4.hpp:569
+#: tmp_error_headers/error_list_mk35.hpp:548
+#: tmp_error_headers/error_list_coreone.hpp:723
 msgid ""
 "Measured temperature is not matching expected value. Check the thermistor is "
 "in contact with hotend. In case of damage, replace it."
@@ -4596,11 +4602,11 @@ msgstr "Pomiar naprężenia pasków"
 msgid "Medium"
 msgstr "Średnia"
 
-#: tmp_error_headers/error_list_coreone.hpp:443
-#: tmp_error_headers/error_list_mk35.hpp:268
 #: tmp_error_headers/error_list_xl.hpp:492
-#: tmp_error_headers/error_list_mk4.hpp:289
 #: tmp_error_headers/error_list_ix.hpp:464
+#: tmp_error_headers/error_list_mk4.hpp:289
+#: tmp_error_headers/error_list_mk35.hpp:268
+#: tmp_error_headers/error_list_coreone.hpp:443
 msgid "Memory allocation failed for scheduled LED animation"
 msgstr "Alokacja pamięci dla zaplanowanej animacji LED nie powiodła się."
 
@@ -4612,11 +4618,11 @@ msgstr "Limit czasu menu"
 msgid "Mesh Bed Leveling"
 msgstr "Poziomowanie stołu"
 
-#: src/gui/MItem_menus.hpp:92
+#: src/gui/MItem_menus.hpp:93
 msgid "Message History"
 msgstr "Historia komunikatów"
 
-#: src/gui/MItem_menus.hpp:83
+#: src/gui/MItem_menus.hpp:84
 msgid "Metrics & Log"
 msgstr "Dane diagn. i log"
 
@@ -4634,7 +4640,7 @@ msgstr "Minimalna temperatura komory"
 
 #: src/gui/menu_item/specific/menu_items_chamber_filtration.cpp:43
 msgid "Minimum Power"
-msgstr "Zasilanie minimum"
+msgstr "Minimalna moc"
 
 #: src/gui/screen_tools_mapping.cpp:680
 msgid "Mismatching filament types"
@@ -4649,7 +4655,7 @@ msgstr "Niezgodność średnic dysz"
 msgid "Mon"
 msgstr "Pon"
 
-#: src/gui/screen_fatal_warning.cpp:31 src/gui/screen_qr_error.cpp:28
+#: src/gui/screen_qr_error.cpp:28 src/gui/screen_fatal_warning.cpp:31
 #: src/gui/dialogs/DialogConnectReg.hpp:23
 msgid "More detail at"
 msgstr "Więcej szczegółów"
@@ -4659,7 +4665,7 @@ msgstr "Więcej szczegółów"
 msgid "Motor %c vibration reduced by %2d%%"
 msgstr "Wibracje silnika %c zmniejszone o %2d%%"
 
-#: src/gui/MItem_menus.hpp:77
+#: src/gui/MItem_menus.hpp:78
 msgid "Move Axis"
 msgstr "Ruch osi"
 
@@ -4742,12 +4748,12 @@ msgstr "Niezał. / 0"
 msgid "NO"
 msgstr "NIE"
 
-#: tmp_error_headers/error_list_coreone.hpp:505
-#: tmp_error_headers/error_list_mk35.hpp:330
-#: tmp_error_headers/error_list_xl.hpp:561
-#: tmp_error_headers/error_list_mk4.hpp:351
 #: tmp_error_headers/error_list_mini.hpp:295
+#: tmp_error_headers/error_list_xl.hpp:561
 #: tmp_error_headers/error_list_ix.hpp:526
+#: tmp_error_headers/error_list_mk4.hpp:351
+#: tmp_error_headers/error_list_mk35.hpp:330
+#: tmp_error_headers/error_list_coreone.hpp:505
 msgid "NO FW ON USB FLASH DRIVE"
 msgstr "BRAK PLIKU FIRMWARE W PAMIĘCI USB FLASH"
 
@@ -4759,11 +4765,11 @@ msgstr "NIE TERAZ"
 msgid "NOW"
 msgstr "TERAZ"
 
-#: tmp_error_headers/error_list_coreone.hpp:232
-#: tmp_error_headers/error_list_mk35.hpp:155
-#: tmp_error_headers/error_list_mk4.hpp:162
 #: tmp_error_headers/error_list_mini.hpp:134
 #: tmp_error_headers/error_list_ix.hpp:232
+#: tmp_error_headers/error_list_mk4.hpp:162
+#: tmp_error_headers/error_list_mk35.hpp:155
+#: tmp_error_headers/error_list_coreone.hpp:232
 msgid "NOZZLE HEATER OVERCURRENT"
 msgstr "ZBYT DUŻY PRĄD NA GRZAŁCE DYSZY"
 
@@ -4792,11 +4798,11 @@ msgstr "Nazwa nie może być pusta"
 msgid "Net fail"
 msgstr "Błąd sieci"
 
-#: src/gui/MItem_tools.cpp:983 src/gui/MItem_menus.hpp:119
+#: src/gui/MItem_menus.hpp:120 src/gui/MItem_tools.cpp:983
 msgid "Network"
 msgstr "Sieć"
 
-#: src/gui/MItem_menus.hpp:122
+#: src/gui/MItem_menus.hpp:123
 msgid "Network Status"
 msgstr "Stan sieci"
 
@@ -4804,11 +4810,11 @@ msgstr "Stan sieci"
 msgid "New FW available"
 msgstr "Dostępna jest aktualizacja FW"
 
-#: tmp_error_headers/error_list_coreone.hpp:618
-#: tmp_error_headers/error_list_mk35.hpp:443
 #: tmp_error_headers/error_list_xl.hpp:667
-#: tmp_error_headers/error_list_mk4.hpp:464
 #: tmp_error_headers/error_list_ix.hpp:625
+#: tmp_error_headers/error_list_mk4.hpp:464
+#: tmp_error_headers/error_list_mk35.hpp:443
+#: tmp_error_headers/error_list_coreone.hpp:618
 msgid "New firmware available"
 msgstr "Dostępna jest nowa wersja firmware"
 
@@ -4854,12 +4860,12 @@ msgstr "Brak USB"
 msgid "No crash dump to save."
 msgstr "Brak zrzutu pamięci do zapisania."
 
-#: tmp_error_headers/error_list_coreone.hpp:562
-#: tmp_error_headers/error_list_mk35.hpp:387
-#: tmp_error_headers/error_list_xl.hpp:618
-#: tmp_error_headers/error_list_mk4.hpp:408
 #: tmp_error_headers/error_list_mini.hpp:352
+#: tmp_error_headers/error_list_xl.hpp:618
 #: tmp_error_headers/error_list_ix.hpp:583
+#: tmp_error_headers/error_list_mk4.hpp:408
+#: tmp_error_headers/error_list_mk35.hpp:387
+#: tmp_error_headers/error_list_coreone.hpp:562
 msgid ""
 "No firmware found\n"
 "in the internal\n"
@@ -4928,8 +4934,8 @@ msgid ""
 "print sheet."
 msgstr "Teraz ustawimy odległość końcówki dyszy od powierzchni płyty."
 
-#: src/common/footer_def.cpp:10 src/gui/MItem_tools.cpp:861
-#: src/gui/MItem_print.hpp:14 src/gui/MItem_print.hpp:49
+#: src/common/footer_def.cpp:10 src/gui/MItem_print.hpp:14
+#: src/gui/MItem_print.hpp:49 src/gui/MItem_tools.cpp:861
 #: src/gui/wizard/selftest_result_heaters.cpp:13 include/common/hw_check.hpp:34
 msgid "Nozzle"
 msgstr "Dysza"
@@ -4988,10 +4994,10 @@ msgstr "Temp. dyszy"
 msgid "Nozzle Temperature"
 msgstr "Temperatura dyszy"
 
-#: tmp_error_headers/error_list_coreone.hpp:807
 #: tmp_error_headers/error_list_xl.hpp:877
-#: tmp_error_headers/error_list_mk4.hpp:639
 #: tmp_error_headers/error_list_ix.hpp:786
+#: tmp_error_headers/error_list_mk4.hpp:639
+#: tmp_error_headers/error_list_coreone.hpp:807
 msgid "Nozzle cleaning failed."
 msgstr "Czyszczenie dyszy nieudane."
 
@@ -5003,8 +5009,8 @@ msgstr "Średnica dyszy"
 msgid "Nozzle diameter doesn't match"
 msgstr "Rozbieżność średnicy dyszy"
 
-#: tmp_error_headers/error_list_mk35.hpp:583
 #: tmp_error_headers/error_list_xl.hpp:800
+#: tmp_error_headers/error_list_mk35.hpp:583
 msgid ""
 "Nozzle doesn't seem to have round cross section. Make sure it is clean and "
 "perpendicular to the bed."
@@ -5044,8 +5050,8 @@ msgstr "Dysza to nie high-flow"
 msgid "ODOMETER"
 msgstr "LICZNIK PRZEBIEGU"
 
-#: src/gui/footer/footer_item_multitool.cpp:28
 #: src/gui/footer/footer_item_fsensor.cpp:49
+#: src/gui/footer/footer_item_multitool.cpp:28
 msgid "OFF "
 msgstr "WYŁ "
 
@@ -5059,8 +5065,8 @@ msgstr "OK"
 #. @@TODO there is a strange comment in FooterItemFSensor::static_makeView about the last character not being rendered
 #. Not sure why but using the same workaround.
 #. Another funny thing is that the LED in FINDA shows the exact opposite - this needs to be discussed with Content ;)
-#: src/gui/footer/footer_item_multitool.cpp:28
 #: src/gui/footer/footer_item_fsensor.cpp:46
+#: src/gui/footer/footer_item_multitool.cpp:28
 msgid "ON "
 msgstr "WŁ "
 
@@ -5136,12 +5142,12 @@ msgstr ""
 "Otwórz drzwi i dokręć śrubę napinającą o około ćwierć obrotu. Następnie "
 "zamknij drzwi i potwierdź."
 
-#: tmp_error_headers/error_list_coreone.hpp:219
-#: tmp_error_headers/error_list_mk35.hpp:142
-#: tmp_error_headers/error_list_xl.hpp:247
-#: tmp_error_headers/error_list_mk4.hpp:149
 #: tmp_error_headers/error_list_mini.hpp:121
+#: tmp_error_headers/error_list_xl.hpp:247
 #: tmp_error_headers/error_list_ix.hpp:219
+#: tmp_error_headers/error_list_mk4.hpp:149
+#: tmp_error_headers/error_list_mk35.hpp:142
+#: tmp_error_headers/error_list_coreone.hpp:219
 msgid "Overcurrent detected on USB port."
 msgstr "ZBYT DUŻY PRĄD NA PORCIE USB"
 
@@ -5149,36 +5155,36 @@ msgstr "ZBYT DUŻY PRĄD NA PORCIE USB"
 msgid "Overcurrent detected on heatbed port, disconnect the device."
 msgstr "Wykryto zbyt duży prąd na porcie stołu grzewczego, odłącz urządzenie."
 
-#: tmp_error_headers/error_list_coreone.hpp:233
-#: tmp_error_headers/error_list_mk35.hpp:156
-#: tmp_error_headers/error_list_mk4.hpp:163
 #: tmp_error_headers/error_list_mini.hpp:135
 #: tmp_error_headers/error_list_ix.hpp:233
+#: tmp_error_headers/error_list_mk4.hpp:163
+#: tmp_error_headers/error_list_mk35.hpp:156
+#: tmp_error_headers/error_list_coreone.hpp:233
 msgid "Overcurrent detected on nozzle heater."
 msgstr "Wykryto zbyt duży prąd na grzałce dyszy."
 
-#: tmp_error_headers/error_list_coreone.hpp:247
-#: tmp_error_headers/error_list_mk35.hpp:170
-#: tmp_error_headers/error_list_xl.hpp:261
-#: tmp_error_headers/error_list_mk4.hpp:177
 #: tmp_error_headers/error_list_mini.hpp:149
+#: tmp_error_headers/error_list_xl.hpp:261
 #: tmp_error_headers/error_list_ix.hpp:247
+#: tmp_error_headers/error_list_mk4.hpp:177
+#: tmp_error_headers/error_list_mk35.hpp:170
+#: tmp_error_headers/error_list_coreone.hpp:247
 msgid "Overcurrent detected on the MMU port, disconnect the device."
 msgstr "Wykryto zbyt duży prąd na porcie MMU. Odłącz urządzenie."
 
-#: tmp_error_headers/error_list_coreone.hpp:226
-#: tmp_error_headers/error_list_mk35.hpp:149
-#: tmp_error_headers/error_list_xl.hpp:254
-#: tmp_error_headers/error_list_mk4.hpp:156
 #: tmp_error_headers/error_list_mini.hpp:128
+#: tmp_error_headers/error_list_xl.hpp:254
 #: tmp_error_headers/error_list_ix.hpp:226
+#: tmp_error_headers/error_list_mk4.hpp:156
+#: tmp_error_headers/error_list_mk35.hpp:149
+#: tmp_error_headers/error_list_coreone.hpp:226
 msgid "Overcurrent detected on the connected USB device, disconnect it."
 msgstr "Wykryto zbyt duży prąd na podłączonym urządzeniu USB. Odłącz je."
 
-#: tmp_error_headers/error_list_coreone.hpp:240
-#: tmp_error_headers/error_list_mk35.hpp:163
-#: tmp_error_headers/error_list_mk4.hpp:170
 #: tmp_error_headers/error_list_ix.hpp:240
+#: tmp_error_headers/error_list_mk4.hpp:170
+#: tmp_error_headers/error_list_mk35.hpp:163
+#: tmp_error_headers/error_list_coreone.hpp:240
 msgid "Overcurrent detected on xBuddy heatbed port, disconnect the device."
 msgstr ""
 "Wykryto zbyt duży prąd na porcie grzanego stołu na xBuddy. Odłącz urządzenie."
@@ -5216,35 +5222,35 @@ msgstr "KALIBRACJA PHASE STEPPING"
 msgid "PIN NOT REACHED"
 msgstr "TRZPIEŃ NIE ZNALEZIONY"
 
-#: tmp_error_headers/error_list_coreone.hpp:309
-#: tmp_error_headers/error_list_mk35.hpp:232
 #: tmp_error_headers/error_list_xl.hpp:337
-#: tmp_error_headers/error_list_mk4.hpp:239
 #: tmp_error_headers/error_list_ix.hpp:323
+#: tmp_error_headers/error_list_mk4.hpp:239
+#: tmp_error_headers/error_list_mk35.hpp:232
+#: tmp_error_headers/error_list_coreone.hpp:309
 msgid "POWER PANIC"
 msgstr "POWER PANIC"
 
-#: tmp_error_headers/error_list_coreone.hpp:15
 #: tmp_error_headers/error_list_xl.hpp:15
 #: tmp_error_headers/error_list_ix.hpp:15
+#: tmp_error_headers/error_list_coreone.hpp:15
 msgid "PRECISE HOMING REFINEMENT FAILED"
 msgstr "PRECYZYJNE BAZOWANIE NIE POWIODŁO SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:85
-#: tmp_error_headers/error_list_coreone.hpp:92
-#: tmp_error_headers/error_list_mk35.hpp:43
-#: tmp_error_headers/error_list_mk35.hpp:50
-#: tmp_error_headers/error_list_mk4.hpp:50
-#: tmp_error_headers/error_list_mk4.hpp:57
 #: tmp_error_headers/error_list_mini.hpp:22
 #: tmp_error_headers/error_list_mini.hpp:29
 #: tmp_error_headers/error_list_ix.hpp:43
 #: tmp_error_headers/error_list_ix.hpp:50
+#: tmp_error_headers/error_list_mk4.hpp:50
+#: tmp_error_headers/error_list_mk4.hpp:57
+#: tmp_error_headers/error_list_mk35.hpp:43
+#: tmp_error_headers/error_list_mk35.hpp:50
+#: tmp_error_headers/error_list_coreone.hpp:85
+#: tmp_error_headers/error_list_coreone.hpp:92
 msgid "PREHEAT ERROR"
 msgstr "BŁĄD GRZANIA"
 
-#: src/gui/resolution_480x320/screen_print_preview_base.cpp:24
 #: src/gui/screen_print_preview.cpp:149
+#: src/gui/resolution_480x320/screen_print_preview_base.cpp:24
 msgid "PRINT"
 msgstr "DRUK"
 
@@ -5281,18 +5287,6 @@ msgstr "PRUSALINK"
 msgid "PULLEY CANNOT MOVE"
 msgstr "RADEŁKO NIE RUSZA SIĘ"
 
-#: tmp_error_headers/error_list_coreone.hpp:344
-#: tmp_error_headers/error_list_coreone.hpp:351
-#: tmp_error_headers/error_list_coreone.hpp:358
-#: tmp_error_headers/error_list_coreone.hpp:365
-#: tmp_error_headers/error_list_coreone.hpp:372
-#: tmp_error_headers/error_list_coreone.hpp:379
-#: tmp_error_headers/error_list_coreone.hpp:386
-#: tmp_error_headers/error_list_coreone.hpp:393
-#: tmp_error_headers/error_list_coreone.hpp:400
-#: tmp_error_headers/error_list_coreone.hpp:407
-#: tmp_error_headers/error_list_coreone.hpp:414
-#: tmp_error_headers/error_list_coreone.hpp:421
 #: tmp_error_headers/error_list_xl.hpp:393
 #: tmp_error_headers/error_list_xl.hpp:400
 #: tmp_error_headers/error_list_xl.hpp:407
@@ -5317,6 +5311,18 @@ msgstr "RADEŁKO NIE RUSZA SIĘ"
 #: tmp_error_headers/error_list_ix.hpp:428
 #: tmp_error_headers/error_list_ix.hpp:435
 #: tmp_error_headers/error_list_ix.hpp:442
+#: tmp_error_headers/error_list_coreone.hpp:344
+#: tmp_error_headers/error_list_coreone.hpp:351
+#: tmp_error_headers/error_list_coreone.hpp:358
+#: tmp_error_headers/error_list_coreone.hpp:365
+#: tmp_error_headers/error_list_coreone.hpp:372
+#: tmp_error_headers/error_list_coreone.hpp:379
+#: tmp_error_headers/error_list_coreone.hpp:386
+#: tmp_error_headers/error_list_coreone.hpp:393
+#: tmp_error_headers/error_list_coreone.hpp:400
+#: tmp_error_headers/error_list_coreone.hpp:407
+#: tmp_error_headers/error_list_coreone.hpp:414
+#: tmp_error_headers/error_list_coreone.hpp:421
 msgid "PUPPY ERROR"
 msgstr "PUPPY ERROR"
 
@@ -5333,8 +5339,8 @@ msgstr "Zaparkuj narzędzie"
 msgid "Park Tool"
 msgstr "Parkuj narzędzie"
 
-#: src/gui/screen_input_shaper_calibration.cpp:101
 #: src/gui/dialogs/DialogLoadUnload.cpp:41
+#: src/gui/screen_input_shaper_calibration.cpp:101
 msgid "Parking"
 msgstr "Parkowanie"
 
@@ -5398,7 +5404,7 @@ msgstr ""
 msgid "Performing cut"
 msgstr "Odcinanie"
 
-#: src/gui/MItem_menus.hpp:166
+#: src/gui/MItem_menus.hpp:167
 msgid "Phase Stepping"
 msgstr "Phase Stepping"
 
@@ -5475,12 +5481,12 @@ msgstr "Ping | Strata"
 msgid "Please assign a tool to the filament"
 msgstr "Przypisz narzędzie do filamentu."
 
-#: tmp_error_headers/error_list_coreone.hpp:611
-#: tmp_error_headers/error_list_mk35.hpp:436
-#: tmp_error_headers/error_list_xl.hpp:660
-#: tmp_error_headers/error_list_mk4.hpp:457
 #: tmp_error_headers/error_list_mini.hpp:387
+#: tmp_error_headers/error_list_xl.hpp:660
 #: tmp_error_headers/error_list_ix.hpp:618
+#: tmp_error_headers/error_list_mk4.hpp:457
+#: tmp_error_headers/error_list_mk35.hpp:436
+#: tmp_error_headers/error_list_coreone.hpp:611
 msgid "Please complete Calibrations & Tests before using the printer."
 msgstr "Przed użyciem drukarki należy przeprowadzić kalibracje i testy."
 
@@ -5527,12 +5533,12 @@ msgstr "Wyciągnij filament z czujnika filamentu."
 msgid "Please remove the belt dampeners."
 msgstr "Zdemontuj tłumiki paska."
 
-#: tmp_error_headers/error_list_coreone.hpp:779
-#: tmp_error_headers/error_list_mk35.hpp:611
-#: tmp_error_headers/error_list_xl.hpp:842
-#: tmp_error_headers/error_list_mk4.hpp:625
 #: tmp_error_headers/error_list_mini.hpp:534
+#: tmp_error_headers/error_list_xl.hpp:842
 #: tmp_error_headers/error_list_ix.hpp:772
+#: tmp_error_headers/error_list_mk4.hpp:625
+#: tmp_error_headers/error_list_mk35.hpp:611
+#: tmp_error_headers/error_list_coreone.hpp:779
 msgid "Please replace filament."
 msgstr "Proszę wymienić filament."
 
@@ -5571,7 +5577,7 @@ msgstr "Filtracja po wydruku"
 
 #: src/gui/menu_item/specific/menu_items_chamber_filtration.cpp:68
 msgid "Post-print Power"
-msgstr "Zasilanie po wydruku"
+msgstr "Moc po wydruku"
 
 #: src/gui/MItem_mmu.hpp:187
 msgid "Power Cycle"
@@ -5591,11 +5597,11 @@ msgstr "Zanik zasilania"
 msgid "Power panic"
 msgstr "Power Panic"
 
-#: tmp_error_headers/error_list_coreone.hpp:310
-#: tmp_error_headers/error_list_mk35.hpp:233
 #: tmp_error_headers/error_list_xl.hpp:338
-#: tmp_error_headers/error_list_mk4.hpp:240
 #: tmp_error_headers/error_list_ix.hpp:324
+#: tmp_error_headers/error_list_mk4.hpp:240
+#: tmp_error_headers/error_list_mk35.hpp:233
+#: tmp_error_headers/error_list_coreone.hpp:310
 msgid "Power panic detected on startup. Check power panic cable."
 msgstr "Wykryto power panic podczas uruchamiania. Sprawdź przewód Power Panic."
 
@@ -5641,8 +5647,8 @@ msgstr "Załaduj do MMU"
 msgid "Preload to MMU Advanced"
 msgstr "Załaduj do MMU - zaawansowane"
 
-#: src/gui/wizard/screen_belt_tuning_wizard.cpp:22
 #: src/gui/wizard/selftest_frame_temp.cpp:61
+#: src/gui/wizard/screen_belt_tuning_wizard.cpp:22
 msgid "Preparing"
 msgstr "Przygotowywanie"
 
@@ -5687,7 +5693,7 @@ msgstr "Wieża stabilizująca %dg"
 msgid "Print"
 msgstr "Druk"
 
-#: src/gui/MItem_tools.cpp:715 src/gui/MItem_print.hpp:96
+#: src/gui/MItem_print.hpp:96 src/gui/MItem_tools.cpp:715
 msgid "Print Fan"
 msgstr "Wentylator wydruku"
 
@@ -5707,12 +5713,12 @@ msgstr "Ekran postępu druku"
 msgid "Print Speed"
 msgstr "Prędkość drukowania"
 
-#: src/gui/MItem_menus.hpp:134
+#: src/gui/MItem_menus.hpp:135
 msgid "Print Statistics"
 msgstr "Statystyki druku"
 
 #. First line - Print Time
-#: src/gui/gcode_description.cpp:142 src/gui/MItem_tools.hpp:469
+#: src/gui/MItem_tools.hpp:469 src/gui/gcode_description.cpp:142
 msgid "Print Time"
 msgstr "Czas druku"
 
@@ -5725,12 +5731,12 @@ msgstr "Druk zakończony"
 msgid "Print fan"
 msgstr "Wentylator wydruku"
 
-#: tmp_error_headers/error_list_coreone.hpp:709
-#: tmp_error_headers/error_list_mk35.hpp:534
-#: tmp_error_headers/error_list_xl.hpp:751
-#: tmp_error_headers/error_list_mk4.hpp:555
 #: tmp_error_headers/error_list_mini.hpp:464
+#: tmp_error_headers/error_list_xl.hpp:751
 #: tmp_error_headers/error_list_ix.hpp:695
+#: tmp_error_headers/error_list_mk4.hpp:555
+#: tmp_error_headers/error_list_mk35.hpp:534
+#: tmp_error_headers/error_list_coreone.hpp:709
 msgid ""
 "Print fan not spinning. Check it for possible debris, then inspect the "
 "wiring."
@@ -5762,11 +5768,11 @@ msgstr "RPM went. wydruku"
 msgid "Printer Model"
 msgstr "Model drukarki"
 
-#: src/gui/MItem_menus.hpp:149
+#: src/gui/MItem_menus.hpp:150
 msgid "Printer Setup"
 msgstr "Konfiguracja drukarki"
 
-#: src/gui/MItem_hardware.hpp:60 src/gui/MItem_hardware.cpp:64
+#: src/gui/MItem_hardware.cpp:64 src/gui/MItem_hardware.hpp:60
 msgid "Printer Type"
 msgstr "Rodzaj drukarki"
 
@@ -5774,8 +5780,8 @@ msgstr "Rodzaj drukarki"
 msgid "Printer doesn't have enough tools"
 msgstr "Drukarka nie ma wystarczającej liczby narzędzi"
 
-#: tmp_error_headers/error_list_coreone.hpp:72
 #: tmp_error_headers/error_list_mk4.hpp:37
+#: tmp_error_headers/error_list_coreone.hpp:72
 msgid ""
 "Printer has detected multiple consecutive filament loading errors. We "
 "recommend checking Nextruder main-plate. Visit prusa.io/mmu-care"
@@ -5817,7 +5823,7 @@ msgstr ""
 "Typ drukarki został zmieniony z %s na %s.\n"
 "Należy przywrócić ustawienia fabryczne."
 
-#: src/gui/MItem_menus.cpp:164
+#: src/gui/MItem_menus.cpp:168
 msgid "Printhead"
 msgstr "Głowica drukująca"
 
@@ -5851,7 +5857,7 @@ msgstr "Błąd protokołu"
 msgid "Prusa"
 msgstr "Prusa"
 
-#: src/gui/MItem_menus.hpp:95
+#: src/gui/MItem_menus.hpp:96
 msgid "Prusa Connect"
 msgstr "Prusa Connect"
 
@@ -5867,7 +5873,7 @@ msgstr ""
 "Konfiguracja Prusa Connect nie została zakończona. Czy chcesz wyjść i "
 "przerwać proces?"
 
-#: src/gui/MItem_menus.hpp:98
+#: src/gui/MItem_menus.hpp:99
 msgid "PrusaLink"
 msgstr "PrusaLink"
 
@@ -5877,43 +5883,43 @@ msgstr ""
 "Silnik kół radełkowanych utknął. Upewnij się, że radełko może się poruszać i "
 "sprawdź okablowanie."
 
-#: tmp_error_headers/error_list_coreone.hpp:408
 #: tmp_error_headers/error_list_xl.hpp:457
 #: tmp_error_headers/error_list_ix.hpp:429
+#: tmp_error_headers/error_list_coreone.hpp:408
 #, c-format
 msgid "Puppy %s firmware fingerprint mismatch"
 msgstr "Puppy %s firmware fingerprint mismatch"
 
-#: tmp_error_headers/error_list_coreone.hpp:394
 #: tmp_error_headers/error_list_xl.hpp:443
 #: tmp_error_headers/error_list_ix.hpp:415
+#: tmp_error_headers/error_list_coreone.hpp:394
 #, c-format
 msgid "Puppy %s firmware not found"
 msgstr "Puppy %s firmware not found"
 
-#: tmp_error_headers/error_list_coreone.hpp:401
 #: tmp_error_headers/error_list_xl.hpp:450
 #: tmp_error_headers/error_list_ix.hpp:422
+#: tmp_error_headers/error_list_coreone.hpp:401
 #, c-format
 msgid "Puppy %s flash writing failed"
 msgstr "Puppy %s flash writing failed"
 
-#: tmp_error_headers/error_list_coreone.hpp:366
 #: tmp_error_headers/error_list_xl.hpp:415
 #: tmp_error_headers/error_list_ix.hpp:387
+#: tmp_error_headers/error_list_coreone.hpp:366
 #, c-format
 msgid "Puppy %s not responding"
 msgstr "Szczeniak %s nie odpowiada"
 
-#: tmp_error_headers/error_list_coreone.hpp:359
 #: tmp_error_headers/error_list_xl.hpp:408
 #: tmp_error_headers/error_list_ix.hpp:380
+#: tmp_error_headers/error_list_coreone.hpp:359
 msgid "Puppy discovery error. No puppy found"
 msgstr "Puppy discovery error. No puppy found"
 
-#: tmp_error_headers/error_list_coreone.hpp:373
 #: tmp_error_headers/error_list_xl.hpp:422
 #: tmp_error_headers/error_list_ix.hpp:394
+#: tmp_error_headers/error_list_coreone.hpp:373
 #, c-format
 msgid ""
 "Puppy uses incompatible bootloader protocol %04x, Buddy FW requires %04x"
@@ -5954,12 +5960,12 @@ msgstr "WYJŚCIE"
 msgid "Question"
 msgstr "Pytanie"
 
-#: tmp_error_headers/error_list_coreone.hpp:813
-#: tmp_error_headers/error_list_mk35.hpp:624
-#: tmp_error_headers/error_list_xl.hpp:883
-#: tmp_error_headers/error_list_mk4.hpp:645
 #: tmp_error_headers/error_list_mini.hpp:547
+#: tmp_error_headers/error_list_xl.hpp:883
 #: tmp_error_headers/error_list_ix.hpp:792
+#: tmp_error_headers/error_list_mk4.hpp:645
+#: tmp_error_headers/error_list_mk35.hpp:624
+#: tmp_error_headers/error_list_coreone.hpp:813
 msgid "Quick Pause"
 msgstr "Szybka pauza"
 
@@ -6060,12 +6066,12 @@ msgstr "Rejestrowanie drukarki w Prusa Connect..."
 msgid "Registration successful, continue at connect.prusa3d.com"
 msgstr "Rejestracja zakończona powodzeniem, kontynuuj na connect.prusa3d.com"
 
-#: tmp_error_headers/error_list_coreone.hpp:324
-#: tmp_error_headers/error_list_mk35.hpp:247
-#: tmp_error_headers/error_list_xl.hpp:359
-#: tmp_error_headers/error_list_mk4.hpp:254
 #: tmp_error_headers/error_list_mini.hpp:219
+#: tmp_error_headers/error_list_xl.hpp:359
 #: tmp_error_headers/error_list_ix.hpp:338
+#: tmp_error_headers/error_list_mk4.hpp:254
+#: tmp_error_headers/error_list_mk35.hpp:247
+#: tmp_error_headers/error_list_coreone.hpp:324
 msgid "Registration to Prusa Connect failed due to:"
 msgstr "Rejestracja w Prusa Connect nie powiodła się:"
 
@@ -6104,16 +6110,16 @@ msgstr "Wyciągnij filament ręcznie"
 msgid "Rename"
 msgstr "Zmień nazwę"
 
-#: src/gui/MItem_menus.hpp:53
+#: src/gui/MItem_menus.hpp:54
 msgid "Reorder Filaments"
 msgstr "Zmień kolejność filamentów"
 
-#: tmp_error_headers/error_list_coreone.hpp:681
-#: tmp_error_headers/error_list_mk35.hpp:506
-#: tmp_error_headers/error_list_xl.hpp:723
-#: tmp_error_headers/error_list_mk4.hpp:527
 #: tmp_error_headers/error_list_mini.hpp:450
+#: tmp_error_headers/error_list_xl.hpp:723
 #: tmp_error_headers/error_list_ix.hpp:681
+#: tmp_error_headers/error_list_mk4.hpp:527
+#: tmp_error_headers/error_list_mk35.hpp:506
+#: tmp_error_headers/error_list_coreone.hpp:681
 msgid ""
 "Repeated collision has been detected.\n"
 "Do you want to resume or pause the print?"
@@ -6121,12 +6127,12 @@ msgstr ""
 "Wykryto powtarzającą się kolizję.\n"
 "Chcesz wznowić lub wstrzymać drukowanie?"
 
-#: tmp_error_headers/error_list_coreone.hpp:778
-#: tmp_error_headers/error_list_mk35.hpp:610
-#: tmp_error_headers/error_list_xl.hpp:841
-#: tmp_error_headers/error_list_mk4.hpp:624
 #: tmp_error_headers/error_list_mini.hpp:533
+#: tmp_error_headers/error_list_xl.hpp:841
 #: tmp_error_headers/error_list_ix.hpp:771
+#: tmp_error_headers/error_list_mk4.hpp:624
+#: tmp_error_headers/error_list_mk35.hpp:610
+#: tmp_error_headers/error_list_coreone.hpp:778
 msgid "Replace filament"
 msgstr "Wymień filament"
 
@@ -6146,8 +6152,8 @@ msgstr ""
 msgid "Requires Filtration"
 msgstr "Wymaga filtracji"
 
-#: src/gui/screen_menu_bed_level_correction.hpp:92 src/gui/MItem_tools.hpp:540
-#: src/gui/screen_menu_steel_sheets.hpp:61
+#: src/gui/MItem_tools.hpp:540 src/gui/screen_menu_steel_sheets.hpp:61
+#: src/gui/screen_menu_bed_level_correction.hpp:92
 msgid "Reset"
 msgstr "Reset"
 
@@ -6183,9 +6189,9 @@ msgstr "Restartowanie MMU"
 msgid "Restore Calibration from USB"
 msgstr "Przywróć kalibrację z USB"
 
-#: src/gui/screen_menu_filament_sensors.hpp:15
-#: src/gui/screen/filament/screen_filaments_reorder.cpp:162
 #: src/gui/screen_menu_phase_stepping.hpp:17 src/gui/MItem_input_shaper.hpp:53
+#: src/gui/screen/filament/screen_filaments_reorder.cpp:162
+#: src/gui/screen_menu_filament_sensors.hpp:15
 msgid "Restore Defaults"
 msgstr "Przywróć domyślne"
 
@@ -6289,8 +6295,8 @@ msgstr "SPOOL JOIN"
 msgid "SSID"
 msgstr "SSID"
 
-#: tmp_error_headers/error_list_coreone.hpp:22
 #: tmp_error_headers/error_list_ix.hpp:22
+#: tmp_error_headers/error_list_coreone.hpp:22
 msgid "STEEL SHEEL NOT DETECTED"
 msgstr "NIE WYKRYTO PŁYTY STOŁU"
 
@@ -6302,9 +6308,9 @@ msgstr "STOP"
 msgid "STOPPED"
 msgstr "ZATRZYMANO"
 
+#: tmp_error_headers/error_list_xl.hpp:57 tmp_error_headers/error_list_ix.hpp:8
+#: tmp_error_headers/error_list_mk4.hpp:8
 #: tmp_error_headers/error_list_coreone.hpp:8
-#: tmp_error_headers/error_list_xl.hpp:57
-#: tmp_error_headers/error_list_mk4.hpp:8 tmp_error_headers/error_list_ix.hpp:8
 msgid "STUCK FILAMENT DETECTED"
 msgstr "WYKRYTO ZABLOKOWANY FILAMENT"
 
@@ -6397,7 +6403,7 @@ msgstr ""
 "Wybierak nie może się poruszać z powodu wykrycia filamentu przez FINDĘ. "
 "Upewnij się, że w wybieraku nie ma filamentu, a FINDA działa prawidłowo."
 
-#: src/gui/MItem_menus.hpp:62
+#: src/gui/MItem_menus.hpp:63
 msgid "Sensor Info"
 msgstr "Info o czujnikach"
 
@@ -6405,11 +6411,11 @@ msgstr "Info o czujnikach"
 msgid "Serial Number"
 msgstr "Numer seryjny"
 
-#: src/gui/MItem_menus.hpp:195
+#: src/gui/MItem_menus.hpp:199
 msgid "Serial Printing Screen"
 msgstr "Ekran druku szeregowego"
 
-#: src/gui/ScreenPrintingModel.cpp:27 src/gui/MItem_tools.hpp:570
+#: src/gui/MItem_tools.hpp:570 src/gui/ScreenPrintingModel.cpp:27
 msgid "Set Ready"
 msgstr "Ustaw gotowość"
 
@@ -6568,12 +6574,12 @@ msgstr "Tryb dźwięku"
 msgid "Sound Volume"
 msgstr "Głośność dźwięku"
 
-#: tmp_error_headers/error_list_coreone.hpp:457
-#: tmp_error_headers/error_list_mk35.hpp:282
-#: tmp_error_headers/error_list_xl.hpp:506
-#: tmp_error_headers/error_list_mk4.hpp:303
 #: tmp_error_headers/error_list_mini.hpp:247
+#: tmp_error_headers/error_list_xl.hpp:506
 #: tmp_error_headers/error_list_ix.hpp:478
+#: tmp_error_headers/error_list_mk4.hpp:303
+#: tmp_error_headers/error_list_mk35.hpp:282
+#: tmp_error_headers/error_list_coreone.hpp:457
 msgid ""
 "Space allocation for firmware BBF file failed. Repeat the action or try "
 "another USB drive."
@@ -6601,11 +6607,11 @@ msgstr "Statyczne"
 msgid "Static-left"
 msgstr "Statyczne-lewo"
 
-#: src/gui/MItem_menus.hpp:65
+#: src/gui/MItem_menus.hpp:66
 msgid "Statistics"
 msgstr "Statystyki"
 
-#: src/gui/MItem_network.hpp:41 src/gui/screen_menu_connect.hpp:24
+#: src/gui/screen_menu_connect.hpp:24 src/gui/MItem_network.hpp:41
 msgid "Status"
 msgstr "Status"
 
@@ -6613,12 +6619,12 @@ msgstr "Status"
 msgid "Stealth Mode"
 msgstr "Tryb Stealth"
 
-#: src/gui/MItem_menus.hpp:173 src/gui/screen_menu_steel_sheets.hpp:115
+#: src/gui/screen_menu_steel_sheets.hpp:115 src/gui/MItem_menus.hpp:177
 msgid "Steel Sheets"
 msgstr "Arkusze druku"
 
-#: tmp_error_headers/error_list_coreone.hpp:23
 #: tmp_error_headers/error_list_ix.hpp:23
+#: tmp_error_headers/error_list_coreone.hpp:23
 msgid ""
 "Steel sheet was not detected. Please put the sheet on to prevent printer "
 "damage."
@@ -6626,12 +6632,12 @@ msgstr ""
 "Nie wykryto płyty stołu. Połóż płytę na stole grzewczym, aby zapobiec "
 "uszkodzeniu drukarki."
 
-#: tmp_error_headers/error_list_coreone.hpp:737
-#: tmp_error_headers/error_list_mk35.hpp:562
-#: tmp_error_headers/error_list_xl.hpp:779
-#: tmp_error_headers/error_list_mk4.hpp:583
 #: tmp_error_headers/error_list_mini.hpp:492
+#: tmp_error_headers/error_list_xl.hpp:779
 #: tmp_error_headers/error_list_ix.hpp:723
+#: tmp_error_headers/error_list_mk4.hpp:583
+#: tmp_error_headers/error_list_mk35.hpp:562
+#: tmp_error_headers/error_list_coreone.hpp:737
 msgid "Steppers disabled due to inactivity."
 msgstr "Silniki krokowe wyłączone z powodu bezczynności."
 
@@ -6684,11 +6690,11 @@ msgstr "Zamienione wentylatory"
 msgid "Syslog Port"
 msgstr "Port Syslog"
 
-#: src/gui/MItem_menus.hpp:131
+#: src/gui/MItem_menus.hpp:132
 msgid "System"
 msgstr "System"
 
-#: src/gui/MItem_menus.hpp:68
+#: src/gui/MItem_menus.hpp:69
 msgid "System Info"
 msgstr "Info systemowe"
 
@@ -6724,17 +6730,17 @@ msgstr "TEMPERATURA"
 msgid "TEST ERROR"
 msgstr "BŁĄD TESTOWY"
 
-#: tmp_error_headers/error_list_coreone.hpp:99
-#: tmp_error_headers/error_list_coreone.hpp:106
-#: tmp_error_headers/error_list_mk35.hpp:57
-#: tmp_error_headers/error_list_mk35.hpp:64
-#: tmp_error_headers/error_list_xl.hpp:85
-#: tmp_error_headers/error_list_mk4.hpp:64
-#: tmp_error_headers/error_list_mk4.hpp:71
 #: tmp_error_headers/error_list_mini.hpp:36
 #: tmp_error_headers/error_list_mini.hpp:43
+#: tmp_error_headers/error_list_xl.hpp:85
 #: tmp_error_headers/error_list_ix.hpp:57
 #: tmp_error_headers/error_list_ix.hpp:64
+#: tmp_error_headers/error_list_mk4.hpp:64
+#: tmp_error_headers/error_list_mk4.hpp:71
+#: tmp_error_headers/error_list_mk35.hpp:57
+#: tmp_error_headers/error_list_mk35.hpp:64
+#: tmp_error_headers/error_list_coreone.hpp:99
+#: tmp_error_headers/error_list_coreone.hpp:106
 msgid "THERMAL RUNAWAY"
 msgstr "THERMAL RUNAWAY"
 
@@ -6912,8 +6918,8 @@ msgstr "Dotknij dyszy przy dźwięku"
 msgid "Target"
 msgstr "Cel"
 
-#: tmp_error_headers/error_list_coreone.hpp:177
 #: tmp_error_headers/error_list_xl.hpp:191
+#: tmp_error_headers/error_list_coreone.hpp:177
 msgid "Target temperature not yet reached. Continue waiting?"
 msgstr "Nie udało się osiągnąć docelowej temperatury. Czekać dalej?"
 
@@ -6925,7 +6931,7 @@ msgstr "Temperatura - pokazuj zero"
 msgid "Temp. style"
 msgstr "Styl temperatury"
 
-#: src/gui/MItem_menus.hpp:74
+#: src/gui/MItem_menus.hpp:75
 msgid "Temperature"
 msgstr "Temperatura"
 
@@ -6933,7 +6939,7 @@ msgstr "Temperatura"
 msgid "Test All"
 msgstr "Test wszystkich"
 
-#: src/gui/MItem_menus.hpp:154
+#: src/gui/MItem_menus.hpp:155
 msgid "Test Errors"
 msgstr "Błędy testowe"
 
@@ -6971,12 +6977,12 @@ msgstr "Testowanie obrotów wentylatora przy 40% mocy. Proszę czekać."
 msgid "Testing filament"
 msgstr "Test filamentu"
 
-#: tmp_error_headers/error_list_coreone.hpp:625
-#: tmp_error_headers/error_list_mk35.hpp:450
-#: tmp_error_headers/error_list_xl.hpp:674
-#: tmp_error_headers/error_list_mk4.hpp:471
 #: tmp_error_headers/error_list_mini.hpp:401
+#: tmp_error_headers/error_list_xl.hpp:674
 #: tmp_error_headers/error_list_ix.hpp:632
+#: tmp_error_headers/error_list_mk4.hpp:471
+#: tmp_error_headers/error_list_mk35.hpp:450
+#: tmp_error_headers/error_list_coreone.hpp:625
 msgid "The G-code isn't fully compatible"
 msgstr "G-code nie jest w pełni kompatybilny"
 
@@ -7097,9 +7103,9 @@ msgstr "Kalibracja powinna zająć niewiele ponad 7 minut."
 msgid "The door sensor is successfully calibrated now."
 msgstr "Czujnik drzwi został pomyślnie skalibrowany."
 
+#: tmp_error_headers/error_list_xl.hpp:58 tmp_error_headers/error_list_ix.hpp:9
+#: tmp_error_headers/error_list_mk4.hpp:9
 #: tmp_error_headers/error_list_coreone.hpp:9
-#: tmp_error_headers/error_list_xl.hpp:58
-#: tmp_error_headers/error_list_mk4.hpp:9 tmp_error_headers/error_list_ix.hpp:9
 msgid ""
 "The filament seems to be stuck, please unload it from nextruder and load it "
 "again."
@@ -7147,12 +7153,12 @@ msgstr ""
 "lub serwisowanych przez użytkownika. We wszystkich innych przypadkach możesz "
 "pominąć ten krok."
 
-#: tmp_error_headers/error_list_coreone.hpp:660
-#: tmp_error_headers/error_list_mk35.hpp:485
-#: tmp_error_headers/error_list_xl.hpp:702
-#: tmp_error_headers/error_list_mk4.hpp:506
 #: tmp_error_headers/error_list_mini.hpp:429
+#: tmp_error_headers/error_list_xl.hpp:702
 #: tmp_error_headers/error_list_ix.hpp:660
+#: tmp_error_headers/error_list_mk4.hpp:506
+#: tmp_error_headers/error_list_mk35.hpp:485
+#: tmp_error_headers/error_list_coreone.hpp:660
 msgid ""
 "The heatbed cooled down during the power outage, printed object might have "
 "detached. Inspect it before continuing."
@@ -7204,10 +7210,10 @@ msgstr ""
 "Może występować niewielki opór.\n"
 "Jeśli filament jest zablokowany, otwórz docisk."
 
-#: tmp_error_headers/error_list_coreone.hpp:436
 #: tmp_error_headers/error_list_xl.hpp:485
-#: tmp_error_headers/error_list_mk4.hpp:282
 #: tmp_error_headers/error_list_ix.hpp:457
+#: tmp_error_headers/error_list_mk4.hpp:282
+#: tmp_error_headers/error_list_coreone.hpp:436
 msgid ""
 "There was a timeout while waiting for measurement sample, please repeat the "
 "action."
@@ -7237,12 +7243,12 @@ msgstr "Ten G-code został pocięty dla innego rodzaju filamentu."
 msgid "This change will apply to all toolheads. Do you want to continue?"
 msgstr "Ta zmiana będzie dotyczyć wszystkich głowic narzędziowych. ontynuować?"
 
-#: tmp_error_headers/error_list_coreone.hpp:485
-#: tmp_error_headers/error_list_mk35.hpp:310
-#: tmp_error_headers/error_list_xl.hpp:541
-#: tmp_error_headers/error_list_mk4.hpp:331
 #: tmp_error_headers/error_list_mini.hpp:275
+#: tmp_error_headers/error_list_xl.hpp:541
 #: tmp_error_headers/error_list_ix.hpp:506
+#: tmp_error_headers/error_list_mk4.hpp:331
+#: tmp_error_headers/error_list_mk35.hpp:310
+#: tmp_error_headers/error_list_coreone.hpp:485
 msgid ""
 "This error code is not found\n"
 "in our database.\n"
@@ -7540,10 +7546,10 @@ msgstr "Podświetlenie narzędzia"
 msgid "Tool Offsets Calibration"
 msgstr "Kalibracja przesunięcia narzędzi"
 
-#: tmp_error_headers/error_list_coreone.hpp:694
-#: tmp_error_headers/error_list_mk35.hpp:519
 #: tmp_error_headers/error_list_xl.hpp:743
 #: tmp_error_headers/error_list_mk4.hpp:540
+#: tmp_error_headers/error_list_mk35.hpp:519
+#: tmp_error_headers/error_list_coreone.hpp:694
 msgid "Tool mapping"
 msgstr "Mapowanie narzędzi"
 
@@ -7557,7 +7563,7 @@ msgstr ""
 "Zaparkuj wszystkie narzędzia w dokach\n"
 "i pozostaw wózek wolny."
 
-#: src/gui/MItem_menus.cpp:162
+#: src/gui/MItem_menus.cpp:166
 msgid "Toolhead"
 msgstr "Głowica narzędziowa"
 
@@ -7565,7 +7571,7 @@ msgstr "Głowica narzędziowa"
 msgid "Toolhead Filament Sensor"
 msgstr "Czujnik filamentu narzędzia"
 
-#: src/gui/MItem_menus.cpp:162
+#: src/gui/MItem_menus.cpp:166
 msgid "Tools"
 msgstr "Narzędzia"
 
@@ -7662,13 +7668,13 @@ msgstr ""
 msgid "UNEVEN BED"
 msgstr "NIERÓWNY STÓŁ"
 
-#: tmp_error_headers/error_list_coreone.hpp:484
-#: tmp_error_headers/error_list_mk35.hpp:309
-#: tmp_error_headers/error_list_mmu.hpp:318
-#: tmp_error_headers/error_list_xl.hpp:540
-#: tmp_error_headers/error_list_mk4.hpp:330
 #: tmp_error_headers/error_list_mini.hpp:274
+#: tmp_error_headers/error_list_xl.hpp:540
 #: tmp_error_headers/error_list_ix.hpp:505
+#: tmp_error_headers/error_list_mk4.hpp:330
+#: tmp_error_headers/error_list_mmu.hpp:318
+#: tmp_error_headers/error_list_mk35.hpp:309
+#: tmp_error_headers/error_list_coreone.hpp:484
 msgid "UNKNOWN ERROR"
 msgstr "NIEZNANY BŁĄD"
 
@@ -7680,30 +7686,30 @@ msgstr "ROZŁADUJ"
 msgid "UNLOAD MANUALLY"
 msgstr "ROZŁADUJ RĘCZNIE"
 
-#: tmp_error_headers/error_list_coreone.hpp:554
-#: tmp_error_headers/error_list_mk35.hpp:379
-#: tmp_error_headers/error_list_xl.hpp:610
-#: tmp_error_headers/error_list_mk4.hpp:400
 #: tmp_error_headers/error_list_mini.hpp:344
+#: tmp_error_headers/error_list_xl.hpp:610
 #: tmp_error_headers/error_list_ix.hpp:575
+#: tmp_error_headers/error_list_mk4.hpp:400
+#: tmp_error_headers/error_list_mk35.hpp:379
+#: tmp_error_headers/error_list_coreone.hpp:554
 msgid "UNSUPPORTED BUDDY FW"
 msgstr "NIEOBŁUGIWANE FW BUDDY"
 
-#: tmp_error_headers/error_list_coreone.hpp:575
-#: tmp_error_headers/error_list_mk35.hpp:400
-#: tmp_error_headers/error_list_xl.hpp:631
-#: tmp_error_headers/error_list_mk4.hpp:421
 #: tmp_error_headers/error_list_mini.hpp:365
+#: tmp_error_headers/error_list_xl.hpp:631
 #: tmp_error_headers/error_list_ix.hpp:596
+#: tmp_error_headers/error_list_mk4.hpp:421
+#: tmp_error_headers/error_list_mk35.hpp:400
+#: tmp_error_headers/error_list_coreone.hpp:575
 msgid "UNSUPPORTED FIRMWARE BBF FILE"
 msgstr "NIEOBSŁUGIWANY PLIK BBF Z FIRMWARE"
 
-#: tmp_error_headers/error_list_coreone.hpp:547
-#: tmp_error_headers/error_list_mk35.hpp:372
-#: tmp_error_headers/error_list_xl.hpp:603
-#: tmp_error_headers/error_list_mk4.hpp:393
 #: tmp_error_headers/error_list_mini.hpp:337
+#: tmp_error_headers/error_list_xl.hpp:603
 #: tmp_error_headers/error_list_ix.hpp:568
+#: tmp_error_headers/error_list_mk4.hpp:393
+#: tmp_error_headers/error_list_mk35.hpp:372
+#: tmp_error_headers/error_list_coreone.hpp:547
 msgid "UNSUPPORTED PRINTER MODEL"
 msgstr "NIEOBSŁUGIWANY MODEL DRUKARKI"
 
@@ -7711,48 +7717,48 @@ msgstr "NIEOBSŁUGIWANY MODEL DRUKARKI"
 msgid "UP"
 msgstr "GÓRA"
 
-#: tmp_error_headers/error_list_coreone.hpp:225
-#: tmp_error_headers/error_list_mk35.hpp:148
-#: tmp_error_headers/error_list_xl.hpp:253
-#: tmp_error_headers/error_list_mk4.hpp:155
 #: tmp_error_headers/error_list_mini.hpp:127
+#: tmp_error_headers/error_list_xl.hpp:253
 #: tmp_error_headers/error_list_ix.hpp:225
+#: tmp_error_headers/error_list_mk4.hpp:155
+#: tmp_error_headers/error_list_mk35.hpp:148
+#: tmp_error_headers/error_list_coreone.hpp:225
 msgid "USB DEVICE OVERCURRENT"
 msgstr "ZBYT DUŻY PRĄD W URZĄDZENIU USB"
 
-#: tmp_error_headers/error_list_coreone.hpp:491
-#: tmp_error_headers/error_list_mk35.hpp:316
-#: tmp_error_headers/error_list_xl.hpp:547
-#: tmp_error_headers/error_list_mk4.hpp:337
 #: tmp_error_headers/error_list_mini.hpp:281
+#: tmp_error_headers/error_list_xl.hpp:547
 #: tmp_error_headers/error_list_ix.hpp:512
+#: tmp_error_headers/error_list_mk4.hpp:337
+#: tmp_error_headers/error_list_mk35.hpp:316
+#: tmp_error_headers/error_list_coreone.hpp:491
 msgid "USB FLASH DRIVE NOT CONNECTED"
 msgstr "NIE PODŁĄCZONO USB"
 
-#: tmp_error_headers/error_list_coreone.hpp:568
-#: tmp_error_headers/error_list_mk35.hpp:393
-#: tmp_error_headers/error_list_xl.hpp:624
-#: tmp_error_headers/error_list_mk4.hpp:414
 #: tmp_error_headers/error_list_mini.hpp:358
+#: tmp_error_headers/error_list_xl.hpp:624
 #: tmp_error_headers/error_list_ix.hpp:589
+#: tmp_error_headers/error_list_mk4.hpp:414
+#: tmp_error_headers/error_list_mk35.hpp:393
+#: tmp_error_headers/error_list_coreone.hpp:568
 msgid "USB FLASH ERROR"
 msgstr "BŁĄD PAMIĘCI USB FLASH"
 
-#: tmp_error_headers/error_list_coreone.hpp:218
-#: tmp_error_headers/error_list_mk35.hpp:141
-#: tmp_error_headers/error_list_xl.hpp:246
-#: tmp_error_headers/error_list_mk4.hpp:148
 #: tmp_error_headers/error_list_mini.hpp:120
+#: tmp_error_headers/error_list_xl.hpp:246
 #: tmp_error_headers/error_list_ix.hpp:218
+#: tmp_error_headers/error_list_mk4.hpp:148
+#: tmp_error_headers/error_list_mk35.hpp:141
+#: tmp_error_headers/error_list_coreone.hpp:218
 msgid "USB PORT OVERCURRENT"
 msgstr "ZBYT DUŻY PRĄD NA PORCIE USB"
 
-#: tmp_error_headers/error_list_coreone.hpp:492
-#: tmp_error_headers/error_list_mk35.hpp:317
-#: tmp_error_headers/error_list_xl.hpp:548
-#: tmp_error_headers/error_list_mk4.hpp:338
 #: tmp_error_headers/error_list_mini.hpp:282
+#: tmp_error_headers/error_list_xl.hpp:548
 #: tmp_error_headers/error_list_ix.hpp:513
+#: tmp_error_headers/error_list_mk4.hpp:338
+#: tmp_error_headers/error_list_mk35.hpp:317
+#: tmp_error_headers/error_list_coreone.hpp:492
 msgid ""
 "USB drive not\n"
 "connected! Please\n"
@@ -7766,23 +7772,23 @@ msgstr ""
 "z prawidłowym\n"
 "plikiem firmware."
 
-#: tmp_error_headers/error_list_coreone.hpp:744
-#: tmp_error_headers/error_list_mk35.hpp:569
-#: tmp_error_headers/error_list_xl.hpp:786
-#: tmp_error_headers/error_list_mk4.hpp:590
 #: tmp_error_headers/error_list_mini.hpp:499
+#: tmp_error_headers/error_list_xl.hpp:786
 #: tmp_error_headers/error_list_ix.hpp:730
+#: tmp_error_headers/error_list_mk4.hpp:590
+#: tmp_error_headers/error_list_mk35.hpp:569
+#: tmp_error_headers/error_list_coreone.hpp:744
 msgid "USB drive or file error, the print is now paused. Reconnect the drive."
 msgstr ""
 "Błąd pamięci USB lub pliku. Drukowanie zostało wstrzymane. Odłącz i ponownie "
 "podłącz pamięć."
 
-#: tmp_error_headers/error_list_coreone.hpp:576
-#: tmp_error_headers/error_list_mk35.hpp:401
-#: tmp_error_headers/error_list_xl.hpp:632
-#: tmp_error_headers/error_list_mk4.hpp:422
 #: tmp_error_headers/error_list_mini.hpp:366
+#: tmp_error_headers/error_list_xl.hpp:632
 #: tmp_error_headers/error_list_ix.hpp:597
+#: tmp_error_headers/error_list_mk4.hpp:422
+#: tmp_error_headers/error_list_mk35.hpp:401
+#: tmp_error_headers/error_list_coreone.hpp:576
 msgid ""
 "USB flash drive contains\n"
 "unsupported firmware BBF file."
@@ -7794,12 +7800,12 @@ msgstr ""
 msgid "USER INTERFACE"
 msgstr "INTERFEJS UŻYTKOWNIKA"
 
-#: tmp_error_headers/error_list_coreone.hpp:688
-#: tmp_error_headers/error_list_mk35.hpp:513
-#: tmp_error_headers/error_list_xl.hpp:730
-#: tmp_error_headers/error_list_mk4.hpp:534
 #: tmp_error_headers/error_list_mini.hpp:457
+#: tmp_error_headers/error_list_xl.hpp:730
 #: tmp_error_headers/error_list_ix.hpp:688
+#: tmp_error_headers/error_list_mk4.hpp:534
+#: tmp_error_headers/error_list_mk35.hpp:513
+#: tmp_error_headers/error_list_coreone.hpp:688
 msgid ""
 "Unable to home the printer.\n"
 "Do you want to try again?"
@@ -7807,18 +7813,18 @@ msgstr ""
 "Nie można zbazować drukarki.\n"
 "Czy chcesz spróbować ponownie?"
 
-#: tmp_error_headers/error_list_coreone.hpp:387
 #: tmp_error_headers/error_list_xl.hpp:436
 #: tmp_error_headers/error_list_ix.hpp:408
+#: tmp_error_headers/error_list_coreone.hpp:387
 msgid "Unable to start puppy application"
 msgstr "Unable to start puppy application"
 
-#: tmp_error_headers/error_list_coreone.hpp:583
-#: tmp_error_headers/error_list_mk35.hpp:408
-#: tmp_error_headers/error_list_xl.hpp:639
-#: tmp_error_headers/error_list_mk4.hpp:429
 #: tmp_error_headers/error_list_mini.hpp:373
+#: tmp_error_headers/error_list_xl.hpp:639
 #: tmp_error_headers/error_list_ix.hpp:604
+#: tmp_error_headers/error_list_mk4.hpp:429
+#: tmp_error_headers/error_list_mk35.hpp:408
+#: tmp_error_headers/error_list_coreone.hpp:583
 msgid "Unable to verify the extruder type, check the wiring and connectors."
 msgstr "Nie można zweryfikować typu ekstrudera. Sprawdź okablowanie i złącza."
 
@@ -7826,9 +7832,9 @@ msgstr "Nie można zweryfikować typu ekstrudera. Sprawdź okablowanie i złącz
 msgid "Unassigned G-Code filament(s)"
 msgstr "Filament(y) nieprzypisany(e) w G-Code"
 
-#: tmp_error_headers/error_list_coreone.hpp:352
 #: tmp_error_headers/error_list_xl.hpp:401
 #: tmp_error_headers/error_list_ix.hpp:373
+#: tmp_error_headers/error_list_coreone.hpp:352
 msgid "Unassigned puppy found"
 msgstr "Unassigned puppy found"
 
@@ -7849,7 +7855,7 @@ msgstr "Nieoczekiwany, błędny prąd"
 msgid "Unknown"
 msgstr "Nieznane"
 
-#: src/gui/screen_fatal_warning.cpp:32 src/gui/screen_qr_error.cpp:29
+#: src/gui/screen_qr_error.cpp:29 src/gui/screen_fatal_warning.cpp:32
 msgid "Unknown Error"
 msgstr "Nieznany błąd"
 
@@ -7857,18 +7863,18 @@ msgstr "Nieznany błąd"
 msgid "Unknown file error"
 msgstr "Nieznany błąd pliku"
 
-#: tmp_error_headers/error_list_coreone.hpp:603
-#: tmp_error_headers/error_list_mk35.hpp:428
-#: tmp_error_headers/error_list_xl.hpp:652
-#: tmp_error_headers/error_list_mk4.hpp:449
 #: tmp_error_headers/error_list_mini.hpp:379
+#: tmp_error_headers/error_list_xl.hpp:652
 #: tmp_error_headers/error_list_ix.hpp:610
+#: tmp_error_headers/error_list_mk4.hpp:449
+#: tmp_error_headers/error_list_mk35.hpp:428
+#: tmp_error_headers/error_list_coreone.hpp:603
 msgid "Unknown file system"
 msgstr "Nieznany system plików"
 
-#: tmp_error_headers/error_list_coreone.hpp:380
 #: tmp_error_headers/error_list_xl.hpp:429
 #: tmp_error_headers/error_list_ix.hpp:401
+#: tmp_error_headers/error_list_coreone.hpp:380
 msgid "Unknown puppy type"
 msgstr "Unknown puppy type"
 
@@ -7911,12 +7917,12 @@ msgstr "Rozładowywanie do radełka"
 msgid "Unparking"
 msgstr "Odparkowanie"
 
-#: tmp_error_headers/error_list_coreone.hpp:604
-#: tmp_error_headers/error_list_mk35.hpp:429
-#: tmp_error_headers/error_list_xl.hpp:653
-#: tmp_error_headers/error_list_mk4.hpp:450
 #: tmp_error_headers/error_list_mini.hpp:380
+#: tmp_error_headers/error_list_xl.hpp:653
 #: tmp_error_headers/error_list_ix.hpp:611
+#: tmp_error_headers/error_list_mk4.hpp:450
+#: tmp_error_headers/error_list_mk35.hpp:429
+#: tmp_error_headers/error_list_coreone.hpp:604
 msgid ""
 "Use a different USB drive or reformat this one to the supported FAT32 file "
 "system."
@@ -7932,12 +7938,12 @@ msgstr "Wykorzystana ilość"
 msgid "User"
 msgstr "Użytkownik"
 
-#: src/gui/MItem_menus.hpp:113
+#: src/gui/MItem_menus.hpp:114
 msgid "User Interface"
 msgstr "Interfejs użytkownika"
 
-#: src/gui/screen_menu_version_info_mini.hpp:17
 #: src/gui/screen_menu_version_info_non_mini.hpp:27
+#: src/gui/screen_menu_version_info_mini.hpp:17
 msgid "VERSION INFO"
 msgstr "WERSJA"
 
@@ -7949,7 +7955,7 @@ msgstr "Kontrola ważności"
 msgid "Verify GCode"
 msgstr "Weryfikacja G-code"
 
-#: src/gui/MItem_menus.hpp:59
+#: src/gui/MItem_menus.hpp:60
 msgid "Version Info"
 msgstr "Wersja"
 
@@ -7983,9 +7989,9 @@ msgstr "ASYSTENT - OK"
 msgid "Waiting for chamber temperature"
 msgstr "Czekam na temperaturę komory"
 
-#: tmp_error_headers/error_list_coreone.hpp:415
 #: tmp_error_headers/error_list_xl.hpp:464
 #: tmp_error_headers/error_list_ix.hpp:436
+#: tmp_error_headers/error_list_coreone.hpp:415
 msgid "Waiting for fingerprint timed out"
 msgstr "Oczekiwanie na odcisk palca przekroczyło limit czasu"
 
@@ -7997,9 +8003,9 @@ msgstr "Czekam na ustabilizowanie temperatury hotendów do kalibracji:"
 msgid "Waiting for nozzle to cool down"
 msgstr "Oczekiwanie na schłodzenie dyszy"
 
-#: tmp_error_headers/error_list_coreone.hpp:422
 #: tmp_error_headers/error_list_xl.hpp:471
 #: tmp_error_headers/error_list_ix.hpp:443
+#: tmp_error_headers/error_list_coreone.hpp:422
 msgid "Waiting for puppies to start timed out"
 msgstr "Waiting for puppies to start timed out"
 
@@ -8007,19 +8013,19 @@ msgstr "Waiting for puppies to start timed out"
 msgid "Waiting for temperature"
 msgstr "Czekam na temperaturę"
 
-#: tmp_error_headers/error_list_coreone.hpp:814
-#: tmp_error_headers/error_list_mk35.hpp:625
-#: tmp_error_headers/error_list_xl.hpp:884
-#: tmp_error_headers/error_list_mk4.hpp:646
 #: tmp_error_headers/error_list_mini.hpp:548
+#: tmp_error_headers/error_list_xl.hpp:884
 #: tmp_error_headers/error_list_ix.hpp:793
+#: tmp_error_headers/error_list_mk4.hpp:646
+#: tmp_error_headers/error_list_mk35.hpp:625
+#: tmp_error_headers/error_list_coreone.hpp:814
 msgid "Waiting for the user. Press \"Resume\" once the printer is ready."
 msgstr ""
 "Oczekiwanie na użytkownika. Naciśnij \"Wznów\", gdy drukarka będzie gotowa."
 
-#: tmp_error_headers/error_list_coreone.hpp:702
-#: tmp_error_headers/error_list_mk35.hpp:527
 #: tmp_error_headers/error_list_mk4.hpp:548
+#: tmp_error_headers/error_list_mk35.hpp:527
+#: tmp_error_headers/error_list_coreone.hpp:702
 msgid "Waiting for user input"
 msgstr "Czekam na użytkownika"
 
@@ -8028,44 +8034,23 @@ msgid "Warn"
 msgstr "Ostrzegaj"
 
 #: src/guiapi/src/window_msgbox.cpp:308
-#: tmp_error_headers/error_list_coreone.hpp:610
-#: tmp_error_headers/error_list_coreone.hpp:617
-#: tmp_error_headers/error_list_coreone.hpp:624
-#: tmp_error_headers/error_list_coreone.hpp:631
-#: tmp_error_headers/error_list_coreone.hpp:638
-#: tmp_error_headers/error_list_coreone.hpp:645
-#: tmp_error_headers/error_list_coreone.hpp:659
-#: tmp_error_headers/error_list_coreone.hpp:708
-#: tmp_error_headers/error_list_coreone.hpp:715
-#: tmp_error_headers/error_list_coreone.hpp:722
-#: tmp_error_headers/error_list_coreone.hpp:729
-#: tmp_error_headers/error_list_coreone.hpp:736
-#: tmp_error_headers/error_list_coreone.hpp:743
-#: tmp_error_headers/error_list_coreone.hpp:750
-#: tmp_error_headers/error_list_coreone.hpp:757
-#: tmp_error_headers/error_list_coreone.hpp:764
-#: tmp_error_headers/error_list_coreone.hpp:771
-#: tmp_error_headers/error_list_coreone.hpp:799
-#: tmp_error_headers/error_list_coreone.hpp:806
-#: tmp_error_headers/error_list_mk35.hpp:435
-#: tmp_error_headers/error_list_mk35.hpp:442
-#: tmp_error_headers/error_list_mk35.hpp:449
-#: tmp_error_headers/error_list_mk35.hpp:456
-#: tmp_error_headers/error_list_mk35.hpp:463
-#: tmp_error_headers/error_list_mk35.hpp:470
-#: tmp_error_headers/error_list_mk35.hpp:484
-#: tmp_error_headers/error_list_mk35.hpp:533
-#: tmp_error_headers/error_list_mk35.hpp:540
-#: tmp_error_headers/error_list_mk35.hpp:547
-#: tmp_error_headers/error_list_mk35.hpp:554
-#: tmp_error_headers/error_list_mk35.hpp:561
-#: tmp_error_headers/error_list_mk35.hpp:568
-#: tmp_error_headers/error_list_mk35.hpp:575
-#: tmp_error_headers/error_list_mk35.hpp:582
-#: tmp_error_headers/error_list_mk35.hpp:589
-#: tmp_error_headers/error_list_mk35.hpp:596
-#: tmp_error_headers/error_list_mk35.hpp:603
-#: tmp_error_headers/error_list_mk35.hpp:617
+#: tmp_error_headers/error_list_mini.hpp:386
+#: tmp_error_headers/error_list_mini.hpp:393
+#: tmp_error_headers/error_list_mini.hpp:400
+#: tmp_error_headers/error_list_mini.hpp:407
+#: tmp_error_headers/error_list_mini.hpp:414
+#: tmp_error_headers/error_list_mini.hpp:428
+#: tmp_error_headers/error_list_mini.hpp:463
+#: tmp_error_headers/error_list_mini.hpp:470
+#: tmp_error_headers/error_list_mini.hpp:477
+#: tmp_error_headers/error_list_mini.hpp:484
+#: tmp_error_headers/error_list_mini.hpp:491
+#: tmp_error_headers/error_list_mini.hpp:498
+#: tmp_error_headers/error_list_mini.hpp:505
+#: tmp_error_headers/error_list_mini.hpp:512
+#: tmp_error_headers/error_list_mini.hpp:519
+#: tmp_error_headers/error_list_mini.hpp:526
+#: tmp_error_headers/error_list_mini.hpp:540
 #: tmp_error_headers/error_list_xl.hpp:659
 #: tmp_error_headers/error_list_xl.hpp:666
 #: tmp_error_headers/error_list_xl.hpp:673
@@ -8090,42 +8075,6 @@ msgstr "Ostrzegaj"
 #: tmp_error_headers/error_list_xl.hpp:862
 #: tmp_error_headers/error_list_xl.hpp:869
 #: tmp_error_headers/error_list_xl.hpp:876
-#: tmp_error_headers/error_list_mk4.hpp:456
-#: tmp_error_headers/error_list_mk4.hpp:463
-#: tmp_error_headers/error_list_mk4.hpp:470
-#: tmp_error_headers/error_list_mk4.hpp:477
-#: tmp_error_headers/error_list_mk4.hpp:484
-#: tmp_error_headers/error_list_mk4.hpp:491
-#: tmp_error_headers/error_list_mk4.hpp:505
-#: tmp_error_headers/error_list_mk4.hpp:554
-#: tmp_error_headers/error_list_mk4.hpp:561
-#: tmp_error_headers/error_list_mk4.hpp:568
-#: tmp_error_headers/error_list_mk4.hpp:575
-#: tmp_error_headers/error_list_mk4.hpp:582
-#: tmp_error_headers/error_list_mk4.hpp:589
-#: tmp_error_headers/error_list_mk4.hpp:596
-#: tmp_error_headers/error_list_mk4.hpp:603
-#: tmp_error_headers/error_list_mk4.hpp:610
-#: tmp_error_headers/error_list_mk4.hpp:617
-#: tmp_error_headers/error_list_mk4.hpp:631
-#: tmp_error_headers/error_list_mk4.hpp:638
-#: tmp_error_headers/error_list_mini.hpp:386
-#: tmp_error_headers/error_list_mini.hpp:393
-#: tmp_error_headers/error_list_mini.hpp:400
-#: tmp_error_headers/error_list_mini.hpp:407
-#: tmp_error_headers/error_list_mini.hpp:414
-#: tmp_error_headers/error_list_mini.hpp:428
-#: tmp_error_headers/error_list_mini.hpp:463
-#: tmp_error_headers/error_list_mini.hpp:470
-#: tmp_error_headers/error_list_mini.hpp:477
-#: tmp_error_headers/error_list_mini.hpp:484
-#: tmp_error_headers/error_list_mini.hpp:491
-#: tmp_error_headers/error_list_mini.hpp:498
-#: tmp_error_headers/error_list_mini.hpp:505
-#: tmp_error_headers/error_list_mini.hpp:512
-#: tmp_error_headers/error_list_mini.hpp:519
-#: tmp_error_headers/error_list_mini.hpp:526
-#: tmp_error_headers/error_list_mini.hpp:540
 #: tmp_error_headers/error_list_ix.hpp:617
 #: tmp_error_headers/error_list_ix.hpp:624
 #: tmp_error_headers/error_list_ix.hpp:631
@@ -8145,6 +8094,63 @@ msgstr "Ostrzegaj"
 #: tmp_error_headers/error_list_ix.hpp:764
 #: tmp_error_headers/error_list_ix.hpp:778
 #: tmp_error_headers/error_list_ix.hpp:785
+#: tmp_error_headers/error_list_mk4.hpp:456
+#: tmp_error_headers/error_list_mk4.hpp:463
+#: tmp_error_headers/error_list_mk4.hpp:470
+#: tmp_error_headers/error_list_mk4.hpp:477
+#: tmp_error_headers/error_list_mk4.hpp:484
+#: tmp_error_headers/error_list_mk4.hpp:491
+#: tmp_error_headers/error_list_mk4.hpp:505
+#: tmp_error_headers/error_list_mk4.hpp:554
+#: tmp_error_headers/error_list_mk4.hpp:561
+#: tmp_error_headers/error_list_mk4.hpp:568
+#: tmp_error_headers/error_list_mk4.hpp:575
+#: tmp_error_headers/error_list_mk4.hpp:582
+#: tmp_error_headers/error_list_mk4.hpp:589
+#: tmp_error_headers/error_list_mk4.hpp:596
+#: tmp_error_headers/error_list_mk4.hpp:603
+#: tmp_error_headers/error_list_mk4.hpp:610
+#: tmp_error_headers/error_list_mk4.hpp:617
+#: tmp_error_headers/error_list_mk4.hpp:631
+#: tmp_error_headers/error_list_mk4.hpp:638
+#: tmp_error_headers/error_list_mk35.hpp:435
+#: tmp_error_headers/error_list_mk35.hpp:442
+#: tmp_error_headers/error_list_mk35.hpp:449
+#: tmp_error_headers/error_list_mk35.hpp:456
+#: tmp_error_headers/error_list_mk35.hpp:463
+#: tmp_error_headers/error_list_mk35.hpp:470
+#: tmp_error_headers/error_list_mk35.hpp:484
+#: tmp_error_headers/error_list_mk35.hpp:533
+#: tmp_error_headers/error_list_mk35.hpp:540
+#: tmp_error_headers/error_list_mk35.hpp:547
+#: tmp_error_headers/error_list_mk35.hpp:554
+#: tmp_error_headers/error_list_mk35.hpp:561
+#: tmp_error_headers/error_list_mk35.hpp:568
+#: tmp_error_headers/error_list_mk35.hpp:575
+#: tmp_error_headers/error_list_mk35.hpp:582
+#: tmp_error_headers/error_list_mk35.hpp:589
+#: tmp_error_headers/error_list_mk35.hpp:596
+#: tmp_error_headers/error_list_mk35.hpp:603
+#: tmp_error_headers/error_list_mk35.hpp:617
+#: tmp_error_headers/error_list_coreone.hpp:610
+#: tmp_error_headers/error_list_coreone.hpp:617
+#: tmp_error_headers/error_list_coreone.hpp:624
+#: tmp_error_headers/error_list_coreone.hpp:631
+#: tmp_error_headers/error_list_coreone.hpp:638
+#: tmp_error_headers/error_list_coreone.hpp:645
+#: tmp_error_headers/error_list_coreone.hpp:659
+#: tmp_error_headers/error_list_coreone.hpp:708
+#: tmp_error_headers/error_list_coreone.hpp:715
+#: tmp_error_headers/error_list_coreone.hpp:722
+#: tmp_error_headers/error_list_coreone.hpp:729
+#: tmp_error_headers/error_list_coreone.hpp:736
+#: tmp_error_headers/error_list_coreone.hpp:743
+#: tmp_error_headers/error_list_coreone.hpp:750
+#: tmp_error_headers/error_list_coreone.hpp:757
+#: tmp_error_headers/error_list_coreone.hpp:764
+#: tmp_error_headers/error_list_coreone.hpp:771
+#: tmp_error_headers/error_list_coreone.hpp:799
+#: tmp_error_headers/error_list_coreone.hpp:806
 msgid "Warning"
 msgstr "Ostrzeżenie"
 
@@ -8191,10 +8197,10 @@ msgstr ""
 msgid "Wed"
 msgstr "Śr"
 
-#: tmp_error_headers/error_list_coreone.hpp:597
-#: tmp_error_headers/error_list_mk35.hpp:422
 #: tmp_error_headers/error_list_xl.hpp:646
 #: tmp_error_headers/error_list_mk4.hpp:443
+#: tmp_error_headers/error_list_mk35.hpp:422
+#: tmp_error_headers/error_list_coreone.hpp:597
 msgid ""
 "Welcome to the Cold Pull wizard. Prepare a 30cm piece of PLA filament and "
 "follow the instructions. For more details, visit:"
@@ -8210,7 +8216,7 @@ msgstr "Co to jest?"
 msgid "What nozzle diameter do I have?"
 msgstr "Jaka jest średnica mojej dyszy?"
 
-#: src/gui/MItem_menus.hpp:89
+#: src/gui/MItem_menus.hpp:90
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -8451,12 +8457,12 @@ msgstr "Zakres osi Z"
 msgid "Z-axis steps per unit"
 msgstr "Kroki osi Z na jednostkę"
 
-#: src/gui/wizard/selftest_frame_axis.cpp:29
-#: src/gui/wizard/selftest_frame_axis.cpp:30
-#: src/gui/wizard/selftest_frame_axis.cpp:31
 #: src/gui/wizard/selftest_result_axis.cpp:14
 #: src/gui/wizard/selftest_result_axis.cpp:15
 #: src/gui/wizard/selftest_result_axis.cpp:16
+#: src/gui/wizard/selftest_frame_axis.cpp:29
+#: src/gui/wizard/selftest_frame_axis.cpp:30
+#: src/gui/wizard/selftest_frame_axis.cpp:31
 msgid "axis"
 msgstr "oś"
 
