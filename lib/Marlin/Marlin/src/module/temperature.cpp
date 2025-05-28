@@ -1014,6 +1014,29 @@ void Temperature::isr() {
       print_heater_state(degBed(), degTargetBed(), H_BED);
     #endif
 
+    #if HAS_CHAMBER_API()
+      {
+        const auto chamber_capabilities = buddy::chamber().capabilities();
+        if (chamber_capabilities.temperature_reporting) {
+          const auto current_chamber_temperature = buddy::chamber().current_temperature();
+          const auto target_chamber_temperature = buddy::chamber().target_temperature();
+          SERIAL_ECHOPAIR(" C:", current_chamber_temperature.value_or(0.0f));
+          SERIAL_ECHOPAIR("/", target_chamber_temperature.value_or(0.0f));
+        }
+      }
+    #else
+      #if HAS_TEMP_CHAMBER
+        print_heater_state(degChamber()
+        #if HAS_HEATED_CHAMBER
+          , degTargetChamber()
+        #else
+          , 0
+        #endif
+        , H_CHAMBER
+      );
+      #endif
+    #endif // HAS_CHAMBER_API()
+
     #if HAS_TEMP_HEATBREAK
       print_heater_state(degHeatbreak(target_extruder)
           , degTargetHeatbreak(target_extruder)
@@ -1037,9 +1060,8 @@ void Temperature::isr() {
     #if HAS_HEATED_BED
       SERIAL_ECHOPAIR(" B@:", getHeaterPower(H_BED));
     #endif
-    #if HAS_CHAMBER_API()
-      auto current_chamber_temperature = buddy::chamber().current_temperature();
-      if (current_chamber_temperature.has_value()) SERIAL_ECHOPAIR(" C@:", current_chamber_temperature.value());
+    #if HAS_HEATED_CHAMBER
+      SERIAL_ECHOPAIR(" C@:", getHeaterPower(H_CHAMBER));
     #endif
 
     #if HAS_TEMP_HEATBREAK
