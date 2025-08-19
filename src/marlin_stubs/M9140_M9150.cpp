@@ -19,11 +19,13 @@
  * This affects time estimation and machine motion limits
  */
 void PrusaGcodeSuite::M9140() {
-    config_store().stealth_mode.set(false);
-    marlin_vars().stealth_mode = false;
-    planner.set_stealth_mode(false);
-
-    SERIAL_ECHOLNPGM("Stealth mode disabled");
+    if (!parser.seen('Q')) {
+        config_store().stealth_mode.set(false);
+        marlin_vars().stealth_mode = false;
+        planner.set_stealth_mode(false);
+    }
+    SERIAL_ECHOPGM("Stealth mode ");
+    config_store().stealth_mode.get() ? SERIAL_ECHOLNPGM("enabled") : SERIAL_ECHOLNPGM("disabled");
 }
 
 /**
@@ -41,11 +43,13 @@ void PrusaGcodeSuite::M9140() {
  * This affects time estimation and machine motion limits
  */
 void PrusaGcodeSuite::M9150() {
-    config_store().stealth_mode.set(true);
-    marlin_vars().stealth_mode = true;
-    planner.set_stealth_mode(true);
-
-    SERIAL_ECHOLNPGM("Stealth mode enabled");
+    if (!parser.seen('Q')) {
+        config_store().stealth_mode.set(true);
+        marlin_vars().stealth_mode = true;
+        planner.set_stealth_mode(true);
+    }
+    SERIAL_ECHOPGM("Stealth mode ");
+    config_store().stealth_mode.get() ? SERIAL_ECHOLNPGM("enabled") : SERIAL_ECHOLNPGM("disabled");
 }
 
 /** @}*/
