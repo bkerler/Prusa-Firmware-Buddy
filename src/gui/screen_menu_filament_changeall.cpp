@@ -111,6 +111,12 @@ void MenuMultiFilamentChange::windowEvent(window_t *sender, GUI_event_t event, v
         carry_out_changes();
         Screens::Access()->Close();
         return;
+    } else if (event == GUI_event_t::HOLD) {
+        auto setup_config = std::array<ConfigItem, tool_count>();
+        for (size_t tool = 0; tool < tool_count; tool++) {
+            setup_config.at(tool).action = Action::unload;
+        }
+        set_configuration(setup_config);
     }
 
     WindowMenu::windowEvent(sender, event, param);
