@@ -88,7 +88,7 @@ static bool set_special_fan_speed(uint8_t fan, uint8_t speed, bool set_auto) {
  * - `S` - Speed between 0-255
  * - `P` - Fan index, if more than one fan
  * - `R` - Set the to auto control (if supported by the fan)
- * - `A` - ???
+ * - `A` - Use fan speed of first fan
  * - `T` - Restore/Use/Set Temporary Speed: (With EXTRA_FAN_SPEED enabled:)
  *   - `1` - Restore previous speed after T2
  *   - `2` - Use temporary speed set with T3-255
@@ -96,9 +96,11 @@ static bool set_special_fan_speed(uint8_t fan, uint8_t speed, bool set_auto) {
  *Enclosure fan (index 3) don't support T parameter
  */
 void GcodeSuite::M106() {
-    const uint8_t p = parser.byteval('P', _ALT_P);
+    const auto p = parser.byteval('P', _ALT_P);
+    const uint16_t d = parser.seen('A') ? thermalManager.fan_speed[0] : 255;
+    auto s = std::clamp<uint16_t>(parser.floatval('S', d), 0, 255);
 
-    if (set_special_fan_speed(p, std::clamp<uint16_t>(parser.ushortval('S', 255), 0, 255), parser.seen('R'))) {
+    if (set_special_fan_speed(p, s, parser.seen('R'))) {
         return;
     }
 
