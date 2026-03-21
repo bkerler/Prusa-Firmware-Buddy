@@ -956,6 +956,30 @@ MI_SIDE_LEDS_DIMMING_ENABLE::MI_SIDE_LEDS_DIMMING_ENABLE()
 void MI_SIDE_LEDS_DIMMING_ENABLE::OnChange([[maybe_unused]] size_t old_index) {
     leds::SideStripHandler::instance().set_dimming_enabled(static_cast<leds::DimmingEnabled>(get_index()));
 }
+
+/**********************************************************************************************/
+// MI_SIDE_LEDS_DIMMING_DURATION
+static constexpr NumericInputConfig side_leds_dimming_duration_config = {
+    .min_value = 0,
+    .max_value = 3600,
+    .step = 1,
+    .unit = Unit::second,
+};
+
+MI_SIDE_LEDS_DIMMING_DURATION::MI_SIDE_LEDS_DIMMING_DURATION()
+    : WiSpin(
+        static_cast<float>(config_store().side_leds_dimming_duration.get()),
+        side_leds_dimming_duration_config,
+        _(label)) {
+}
+
+void MI_SIDE_LEDS_DIMMING_DURATION::OnClick() {
+    leds::SideStripHandler::instance().set_dimming_timeout(static_cast<int>(value()));
+}
+
+void MI_SIDE_LEDS_DIMMING_DURATION::Loop() {
+    set_enabled(leds::SideStripHandler::instance().get_dimming_enabled() != leds::DimmingEnabled::never);
+}
 #endif
 
 #if HAS_TOOLCHANGER()

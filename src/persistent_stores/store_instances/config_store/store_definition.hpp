@@ -590,6 +590,8 @@ struct CurrentStore
     StoreItem<uint8_t, PWM255::from_percent(40).value, ItemFlag::user_interface, journal::hash("XBuddy Extension Chamber LEDs dimmed PWM")> side_leds_dimmed_brightness;
     /// Whether the side leds should dim down a bit when user is not interacting with the printer or stay on full power the whole time
     StoreItem<leds::DimmingEnabled, leds::DimmingEnabled::not_printing, ItemFlag::user_interface, journal::hash("Enable Side LEDs dimming")> side_leds_dimming_enabled;
+    /// Duration of inactivity in seconds before side LEDs dim; 0 = dim immediately
+    StoreItem<int, 120, ItemFlag::user_interface, journal::hash("Side LEDs dimming duration")> side_leds_dimming_duration;
 #endif
 
     StoreItem<bool, true, ItemFlag::user_interface, journal::hash("Enable Serial Printing Screen")> serial_print_screen_enabled;
