@@ -594,6 +594,9 @@ struct CurrentStore
 
     StoreItem<bool, true, ItemFlag::user_interface, journal::hash("Enable Serial Printing Screen")> serial_print_screen_enabled;
 
+    /// LCD backlight brightness in percent (1-100)
+    StoreItem<uint8_t, 100, ItemFlag::user_interface, journal::hash("Display backlight brightness")> leds_display_backlight_brightness;
+
     StoreItem<bool, true, ItemFlag::user_interface, journal::hash("Enable Tool LEDs")> tool_leds_enabled;
     /// Tool LED brightness in percent (0-100); applied when tool_leds_enabled is true
     StoreItem<uint8_t, 100, ItemFlag::user_interface, journal::hash("Tool LED brightness")> tool_leds_brightness;

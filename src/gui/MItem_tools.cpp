@@ -68,6 +68,7 @@
 
 #if HAS_LEDS()
     #include <leds/status_leds_handler.hpp>
+    #include <leds/led_manager.hpp>
 #endif
 
 #if HAS_SIDE_LEDS()
@@ -880,6 +881,28 @@ void MI_LEDS_ENABLE::OnChange([[maybe_unused]] size_t old_index) {
     } else {
         leds::StatusLedsHandler::instance().set_active(true);
     }
+}
+
+/**********************************************************************************************/
+// MI_DISPLAY_BACKLIGHT_BRIGHTNESS
+static constexpr NumericInputConfig display_backlight_brightness_config = {
+    .min_value = 2,
+    .max_value = 100,
+    .step = 1,
+    .unit = Unit::percent,
+};
+
+MI_DISPLAY_BACKLIGHT_BRIGHTNESS::MI_DISPLAY_BACKLIGHT_BRIGHTNESS()
+    : WiSpin(
+        static_cast<float>(config_store().leds_display_backlight_brightness.get()),
+        display_backlight_brightness_config,
+        _(label)) {
+}
+
+void MI_DISPLAY_BACKLIGHT_BRIGHTNESS::OnClick() {
+    const auto val = static_cast<uint8_t>(value());
+    config_store().leds_display_backlight_brightness.set(val);
+    leds::LEDManager::instance().set_lcd_brightness(val);
 }
 #endif
 
