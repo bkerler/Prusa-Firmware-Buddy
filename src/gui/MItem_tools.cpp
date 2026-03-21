@@ -955,6 +955,33 @@ void MI_TOOL_LEDS_ENABLE::OnChange(size_t old_index) {
     #endif
     config_store().tool_leds_enabled.set(!old_index);
 }
+
+/**********************************************************************************************/
+// MI_TOOL_LEDS_BRIGHTNESS
+static constexpr NumericInputConfig tool_leds_brightness_config = {
+    .min_value = 0,
+    .max_value = 100,
+    .step = 1,
+    .unit = Unit::percent,
+};
+
+MI_TOOL_LEDS_BRIGHTNESS::MI_TOOL_LEDS_BRIGHTNESS()
+    : WiSpin(
+        static_cast<float>(config_store().tool_leds_brightness.get()),
+        tool_leds_brightness_config,
+        _(label), nullptr, is_enabled_t::yes,
+        prusa_toolchanger.is_toolchanger_enabled() ? is_hidden_t::no : is_hidden_t::yes) {
+}
+
+void MI_TOOL_LEDS_BRIGHTNESS::OnClick() {
+    const auto val = static_cast<uint8_t>(value());
+    config_store().tool_leds_brightness.set(val);
+    if (config_store().tool_leds_enabled.get()) {
+        HOTEND_LOOP() {
+            prusa_toolchanger.getTool(e).set_cheese_led();
+        }
+    }
+}
 #endif
 
 /*****************************************************************************/

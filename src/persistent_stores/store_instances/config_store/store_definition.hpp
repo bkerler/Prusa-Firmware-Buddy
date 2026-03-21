@@ -595,6 +595,8 @@ struct CurrentStore
     StoreItem<bool, true, ItemFlag::user_interface, journal::hash("Enable Serial Printing Screen")> serial_print_screen_enabled;
 
     StoreItem<bool, true, ItemFlag::user_interface, journal::hash("Enable Tool LEDs")> tool_leds_enabled;
+    /// Tool LED brightness in percent (0-100); applied when tool_leds_enabled is true
+    StoreItem<uint8_t, 100, ItemFlag::user_interface, journal::hash("Tool LED brightness")> tool_leds_brightness;
 
     StoreItem<float, 0.0f, ItemFlag::stats, journal::hash("Odometer X")> odometer_x;
     StoreItem<float, 0.0f, ItemFlag::stats, journal::hash("Odometer Y")> odometer_y;

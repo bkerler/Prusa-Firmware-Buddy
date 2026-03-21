@@ -13,6 +13,7 @@ using ScreenMenuLeds__ = ScreenMenu<GuiDefaults::MenuFooter, MI_RETURN,
 #endif
 #if HAS_TOOLCHANGER()
     MI_TOOL_LEDS_ENABLE,
+    MI_TOOL_LEDS_BRIGHTNESS,
 #endif
 #if HAS_SIDE_LEDS()
     MI_SIDE_LEDS_MAX_BRIGTHNESS,
