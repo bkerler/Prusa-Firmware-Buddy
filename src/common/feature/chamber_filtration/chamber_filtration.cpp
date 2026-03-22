@@ -108,24 +108,35 @@ void ChamberFiltration::step() {
     if (is_printing && !was_printing) {
         // Checking is a bit expensive, do it only at the beginning of the print
         update_needs_filtration();
+    } else if (!is_printing && was_printing) {
+        // The filtration decision is scoped to a single print. Clear it as soon
+        // as the print ends so post-print filtration can't leak stale state into
+        // the next job.
+        needs_filtration_ = std::nullopt;
     }
 
     const auto now_s = ticks_s();
 
-    // Determine output PWM of the fans
-    if (!needs_filtration_.value_or(false)) {
-        output_pwm_ = {};
-
-    } else if (is_printing) {
-        output_pwm_ = config_store().chamber_print_filtration_enable.get() ? config_store().chamber_mid_print_filtration_pwm.get() : PWM255(0);
+    // Always track when we were last printing so that post-print filtration can
+    // fire regardless of whether mid-print filtration was needed for this filament.
+    if (is_printing) {
         last_print_s_ = now_s;
+    }
 
-    } else if (config_store().chamber_post_print_filtration_enable.get() && ticks_diff(now_s, last_print_s_) <= config_store().chamber_post_print_filtration_duration_min.get() * 60) {
+    // Determine output PWM of the fans
+    if (is_printing && needs_filtration_.value_or(false)) {
+        // Mid-print: run only when filament requires filtration (or always-on is set)
+        output_pwm_ = config_store().chamber_print_filtration_enable.get() ? config_store().chamber_mid_print_filtration_pwm.get() : PWM255(0);
+
+    } else if (!is_printing && last_print_s_ != 0
+        && config_store().chamber_post_print_filtration_enable.get()
+        && ticks_diff(now_s, last_print_s_) <= config_store().chamber_post_print_filtration_duration_min.get() * 60) {
+        // Post-print: run for the configured duration regardless of filament type,
+        // as the user explicitly enabled and configured this.
         output_pwm_ = config_store().chamber_post_print_filtration_pwm.get();
 
     } else {
         output_pwm_ = {};
-        needs_filtration_ = std::nullopt; // Reset the flag after the print is done so that it doesn't affect the next print
     }
 
     const auto commit_unaccounted_filter_usage = [&](int min_s = 1) {
