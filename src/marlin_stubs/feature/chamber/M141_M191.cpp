@@ -5,6 +5,7 @@
 #include <marlin_stubs/skippable_gcode.hpp>
 
 #include <feature/chamber/chamber.hpp>
+#include <feature/chamber/chamber_marlin_compat.hpp>
 #include <gcode/gcode_parser.hpp>
 #include <module/planner.h>
 #include <lcd/ultralcd.h> // Some marlin garbage dunno
@@ -78,8 +79,9 @@ void PrusaGcodeSuite::M141_no_parser(const M141Args &args) {
     // Keep everything heated up while we're waiting
     buddy::SafetyTimerBlocker safety_timer_blocker;
 
-    if (!chamber().capabilities().temperature_control()) {
+    if (!buddy::chamber_temperature_command_supported(chamber().capabilities())) {
         SERIAL_ERROR_MSG("Chamber does not allow temperature control");
+        return;
     }
 
     auto target = args.target_temp;

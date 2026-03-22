@@ -25,12 +25,10 @@
 #include <option/has_dwarf.h>
 #include <option/has_mmu2.h>
 #include <option/has_toolchanger.h>
+#include <feature/chamber/chamber_marlin_compat.hpp>
 
 #if HAS_TOOLCHANGER()
     #include "../../module/prusa/toolchanger.h"
-#endif
-#if HAS_CHAMBER_API()
-    #include "feature/chamber/chamber.hpp"
 #endif
 
 static void cap_line(PGM_P const name, bool ena = false) {
@@ -185,13 +183,16 @@ void GcodeSuite::M115() {
     // AUTOREPORT_SD_STATUS (M27 extension)
     cap_line(PSTR("AUTOREPORT_SD_STATUS"));
 
-    // THERMAL_PROTECTION
-    cap_line(PSTR("THERMAL_PROTECTION")
+    bool thermal_protection = false;
 #if ((ENABLED(THERMAL_PROTECTION_HOTENDS) || HAS_DWARF()) && (ENABLED(THERMAL_PROTECTION_BED) || !HAS_HEATED_BED || HAS_REMOTE_BED()) && (ENABLED(THERMAL_PROTECTION_CHAMBER) || !HAS_HEATED_CHAMBER))
-                 ,
-        true
+    thermal_protection = true;
 #endif
-    );
+#if HAS_CHAMBER_API()
+    thermal_protection = thermal_protection && buddy::chamber_thermal_protection_supported(buddy::chamber().capabilities());
+#endif
+
+    // THERMAL_PROTECTION
+    cap_line(PSTR("THERMAL_PROTECTION"), thermal_protection);
 
     // MOTION_MODES (M80-M89)
     cap_line(PSTR("MOTION_MODES")
@@ -208,7 +209,7 @@ void GcodeSuite::M115() {
         true
 #elif HAS_CHAMBER_API()
                  ,
-        buddy::chamber().capabilities().temperature_reporting
+        buddy::chamber_temperature_command_supported(buddy::chamber().capabilities())
 #endif
     );
 }
