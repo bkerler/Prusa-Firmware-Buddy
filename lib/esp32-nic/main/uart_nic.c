@@ -48,7 +48,7 @@
 // Externals with no header
 esp_err_t mac_init(void);
 
-#define FW_VERSION 13
+#define FW_VERSION 14
 
 #define SCAN_MAX_STORED_SSIDS 64
 #define SSID_LEN              32
