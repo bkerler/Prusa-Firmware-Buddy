@@ -1763,7 +1763,7 @@ void print_resume(void) {
         server.print_state = State::PowerPanic_Resume;
 #endif
     } else {
-        print_start(nullptr, GCodeReaderPosition(), marlin_server::PreviewSkipIfAble::all);
+        print_start(marlin_vars().media_SFN_path.get_ptr(), GCodeReaderPosition(), marlin_server::PreviewSkipIfAble::all);
     }
 }
 
