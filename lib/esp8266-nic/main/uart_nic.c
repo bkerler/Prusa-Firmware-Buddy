@@ -45,7 +45,7 @@
 int ieee80211_output_pbuf(esp_aio_t *aio);
 esp_err_t mac_init(void);
 
-#define FW_VERSION 13
+#define FW_VERSION 14
 
 #define SCAN_MAX_STORED_SSIDS 64
 #define SSID_LEN              32
@@ -575,6 +575,8 @@ static void IRAM_ATTR handle_rx_msg_clientconfig_v2(uint8_t *data, struct header
         wifi_config.sta.threshold.authmode = WIFI_AUTH_WPA2_PSK;
     }
     wifi_config.sta.pmf_cfg.capable = 1;
+    wifi_config.sta.scan_method = WIFI_ALL_CHANNEL_SCAN;
+    wifi_config.sta.sort_method = WIFI_CONNECT_AP_BY_SIGNAL;
 
     // If scan is in progress we need to stop it manually here to prevent reconnect to previous AP.
     if (scan.in_progress) {
