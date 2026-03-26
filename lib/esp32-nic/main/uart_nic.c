@@ -642,6 +642,14 @@ static void check_online_status() {
     const uint32_t elapsed = now >= last ? now - last : now;
 
     if (elapsed > INACTIVE_PACKET_SECONDS) {
+        // A quiet network is not necessarily a broken one. If we are still
+        // associated according to the Wi-Fi stack, keep the connection up and
+        // treat this as an idle period instead of forcing a reconnect cycle.
+        if (get_link_status() != 0) {
+            last_inbound_seen = now;
+            return;
+        }
+
         probe_in_progress = true;
         probe_retry_count = 0;
         probe_run();
