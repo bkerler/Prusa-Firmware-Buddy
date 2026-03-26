@@ -462,11 +462,10 @@ bool generate_next_step_event(step_event_i32_t &step_event, step_generator_state
             --step_state.left_insert_start_of_move_segment;
         }
 
-        if (step_state.previous_step_time == 0.) {
+        if (step_state.previous_step_time_ticks == 0) {
             step_event.flags |= STEP_EVENT_FLAG_FIRST_STEP_EVENT;
         }
 
-        step_state.previous_step_time = step_time_absolute;
         step_state.previous_step_time_ticks = step_time_absolute_ticks;
     } else {
         // Reset flags to indicate no step has been produced
@@ -902,7 +901,6 @@ STEPPING_INLINE bool append_move_discarding_step_event(step_generator_state_t &s
         step_event->flags = step_state.current_flags | STEP_EVENT_FLAG_BEGINNING_OF_MOVE_SEGMENT | extra_step_flags;
 
         PreciseStepping::step_event_queue.head = next_step_event_queue_head;
-        step_state.previous_step_time = 0.;
         step_state.previous_step_time_ticks = 0;
         return true;
     }
@@ -1408,7 +1406,6 @@ void PreciseStepping::step_generator_state_init(const move_t &move) {
     }
 
     current_move_flags = 0;
-    step_generator_state.previous_step_time = 0.;
     step_generator_state.previous_step_time_ticks = 0;
     step_generator_state.buffered_step.flags = 0;
     step_generator_state.current_distance = stepper.count_position_from_startup;
