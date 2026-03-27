@@ -5,6 +5,10 @@
 #include "../../lib/Marlin/Marlin/src/gcode/parser.h"
 #include "feature/prusa/MMU2/mmu2_mk4.h"
 #include "gcode_info.hpp"
+#include <algorithm>
+#include <cctype>
+#include <utils/string_builder.hpp>
+#include <vector>
 
 #ifdef PRINT_CHECKING_Q_CMDS
 
@@ -37,25 +41,31 @@ void PrusaGcodeSuite::M862_6() {
     #endif
     if (parser.boolval('Q')) {
         for (auto &feature : supported_features) {
-            SERIAL_ECHOLNPAIR(" M862 P\"", feature.data(), "\"");
+            SERIAL_ECHO_START();
+            SERIAL_ECHO("  M862.6 P\"");
+            SERIAL_ECHO(feature.data());
+            SERIAL_ECHOLN("\"");
         }
     }
 
-    if (parser.boolval('P')) {
-        char *arg = parser.string_arg + 1;
+    if (parser.seenval('P')) {
+        const char *arg = parser.string_arg;
         while (*arg == ' ' || *arg == '\"') {
             arg++;
         }
 
-        char *arg_end = arg;
-        while (isalnum(*arg_end) || *arg_end != '\"') {
+        const char *arg_end = arg;
+        while (*arg_end && *arg_end != '\"') {
             arg_end++;
         }
-        *arg_end = 0;
 
-        auto str_arg = std::string_view(arg, arg_end);
-        SERIAL_ECHOPAIR("\"", str_arg.data(), "\"");
-        if (!count(supported_features.begin(), supported_features.end(), str_arg)) {
+        const auto str_arg = std::string_view(arg, arg_end - arg);
+        ArrayStringBuilder<80> sb;
+        sb.append_printf("\"");
+        sb.append_std_string_view(str_arg);
+        sb.append_printf("\"");
+        SERIAL_ECHO(sb.str());
+        if (!std::count(supported_features.begin(), supported_features.end(), str_arg)) {
             SERIAL_ECHO(" NOT");
         }
         SERIAL_ECHOLN(" supported.");
