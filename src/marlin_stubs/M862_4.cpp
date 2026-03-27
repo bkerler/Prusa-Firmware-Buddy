@@ -33,7 +33,7 @@ void PrusaGcodeSuite::M862_4() {
         snprintf(temp_buf, sizeof(temp_buf), PSTR("  M862.4 P%s"), version_buffer);
         SERIAL_ECHOLN(temp_buf);
     }
-    if (parser.boolval('P')) {
+    if (parser.seenval('P')) {
         auto req_version = parser.value_int();
         SERIAL_ECHO("Firmware version ");
         if (atoi(version_buffer) == req_version) {

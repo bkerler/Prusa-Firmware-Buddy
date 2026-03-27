@@ -53,8 +53,8 @@ void PrusaGcodeSuite::M862_1() {
         SERIAL_ECHO(sb.str());
     }
 
-    if (parser.floatval('P')) {
-        double requested_nozzle_diameter = (double)parser.floatval('P');
+    if (parser.seenval('P')) {
+        const double requested_nozzle_diameter = (double)parser.floatval('P');
         if (requested_nozzle_diameter < 0) {
             SERIAL_ECHO("Requested nozzle diameter cannot be negative.");
         } else if (requested_nozzle_diameter != nozzle_diameter) {

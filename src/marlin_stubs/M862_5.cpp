@@ -36,7 +36,7 @@ void PrusaGcodeSuite::M862_5() {
         SERIAL_ECHO(temp_buf);
         SERIAL_EOL();
     }
-    if (parser.boolval('P')) {
+    if (parser.seenval('P')) {
         SERIAL_ECHO("Gcode level ");
         if (parser.ulongval('P') == GCodeInfo::gcode_level) {
             SERIAL_ECHO("matches");
