@@ -1033,10 +1033,12 @@ JsonResult DirRenderer::renderState(size_t resume_point, json::JsonOutput &outpu
                 // It is a directory with a stupid name, but not a running
                 // transfer. Act as if it is just a directory.
                 state.read_only = false;
-                state.childsize = child_size(state.base_path, state.ent->d_name);
             }
         } else {
             state.read_only = false;
+        }
+
+        if (state.ent->d_type != DT_DIR && !state.childsize.has_value()) {
             state.childsize = child_size(state.base_path, state.ent->d_name);
         }
 
