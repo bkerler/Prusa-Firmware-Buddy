@@ -22,6 +22,8 @@
 
 #include "../../inc/MarlinConfig.h"
 
+#include <cmath>
+
 #include <option/has_dwarf.h>
 #include <option/has_indx.h>
 #include <option/has_toolchanger.h>
@@ -212,23 +214,23 @@ void GcodeSuite::M106() {
 
     const bool auto_control = parser.seen('R');
     if (parser.seen('S') || parser.seen('A') || auto_control) {
-        const uint8_t speed = parser.byteval('S', 255);
+        const bool inherit_first_fan_speed = p < _CNT_P && parser.seen('A') && !parser.seenval('S');
+        const float default_speed = inherit_first_fan_speed ? thermalManager.fan_speed[0] : 255;
+        const uint8_t speed = static_cast<uint8_t>(std::clamp(std::round(parser.floatval('S', default_speed)), 0.0f, 255.0f));
 
         const std::optional<PhysicalToolIndex> tool = stdext::get_optional<PhysicalToolIndex>(get_target_physical_from_command());
         if (set_special_fan_speed(p, tool, speed, auto_control)) {
             // Done in the function
 
         } else if (p < _CNT_P) {
-            uint16_t d = parser.seen('A') ? thermalManager.fan_speed[0] : 255;
-            uint16_t s = parser.ushortval('S', d);
-            NOMORE(s, 255U);
+            uint16_t scaled_speed = speed;
     #if HAS_GCODE_COMPATIBILITY()
-            if (gcode.compatibility.mk4_compatibility_mode) {
-                s = (s * 7) / 10; // Converts speed to 70% of its values
+            if (gcode.compatibility.mk4_compatibility_mode && !inherit_first_fan_speed) {
+                scaled_speed = (scaled_speed * 7) / 10; // Converts speed to 70% of its value
             }
     #endif
 
-            thermalManager.set_fan_speed(p, s);
+            thermalManager.set_fan_speed(p, scaled_speed);
         }
     }
 
